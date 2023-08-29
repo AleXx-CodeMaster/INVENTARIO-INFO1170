@@ -29,7 +29,7 @@ Todos estos problemas existen a la falta de implementación de una solución sim
 
 Al final de todo la compañía se encuentra en una situación precaria, el resto de los departamentos funcionan a su máximo estándar pero su aporte al soporte de la compañía esto es en parte a varios problemas existentes en su sistemas de transporte, envío y inventario donde la falta de un sistema que simplifique y solucione simplemente no existe y ha causado frustraciones dentro los negocios entre los clientes y administradores, finalmente dejando en una situación precaria ya que de a poco van perdiendo clientela y distribuidores en los que dependían para mantener el negocio dejándolos en una esquina sin escape a la lenta pero segura pérdida de capital que puede llegar hasta el punto de quiebra dejando a miles de empleados sin trabajos y una pérdida en el poder del mercado.
 
-##Los objetivos del equipo
+#Los objetivos del equipo
 
 Dentro del equipo hemos planteado cuáles son nuestros objetivos mientras se crea el proyecto presentado aunque hay que decir que este proyecto aún sigue siendo un proyecto joven, puede haber cambios aunque serán mínimos en el trabajo en general ya que el diseño en general ya lo hemos hablado y tenemos una idea en general de cómo la pagina se tiene que ver y funcionar dejándonos a todos en una página en general para la creación de la página que se van a crear.
 
