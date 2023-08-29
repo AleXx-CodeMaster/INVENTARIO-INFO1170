@@ -72,3 +72,4 @@ Gracias por leer este documento que tenga un buen día,tarde o noche.
 
 De parte de todo el equipo.
 
+![](https://github.com/AleXx-CodeMaster/INVENTARIO-INFO1170/blob/main/Representaci%C3%B3n%20de%20la%20P%C3%A1gina%20Web%20(Inventario)/LOGO%20DE%20LA%20P%C3%81GINA%20WEB.png)
