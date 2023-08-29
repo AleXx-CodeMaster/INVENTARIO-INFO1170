@@ -1,5 +1,5 @@
 # ORGANIZADOR-DE-INVENTARIO-INFO1170
-# Descripción del proyecto.
+## Descripción del proyecto.
 
 En nuestro proyecto una bodega necesita una página en la que tienen la necesidad de ingresar su inventario actual dentro de la bodega usando los códigos de barra del producto, a la vez necesitan que la página sea fácil de usar y aprender para que los trabajadores no necesitan una gran cantidad de capacitación para su uso. Además con esta página se facilitará el trabajo del administrador al gestionar el inventario de la bodega, que productos se necesitan comprar, que hay en alto stock, productos a caducar, falta de interés de nuestros clientes en ciertos productos etc.
 
@@ -16,7 +16,7 @@ Finalmente las soluciones que queremos implementar dentro del proyecto son estas
 - Acceso rápido fuera de las tiendas o bodegas a través del internet por administradores o jefes de la compañía para revisión y edición de la base de datos por si hay errores humanos dentro del sistema.
 - El conteo de stock dentro de una bodega o tienda junto a una posible vista de los precios de cada ítem para la facilitación de ventas en lo cual puede facilitar los negocios a gran escala(Regional, Nacional o Global).
 - 
-# Análisis de una situación sin el proyecto.
+## Análisis de una situación sin el proyecto.
 
 Una empresa dentro de la región de la Araucanía, Temuco que se basa en la compra y distribución de ítems variados para la casa desde sartenes para la cocina hasta podadores para el jardín. Muchos de los sistemas básicos que esta compañía necesita ya se encuentran implementados desde una cadena de transporte al sistema de pedidos a cada bodega.
 Uno de los problemas que tienen es que no tienen un software que sea capaz ingresar su inventario de objetos dentro de sus tiendas y bodegas lo que ha llevado a faltas de stock dentro de las tiendas.
@@ -42,5 +42,33 @@ Nuestro tercer objetivo es la creación del organizador que como se puede ver es
 
 Nuestro último objetivo el uso de una máquina que detecta los códigos de barra dentro de los productos vendidos a través de la página y se integre a la base de datos siendo un ítem previamente ingresado o un nuevo producto dentro del inventario, la idea principal es dar al usuario final una forma de integrar elementos a la base de datos de una manera simple y sencilla solamente dejando al usuario en integrar datos faltantes y listo, este objetivo es uno en el cual aún se está pensando una solución y no es de alta prioridad por el momento que se escribe este documento.
 
+## ¿Qué cambios haría este proyecto en el campus?
 
+El proyecto que se está programando tiene el beneficio de ser modificable y podría ayudar a los negocios que venden comida para poder revisar su stock y mantener un buen inventario para la compra y venta de productos en las premisas del campus.
+
+Uno de estos negocios sería la cafetería de la biblioteca, el otro sería la cafetería debajo del comedor que es una cafetería más espaciosa para más estudiantes en las horas de almuerzo y finalmente la cafetería de las canchas que es un negocio más chico pero igual de importante.
+
+Estos negocios mejoran su control sobre su stock de alimentos y ventas de estos, esto no es todo ya que la universidad en si tiene objetos que se deben mantener en el inventario para que no falten dentro de los lugares donde se guardan estos objetos generando un mejor control de inventario dentro del campus, estos creemos que serían los cambios que ocurrirían en el campus.
+
+## ¿Qué pasaría con la empresa si se le agrega el proyecto a sus operaciones?
+
+Como ya hablamos la empresa explicada anteriormente se encuentra en una situación precaria donde su negocio está perdiendo capital y clientela por la falta de un sistema que ayude a mantener un inventario en las premisas de la empresa dejando frustraciones dentro de los negocios y tratos de la empresa.
+
+Habiendo clarificado la situación de la empresa ahora se explicara en qué formas nuestro proyecto mejorará la situación en la cual se encuentra, para empezar la implementación del software serian sencilla dentro de la empresa ya que lo único que se necesita es un servidor donde se contiene la información de la base de datos y una simple conexión al buscador de los ordenadores dentro de las premisas para que los empleados que necesiten usar el software tengan acceso.
+
+También ayudaría a la compañía para la mantención del inventario y se sabría mejor el stock que hay para la venta y compra de productos, a la vez ayudaría a lo distribuidores a saber cuánto hay del producto que necesitan para mandar a pedir esto deja en una baja probabilidad de errores y faltas de stock ya que no había lo suficiente para el envío dejándolos más bajos de stock de los que se esperaba.
+
+El sistema también les ayuda mantener seguridad en el inventario ya que se mantiene un conteo digital el cual se puede revisar a través de un conteo de inventario para verificar la realidad de la situación.
+
+También ayuda en mantener la condición de los empleados quien está enfermo o si tiene vacaciones guardados, sus salario, incluyendo otras cosas importantes que solo los administradores y los jefes tienen acceso obviamente con un respaldo físico. Esto ayudaría a tener un mejor control de la situación de los trabajadores.
+
+Más que eso no habrian muchos mas cambios en los temas mas complicados capaz un cambio al sistema de distribución dando mejoras al sistema existente pero de nuestra parte no vemos más cambios de los ya hablados.
+
+A pesar de esto pueden que hayan cambios mayores que el escritor o el resto del equipo no haya visto o pensado en su momento en lo cual nos disculpamos, pero eso significa que el proyecto tiene mucho más valor de lo que pensamos que en nuestro punto de vista apela más a su creación.
+
+Finalmente este párrafo es para terminar este documento y una especie de conclusión. Como hemos intentado escribir, demostramos la función del software cuáles son nuestros objetivos entrando a esta aventura semestral en la cual nuestra atención y capacidad de trabajar juntos en algo que no sabemos exactamente si podemos alcanzar pero lo intentaremos no por la nota del semestre pero para tener el conocimiento y gratitud de haber demostrado que si pertenecemos a esta carrera y somos capaces de crear y trabajar como el sector profesional necesita que trabajemos para alcanzar nuestros sueños.
+
+Gracias por leer este documento que tenga un buen día,tarde o noche.
+
+De parte de todo el equipo.
 
