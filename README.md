@@ -29,3 +29,18 @@ Todos estos problemas existen a la falta de implementación de una solución sim
 
 Al final de todo la compañía se encuentra en una situación precaria, el resto de los departamentos funcionan a su máximo estándar pero su aporte al soporte de la compañía esto es en parte a varios problemas existentes en su sistemas de transporte, envío y inventario donde la falta de un sistema que simplifique y solucione simplemente no existe y ha causado frustraciones dentro los negocios entre los clientes y administradores, finalmente dejando en una situación precaria ya que de a poco van perdiendo clientela y distribuidores en los que dependían para mantener el negocio dejándolos en una esquina sin escape a la lenta pero segura pérdida de capital que puede llegar hasta el punto de quiebra dejando a miles de empleados sin trabajos y una pérdida en el poder del mercado.
 
+##Los objetivos del equipo
+
+Dentro del equipo hemos planteado cuáles son nuestros objetivos mientras se crea el proyecto presentado aunque hay que decir que este proyecto aún sigue siendo un proyecto joven, puede haber cambios aunque serán mínimos en el trabajo en general ya que el diseño en general ya lo hemos hablado y tenemos una idea en general de cómo la pagina se tiene que ver y funcionar dejándonos a todos en una página en general para la creación de la página que se van a crear.
+
+Hablaremos de cada objetivo de una manera detalla empezando ahora:
+Nuestro primer objetivo es crear un sistema de base de datos que sea fácil de implementar y modificar para el uso de los administradores siendo su uso en la revisión de elementos dentro de la base de datos junto a su modificación siendo esta necesaria en vista del administrador para crear esta posibilidad pensamos en crear una sección para el adminstrador en la cual tiene acceso a la base de datos a través de la página.
+
+Nuestro segundo objetivo es la creación un sitio que sea sencillo en diseño pero fácil en su modificación siendo esta necesaria, estas modificaciones pueden ser en el estilo de la página o una modificación más interna dentro de la página por si es necesario crear nuevas páginas o se agreguen más funciones al software dentro de la página, también uno de nuestros objetivos apegados a este es la necesidad de crear un buen “layout” de la página para quienes la usen por primera vez dejando una baja posibilidad de confusión de parte del usuario en cómo funciona la pagina.
+
+Nuestro tercer objetivo es la creación del organizador que como se puede ver es uno de los mayores temas en los cuales se basa el proyecto la idea de este sistema es organización de un inventario basado en la identificación de los objetos y categorizacion automatica de estos donde el usuario ingresando el objeto de la información al software para que este lo ingrese a la base de datos y este sea organizado dentro del sistema.
+
+Nuestro último objetivo el uso de una máquina que detecta los códigos de barra dentro de los productos vendidos a través de la página y se integre a la base de datos siendo un ítem previamente ingresado o un nuevo producto dentro del inventario, la idea principal es dar al usuario final una forma de integrar elementos a la base de datos de una manera simple y sencilla solamente dejando al usuario en integrar datos faltantes y listo, este objetivo es uno en el cual aún se está pensando una solución y no es de alta prioridad por el momento que se escribe este documento.
+
+
+
