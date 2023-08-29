@@ -73,4 +73,4 @@ Gracias por leer este documento que tenga un buen día,tarde o noche.
 De parte de todo el equipo.
 
 ![](https://github.com/AleXx-CodeMaster/INVENTARIO-INFO1170/blob/main/Representaci%C3%B3n%20de%20la%20P%C3%A1gina%20Web%20(Inventario)/LOGO%20DE%20LA%20P%C3%81GINA%20WEB.png)
-![]_(https://lucid.app/lucidchart/4c2ea38e-cc0d-4ac2-9376-d226ad27bb47/edit?viewport_loc=-520%2C226%2C2329%2C974%2C0_0&invitationId=inv_4e187035-5a0e-4220-a3ac-6aecefb6e729).
+![Diagramas]_(https://lucid.app/lucidchart/4c2ea38e-cc0d-4ac2-9376-d226ad27bb47/edit?viewport_loc=-520%2C226%2C2329%2C974%2C0_0&invitationId=inv_4e187035-5a0e-4220-a3ac-6aecefb6e729).
