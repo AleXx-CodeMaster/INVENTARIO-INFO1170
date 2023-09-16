@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script>
+        function Cambiar_Img(ImagenUser,on_or_off,){
+            if(on_or_off == 'on'){
+                ImagenUser.src = 'fotoperfil.avif'
+            }else{
+                ImagenUser.src = 'usuarioIMG.png'
+            }
+        }
+        window.onload = function(){
+            var par1 = localStorage.getItem('#Nemp')
+        }
+    
+    </script>
+    <script>
+        window.onload = function() {
+          var texto1 = localStorage.getItem('texto1');
+          var texto2 = localStorage.getItem('texto2');
+          if (texto1) {
+            document.getElementById('NomEmp').innerHTML = 'Empresa: '+ texto1;
+          }
+          if (texto2) {
+            document.getElementById('NomEnc').innerHTML ='Encargado:'+ texto2;
+          }
+        }
+        </script>
+</head>
+<body>
+    <header class = 'Part1_Menu'>
+
+            <img id = 'ImagenUsuario' src = "usuarioIMG.png" alt="Imagen del usuario"  onmousemove=""> <!--Usar una funcion con java scrpit , para cabaiar la imagen , he ir actualizando-->
+            <p id = 'NomEmp'> Empresa:<span id = 'NomEmpr'>...Nombre de la empresa </span></p> <!-- usar una funcio con java escrip , para poder cambiar el nombre-->
+            <p id = 'NomEnc'> Encargado:<span id = 'NomCargo'>...............</span></p>  <!--Usar una funcion de actualizar-->
+            <button id = 'B_configuracion'> <a href='configuracion.html'>Configuración V</a></button> <!--usar una funcion para que diriga la nueva ruta , de la sig pagina-->
+
+    </header>
+    <script>
+        const imgUser = document.querySelector('#ImagenUsuario')
+        imgUser.addEventListener('mouseover', function() {Cambiar_Img(this,'on')} )
+        imgUser.addEventListener('mouseout', function() {Cambiar_Img(this,'off')} )
+
+    </script>
+    
+</body>
+</html>
