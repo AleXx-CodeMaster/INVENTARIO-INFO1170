@@ -8,6 +8,26 @@
     <title>Login</title>
 </head>
 <body>
-
+    <nav>
+        <ul>
+            <li><a href="">MENU PRINCIPAL</a></li>
+            <li><a href="">CLIENTES</a></li>
+            <li><a href="">GESTION DE PRODUCTOS</a></li>
+            <ul>
+                <li><a href="">Categorias</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Provedores</a></li>
+            </ul>
+            <li><a href="">GESTION DE EXISTENCIAS</a></li>
+            <ul>
+                <li><a href="">Entrada</a></li>
+                <li><a href="">Salida/Factura</a></li>
+            </ul>
+            <li><a href="">GRAFICA</a></li>
+            <li><a href="">CALENDARIO</a></li>
+            <li><a href="">AYUDA</a></li>
+            <li><a href="">MAS SOBRE NOSOTROS</a></li>
+        </ul>
+    </nav>
 </body>
 </html>

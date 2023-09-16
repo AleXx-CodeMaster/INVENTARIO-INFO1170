@@ -18,5 +18,10 @@ Route::get('/', function () {
 });
 
 Route::get('/login',function(){
-    return view('Proyecto',);
+    return view('Proyecto');
 });
+
+Route::get('/hola',function(){
+    return view('hola');
+});
+
