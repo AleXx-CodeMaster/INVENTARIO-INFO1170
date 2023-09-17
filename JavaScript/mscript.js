@@ -1,9 +1,10 @@
+/* FUNCIONES DE LA PAGINA "paginaGeneral" */
 // funcion para cambair la imagen
 function Cambiar_Img(ImagenUser,on_or_off,){
     if(on_or_off == 'on'){
         ImagenUser.src = 'fotoperfil.avif'
     }else{
-        ImagenUser.src = 'usuarioIMG.png'
+        ImagenUser.src = '/Imagenes/usuarioIMG.png'
     }
 }
 window.onload = function(){
