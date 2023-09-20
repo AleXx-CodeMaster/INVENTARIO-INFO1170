@@ -1,3 +1,41 @@
-*{
+/*ESTILO PARA EL BLOQUE MENU DE Pagina : 'paginaGENERAL'*/
+*.Part1_Menu{
+    display:block;
+    width: 20rem;
+    height: 44rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    /* box-shadow: 0.3rem 0.3rem 4px rgba(129, 129, 129, 0.615);;  sobmbra para el bloque */
+    box-shadow: 0rem 0rem 0.7rem rgba(129, 129, 129, 0.615);;  /* sobmbra para el bloque*/
+
+}
+/* estilo para la imagen del usuario */
+#ImagenUsuario {
+    margin-left: 3rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 20rem;
+  }
+.Part1_Menu p,button{
+
+    font-family:monospace;
+    margin-left: 2rem;
+}
+button,a {
     background-color: white;
+    color: rgba(0, 0, 0, 0.879);
+    border: none;
+    text-align: left;
+    text-decoration: none;
+
+}
+button:hover{
+    background-color: rgb(221, 221, 221);
+    color:grey;
+    border:none;
+}
+
+hr{
+    color: black;
+    border: 1px solid black;
 }
