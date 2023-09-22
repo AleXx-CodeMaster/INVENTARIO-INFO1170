@@ -1,0 +1,93 @@
+/* Estilo para el encabezado */
+.Cont-P_1 {
+    grid-row: 1;
+    background-color: rgba(28, 28, 32, 0.94);
+    font-family: monospace;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+  }
+  /* Estilo para el div que contiene el párrafo y la imagen */
+.Cont-P_1 div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color:white;
+  }
+/*estilo para el Boton 'nuevo +'*/
+#BotonMas{
+    margin-left: 2rem;
+    width: 8em;
+    height: 3.5rem;
+    border-radius: 0.2rem;
+    border: 0.1rem solid white;
+    color:white;
+    background-color: rgba(13, 12, 25, 0.792);
+    font-family: monospace;
+    font-size: 1rem;
+}
+#S {
+    font-size: 2rem; /* Ajusta este valor según tus necesidades */
+}
+/*ESTILO para MAIN : PARTE DEL CUERPO*/
+.Cont-P_2{
+    grid-row: 2;
+    width: 87%;
+    height: 100%;
+    display:block;
+    background-color: teal;
+    margin-bottom: auto;
+    margin: auto;
+    grid-template-rows: auto auto auto;
+}
+/*Estilo para el formulario a rellenar*/
+.C-Formulario{
+    grid-row: 1;
+    display: block;
+    background-color:cornsilk;
+    width: 90%;
+    height: 20rem;
+    margin: auto;
+}
+.C-Formulario section{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.C-Formulario section button,h4{
+    border-radius: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+}
+/*Estilo para la barra de buscador*/
+#C-Busqueda{
+    grid-row: 2;
+    width: 100%;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#F1{
+    margin-left: 1rem;
+}
+#F2{
+    margin-left:  1.5rem;
+    margin-right: 1.5rem;
+}
+#F2 input{
+    border-radius: 2rem;
+}
+/*Estilo para donde se hubicara la tabla */
+.C-Tabla{
+    grid-row: 3;
+    display: block;
+    background-color:cornsilk;
+    width: 97%;
+    height: 20rem;
+    margin: auto;
+}
