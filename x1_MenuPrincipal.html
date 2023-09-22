@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="secciones.css"> 
+</head>
+<body>
+    <nav class="MenuIzq">
+        <div class = "Part1_Menu1" >
+            <div id = 'INF_Usuer'>
+                <img id = 'ImagenUsuario' src = "https://leadsales.io/wp-content/uploads/2023/05/users-leadsales.webp" alt="Imagen del usuario" width="40px"> <!--Usar una funcion con java scrpit , para cabaiar la imagen , he ir actualizando-->
+                <div id = 'bloque_de_Parrafo'>
+                    <p id = 'NomEmp'> Empresa: <span id = 'NomEmpr'>...Nombre de la empresa </span></p> <!-- usar una funcio con java escrip , para poder cambiar el nombre-->
+                    <p id = 'NomEnc'> Encargado: <span id = 'NomCargo'>...............</span></p>  <!--Usar una funcion de actualizar-->
+                </div>
+            </div>
+
+            <button id = 'B_configuracion'><a href='configuracion.html'>Configuración A</a></button> <!--usar una funcion para que diriga la nueva ruta , de la sig pagina-->
+            <button id = 'B_configuracion'><a href='configuracion.html'>Configuración M</a></button> <!--usar una funcion para que diriga la nueva ruta , de la sig pagina-->
+        </div>
+        <div class = " Part1_Menu2">
+            <label> Apartado del Menu </label>
+            <ul>
+                <li><details><summary><a href="#">MENU PRINCIPAL</a></summary></details> </li>
+                <li><details><summary><a href="Clientes">CLIENTES</a></summary></details></li>
+                <li><details> <summary>GESTION DE PRODUCTOS</summary>
+                <ul>
+                    <li><a href="GestionDeProductos/Categorias">Categorias</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Provedores</a></li>
+                </ul> </details> </li>
+                <li><details><summary>GESTION DE EXISTENCIAS</summary>
+                    <ul>
+                        <li><a href="#">Entrada</a></li>
+                        <li><a href="#">Salida/Factura</a></li>
+                    </ul> </details></li>
+                
+                <li><details><summary><a href="file:///C:/Users/La%20Palo..ma/Downloads/Pagina_que_se_encargaran_Yaninna%20(1).pdf">GRAFICA</a></summary></details></li>
+                <li><details><summary><a href="#">CALENDARIO</a></summary></details></li>
+                <li><details><summary><a href="#">AYUDA</a></summary></details> </li>
+                <li><details><summary><a href="#">MÁS SOBRE</a></summary></details> </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="CuerpoPagina">
+        <header class = 'Cuerpo1' id = 'Parte_Superior'> 
+            <div>
+                <img src="Logo.jpg"width='200px'> 
+                <h1>Nombre de la Empresa</h1>
+            </div>
+        </header>
+        <main class = 'Cuerpo2' id = 'Contenido'>
+            <section class='Contedor0' id = 'box1'>
+                <div id ='DivCambio1'>
+                    <!--PARRAFOS DESCRIPTIVO ,del mensaje del boton
+                        Usando Javascript se colocaria los correspondientes 
+                        del boton que se precione , se ejecutaria el tipo de info que se cola
+                        en este apartado, mienstras estaria vacia
+                    
+                        La etiqueta canavas , para hacer lo del grafico-->
+                    <p>lugar donde sale la el texto y grafico</p>
+                    <canvas id="miGrafico" height="0rem"></canvas>
+                </div>
+            </section>
+            <section class="Contedor1">
+                <button class="BotonMenu" id="Bot1">Estadistica</button>
+                <button class="BotonMenu" id="Bot2">Productos mas vendidos</button>
+                <button class="BotonMenu" id="Bot3">Productos menos vendidos</button>
+                <button class="BotonMenu" id="Bot4">Resumen de Registros</button>
+            </section>
+            <section class="Contedor2" id= 'box2'>
+                <div id ='DivCambio1'> </div>
+            </section>
+            <section class="Contedor3" id=" 'box3">
+                    <div class="C parte-1"><details><summary>Clientes</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sint cupiditate magnam sapiente nesciunt beatae veniam 
+                        deleniti explicabo dolorum maiores, id unde quos in labor
+                        e illum impedit deserunt! Quis ea fugit rem, ducimus magnam
+                        , quam placeat, dolorum impedit saepe praesentium veritatis c
+                        onsectetur vel modi necessitatibus earum eligendi incidunt
+                        fuga optio a. Possimus qui iure ad cumque est! Assumenda ap
+                        eriam eum nostrum, asperiores dolore voluptate tempora enim
+                        doloremque adipisci dicta tenetur ex quae qui praesentium re
+                        pudiandae aliquam neque? Aperiam a similique maiores libero.
+                        Iure, at voluptatum! Nostrum impedit voluptatibus rerum modi o
+                        dit, vitae quasi amet minima itaque eum facilis minus quos? Eligendi.</p></details></div>
+                    <div class="C parte-2"><details><summary>Existencia total</summary></details></div>
+                    <div class="C parte-3"><details><summary>Importe Pagado</summary></details></div>
+                    <div class="C parte-4"><details><summary>Provedores</summary></details></div>
+                    <div class="C parte-5"><details><summary>Existencia vendida</summary></details></div>
+                    <div class="C parte-6"><details><summary>Importe restante</summary></details></div>
+                    <div class="C parte-7"><details><summary>Productos</summary></details></div>
+                    <div class="C parte-8"><details><summary>Existencia Actual</summary></details></div>
+                    <div class="C parte-9"><details><summary>Beneficio Bruto</summary></details></div>
+                    <div class="C parte-10"><details><summary>Facturas</summary></details></div>
+                    <div class="C parte-11"><details><summary>Importe vendido</summary></details></div>
+                    <div class="C parte-12"><details><summary>Beneficio Neto</summary></details></div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

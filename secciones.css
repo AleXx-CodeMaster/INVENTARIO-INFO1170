@@ -1,0 +1,134 @@
+
+.Cuerpo1{
+    grid-row: 1;
+    width: 30rem;
+    background-color: teal;
+    margin:auto;
+    padding-bottom: 0rem;
+    
+;
+}
+.Cuerpo2{
+    grid-row: 2;
+    display: grid;
+    padding-top: 0rem;
+    background-color: brown;
+    grid-template-rows: auto auto auto auto;
+    ;
+}
+.Contedor0{
+    grid-row: 1;
+    background-color: rgb(0, 0, 0) ;
+    color: white;
+    margin: auto;
+}
+.BotonMenu{
+    margin:auto;
+    height: 4rem;
+    border-radius: 1rem;
+}
+.Contedor1{
+    grid-row: 2;
+    background-color:grey ;
+    padding: 2rem;
+} 
+.Contedor2{
+    grid-row: 3;
+    background-color:rgba(96, 128, 0, 0.503) ;
+} 
+.Contedor3{
+    grid-row: 4;
+    background-color:rgba(12, 65, 67, 0.343) ;
+    margin: auto;
+    width: 900px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    
+    row-gap: 1.5rem;
+    column-gap: 3rem;
+    grid-template-areas: 
+        "C-1 C-2 C-3"
+        "C-4 C-5 C-6"
+        "C-7 C-8 C-9"
+        "C-10 C-11 C-12"
+        ;
+}
+.C{
+    display: block;
+    background-color: rgb(12, 12, 144);
+    color: white;
+    width: 15rem;
+}
+
+.parte-1{
+    grid-area: C-1;
+
+}
+
+.parte-2{
+    grid-area: C-2;
+    background-size: cover;
+    background-position: center;
+}
+.parte-3{
+    grid-area: C-3;
+    background-size: cover;
+    background-position: center;
+}
+
+.parte-4{
+    grid-area: C-4;
+    background-size: cover;
+    background-position: center;
+}
+.parte-5{
+    grid-area: C-5;
+    background-size: cover;
+    background-position: center;
+}
+.parte-6{
+    grid-area: C-6;
+    background-size: cover;
+    background-position: center;
+}
+.parte-7{
+    grid-area: C-7;
+    background-size: cover;
+    background-position: center;
+}
+.parte-8{
+    grid-area: C-8;
+    background-size: cover;
+    background-position: center;
+}
+.parte-9{
+    grid-area: C-9;
+    background-size: cover;
+    background-position: center;
+}
+.parte-10{
+    grid-area: C-10;
+    background-size: cover;
+    background-position: center;
+}
+.parte-11{
+    grid-area: C-11;
+    background-size: cover;
+    background-position: center;
+}
+.parte-12{
+    grid-area: C-12;
+    background-size: cover;
+    background-position: center;
+}
+
+.C summary{
+    margin-top: 20px;
+    margin-left: 4rem;
+    margin-right: 3rem;
+    text-align:center;  
+    border-left: 2px solid white;
+    height:100%
+}
