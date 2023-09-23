@@ -1,0 +1,38 @@
+* body { 
+    display: grid;    
+    margin: 0;       
+    padding: 0;      
+    grid-template-columns: 15rem auto; 
+    flex-grow: 1;                
+}
+.MenuIzq{
+    grid-column: 1;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.932);
+    grid-template-rows: 4rem 7rem auto auto;
+    flex-grow: 1;
+}
+.CuerpoPagina{
+    grid-column: 2;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.04);
+    grid-template-rows: auto auto auto auto auto;
+    flex-grow: 1;
+} 
+/* De aca adelante son estilos para aplicar al CuerpoPagina , que iria cambiando segun la pagina*/
+.CuerpoPagina header{
+    background-color: grey;
+    width: 100%;
+}
+.CuerpoPagina img{
+    width: 20%;
+}
+.CuerpoPagina section{
+    background-color: teal;
+    display: flex;
+    width: 85%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: auto;
+    margin-bottom: 5%;
+}
