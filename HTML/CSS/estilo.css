@@ -6,7 +6,7 @@
     margin: 0;        /* Esto elimina el margen alrededor del cuerpo */
     padding: 0;       /* Esto elimina el relleno alrededor del cuerpo */
     grid-template-columns: 21rem auto; /* Esto crea dos columnas: una de 200px para el menú lateral y otra que ocupa el espacio restante para el contenido y el menú superior */
-    height: 100vh; /*Ocupar todo el ancho de la pantalla
+    height: 100vh;                     /*Ocupa todo el ancho de la pantalla*/
 }
 /* Aca se indicaria el menu que se encuntra en la izquirda que tomara la
     1/2 de la pagina en formato de la anchura*/
