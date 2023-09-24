@@ -8,11 +8,7 @@
 .MenuIzq{
     width: 100%;
     grid-column: 1;
-    /* display: grid;  */
-    background-color: rgba(0, 0, 0, 0.391);
-    /* background-color: rgba(205, 206, 206, 0.535); */
-    border-right: 3px solid black;                            
-/*   grid-template-rows: 4rem 7rem auto auto; */
+    background-color: rgba(22,24,56);
     flex-grow: 1;
 }
 .MenuIzq img{
@@ -27,18 +23,203 @@
 } 
 /* De aca adelante son estilos para aplicar al CuerpoPagina , que iria cambiando segun la pagina*/
 .CuerpoPagina header{
-    background-color: grey;
+    /* background-color: grey;   Este color se boorra , solo se deja el width , en los head , de las otras paginas con su id , se le especificara el color y largo */
     width: 100%;
 }
-.CuerpoPagina img{
-    width: 20%;
-}
+/*Este estilo esta afectando a todos los seccion de las paginas actualmente
+  por lo cual si tu estilo con tu seccion de tu pagina no funciona , es porque
+  este esta afectando, Recyuerda colocar class y id ya que con eso estamos 
+  haceindo la pagina*/
 .CuerpoPagina section{
+    background-color: crimson;
+    display: flex;
+    width: 85%;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* margin-top: auto; */
+    /* margin-bottom: 5%; */
+}
+/*Estilo para la pagina:AYUDA*/
+.Cont-A1{
+    grid-row: 1/span 2;
+    background-color: teal;     /*Color para saber donde esta*/
+}
+.Cont-A2{
+    grid-row: 3/span 2;
+    background-color: tomato;    /*Color para saber donde esta*/
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.Cont-A3{
+    grid-row: 5;
+    background-color:springgreen;  /*Color para saber donde esta*/
+}
+#Box1-a{
+    grid-row: 1;
+    background-color: brown;
+}
+#Box2-a{
+    grid-row: 2;
+    background-color: green;
+}
+/*Estilo para La Pagina:Clientes*/
+.C-CL1{
+    grid-row: 1;
     background-color: teal;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.C-CL2{
+    grid-row: 2;
+    background-color: tomato;
+}
+.C-CL3{
+    grid-row: 3;
+    background-color:springgreen;
+}
+.C-CL4{
+    grid-row: 4;
+    background-color:chocolate;
+}
+.C-CL5{
+    grid-row: 5;
+    background-color: green;
+}
+#Box1-C1{
+    grid-row: 1;
+    /* background-color: cyan; */
+}
+#Box2-C1{
+    grid-row: 2;
+    /* background-color: brown; */
+}
+
+/*Estilo para la pagina:Productos*/
+.C-P1{
+    grid-row: 1;
+    background-color: teal; 
+    display: grid;
+    grid-template-rows: auto auto;
+} 
+.C-P2{
+    grid-row: 2 / span 3;
+    background-color: tomato;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.C-P3{
+    grid-row: 5;
+    background-color:springgreen;
+}
+#CP_1{
+    grid-row: 1;
+    background-color: aqua;
+}
+#C_Formulario{
+    grid-row: 2;
+    background-color: green;
+}
+#C-Busqueda{
+    grid-row: 1;
+    background-color: brown;
+}
+#C-Tabla{
+    grid-row: 2;
+    background-color:crimson;
+}
+/*Estilo para la pagina:BandejaPrinicipal(MenuPrinciapl)*/
+.C-MP1{
+    grid-row: 1;
+    background-color: teal; 
+}
+.C-MP2{
+    grid-row: 2 /span 3;
+    background-color: tomato;
+    display: grid;  
+    grid-template-rows: auto auto auto auto;  
+}
+.C-MP3{
+    grid-row: 5;
+    background-color:springgreen;
+}
+#Contedor-1{
+    grid-row: 1;
+    background-color: green;
+}
+#Contedor-2{
+    grid-row: 2;
+    background-color: brown;
+}
+#Contedor-3{
+    grid-row: 3;
+    background-color: green;
+}
+#Contedor-4{
+    grid-row: 4;
+    background-color: brown;
+}
+/*Estilo para la pagina:Resumen de Registros*/
+.C-R1{
+    grid-row: 1;
+    background-color: teal; 
+    display: grid;
+    grid-template-rows: auto;
+}
+.C-R2{
+    grid-row: 2/span 3;
+    background-color: tomato;    
+}
+.C-R3{
+    grid-row: 5;
+    background-color:springgreen;
+}
+#BoxR1{
+    grid-row: 1;
+    background-color: green;
+}
+/*Estilo para la pagina: Más sobre nosotros*/
+.C-MAS1{
+    grid-row: 1;
+    background-color: teal; 
+}
+.C-MAS2{
+    grid-row: 2/span 3;
+    background-color: tomato;  
+    display: grid;
+    grid-template-rows: auto auto auto auto;  
+}
+.C-MAS3{
+    grid-row: 5;
+    background-color:springgreen;
+}
+#C1{
+    grid-row: 1;
+    /* background-color: brown; */
+}
+#C2{
+    grid-row: 2;
+    /* background-color: green */
+}
+#C3{
+    grid-row: 3;
+    /* background-color: brown; */
+}
+#C4{
+    grid-row: 4;
+    /* background-color: green; */
+}
+/* ESTILO PARA LA PAGINA : MÁS SOBRE NOSOTROS*/
+.CuerpoPagina .Contenedor{
+    background-color: rgba(0, 128, 128, 0.436);
     display: flex;
     width: 85%;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: auto;
     margin-bottom: 5%;
+}
+.Id img{
+    width: 80px;
+    border-radius: 2rem;
+    
 }
