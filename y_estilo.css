@@ -30,7 +30,7 @@
     border: 5px;
 }
 .Menu-2{
-    background-color: rgba(255,235,165);
+    background-color:rgb(22, 24, 56);
     color:  rgba(255, 255, 255, 0.669);;
     /* grid-row: 2; */
     display: flex;
