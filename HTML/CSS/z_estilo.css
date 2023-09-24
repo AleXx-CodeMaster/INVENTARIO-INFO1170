@@ -6,11 +6,17 @@
     flex-grow: 1;                
 }
 .MenuIzq{
+    width: 100%;
     grid-column: 1;
-    display: grid;
-    background-color: rgba(0, 0, 0, 0.932);
-    grid-template-rows: 4rem 7rem auto auto;
+    /* display: grid;  */
+    background-color: rgba(0, 0, 0, 0.391);
+    /* background-color: rgba(205, 206, 206, 0.535); */
+    border-right: 3px solid black;                            
+/*   grid-template-rows: 4rem 7rem auto auto; */
     flex-grow: 1;
+}
+.MenuIzq img{
+    width: 70%;
 }
 .CuerpoPagina{
     grid-column: 2;
