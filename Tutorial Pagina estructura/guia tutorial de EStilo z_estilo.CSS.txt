@@ -1,0 +1,66 @@
+                                              Estilo “z_estilo.CSS”
+Este archivo es para aplicar a todas las páginas, el cual su propósito será contener:
+        - La estructura de la página
+        - estilo de cada pagina (O tambien podriamos generar un archivo que contenga todos estos estilos)
+
+En la estructura de la página se usa un display grid; el cual con ella podemos dividir nuestra página en filas 
+y columnas. en este archivo se especificó que la página se divide en 2 columnas.
+        - Columna 1: Menú Izquierdo 
+        - Columna 2: Cuerpo de la página 
+En donde el estilo de Menú izquierdo está en otro archivo y estilo.css .Pero nos centraremos en La Columna2
+
+    La Columna 2: Contiene 5 Filas de modo auto ( ESto quiere decir que no tiene limites de cuanto usará , sino que su tamaño dependerá 
+    de lo que contenga esa fila)
+    Al tener 5 filas , se deben llenar estos campos con etiquetas
+    De la sig forma(Par este ej.Usaremos la etiqueta div):
+    <body>
+        <div class = "Con_1"> Contendido 1  </div>
+        <div class = "Con_2"> Contendido 2 </div>
+        <div class = "Con_3"> Contendido 3  </div>
+        <div class = "Con_4"> Contendido 4 </div>
+        <div class = "Con_5"> Contendido 5 </div>
+    </body>
+    Aca se especifica que el cuerpo body tendra 5 etiquetas , la cual son contenedores , que en cada uno tendrá un contenido(Etiquetas 
+    de datos , como img,p,ul,li,etc) , por lo cual para posicionarlo necesitaremos a nuestra hoja de estilo z_estilo
+    Y lo posicionamos de esta forma:
+
+    .Con1 {
+        grid-row: 1;
+    }
+    .Con2 {
+        grid-row: 2;
+    }
+    .Con3 {
+        grid-row: 3;
+    }
+    .Con4 {
+        grid-row: 4;
+    }
+    .Con5 {
+        grid-row: 5;
+    } 
+Aca podemos ver que se usa el grid-row , la cual estamos indicando en qué fila la vamos a colocar , lo mismo sucedería si queremos
+    especificar columnas.
+--------------------------------------------------------------------------------------------------------------------------------------
+    Pero qué pasa si tuvieras esta estructura en tu html?:
+        <body>
+        <div class = "Con_1"> Contendido 1  </div>
+        <div class = "Con_2"> Contendido 2 </div>
+        <div class = "Con_3"> Contendido 3  </div>
+    </body
+    Para estos casos , puedes especificar qué contenedor usará más de 1 fila, Vamos hacer que el 'Con_2' ocupe la fila 2 ,3 y 4
+    y el código se vería así:
+    .Con1 {
+        grid-row: 1;
+    }
+    .Con2 {
+        grid-row: 2 /span 3;
+    }
+    .Con3 {
+        grid-row: 5;
+    }
+    usaremos el /span , ya que con ella especificaremos cuantas ocupará nuestro contendor , y esto significa , que se espandera en 3 filas, 
+    si se indica 2 , significa que este contenedor ocupará la fila 2,3 y 4.como queríamos.
+    Este último , yo lo he aplicado en mis páginas , la cual sería la etiqueta header,main y floter.
+    Te dejo el ejemplo en las imágenes Estructura 1 , código, imagen web , la cual se ve como hacer en estos caso.
+    la imagen web, es aplicando el efecto ya con contenido adentro.
