@@ -26,42 +26,78 @@
     /* background-color: grey;   Este color se boorra , solo se deja el width , en los head , de las otras paginas con su id , se le especificara el color y largo */
     width: 100%;
 }
-/*Este estilo esta afectando a todos los seccion de las paginas actualmente
-  por lo cual si tu estilo con tu seccion de tu pagina no funciona , es porque
-  este esta afectando, Recyuerda colocar class y id ya que con eso estamos 
-  haceindo la pagina*/
-.CuerpoPagina section{
-    background-color: crimson;
-    display: flex;
-    width: 85%;
-    margin-left: 10%;
-    margin-right: 10%;
-    /* margin-top: auto; */
-    /* margin-bottom: 5%; */
-}
+
 /*Estilo para la pagina:AYUDA*/
 .Cont-A1{
     grid-row: 1/span 2;
-    background-color: teal;     /*Color para saber donde esta*/
+    /* background-color: teal;     Color para saber donde esta */
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 .Cont-A2{
     grid-row: 3/span 2;
-    background-color: tomato;    /*Color para saber donde esta*/
+    /* background-color: tomato;    Color para saber donde esta */
     display: grid;
     grid-template-rows: auto auto;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 .Cont-A3{
     grid-row: 5;
-    background-color:springgreen;  /*Color para saber donde esta*/
+    /* background-color:springgreen;  Color para saber donde esta */
 }
 #Box1-a{
     grid-row: 1;
-    background-color: brown;
+    /* background-color: brown; */
 }
 #Box2-a{
     grid-row: 2;
-    background-color: green;
+    /* background-color: green; */
 }
+/*-----------------------------------------------------------------------------------------------------*/
+.Cont-A1 h1{
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    color: rgba(22,24,56);
+    text-align: center;
+    font-size: 3rem;
+}
+.Cont-A1 hr{
+    border: none;
+    border-top: 2px solid  rgba(189,19,19);
+    width: 90%;
+    text-align: center;
+}
+.Cont-A2 ul {
+    list-style: none;
+  }
+  
+.Cont-A2 li summary::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right:1rem;
+    border-radius: 50%;
+    background-color:  rgba(22,24,56);
+  }
+.Cont-A2 summary{
+    font-size: 0.9rem;
+    color: rgb(8, 10, 34);
+    font-weight: bold;
+    
+}
+.Cont-A2 p{
+    margin-left: 2rem;
+    padding: 0;
+    width: 70%;
+    font-size: 0.8rem;
+}
+.Cont-A2 h3{
+    text-align:start;
+    padding-left:10%;
+    font-size: 1.2rem;
+    color: rgba(189,19,19);
+}
+/*-----------------------------------------------------------------------------------------*/
 /*Estilo para La Pagina:Clientes*/
 .C-CL1{
     grid-row: 1;
@@ -97,15 +133,21 @@
 /*Estilo para la pagina:Productos*/
 .C-P1{
     grid-row: 1;
-    background-color: teal; 
+    /* background-color: teal;  */
     display: grid;
     grid-template-rows: auto auto;
+    font-size: 1rem;
+    color:  rgba(255,235,167);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 } 
 .C-P2{
     grid-row: 2 / span 3;
-    background-color: tomato;
+    /* background-color: tomato; */
+    font-size: 1rem;
+    color:  rgba(255,235,167);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto ;
 }
 .C-P3{
     grid-row: 5;
@@ -113,20 +155,77 @@
 }
 #CP_1{
     grid-row: 1;
-    background-color: aqua;
+    background-color: rgb(22, 24, 56);
+    display: flex;
+    /* display: flex; */
 }
 #C_Formulario{
     grid-row: 2;
-    background-color: green;
+    background-color:  rgba(189,19,19);
+    border-radius: 2rem;
+    padding: 2rem;
+    padding-top: 1rem;
+    display :block;
+    margin: 20%;
+    margin-top: 0%;
+    margin-bottom: 2%;
 }
+.Enviar_datos{
+    text-align: right;
+}
+#Enviar{
+    border-radius: 0.1rem;
+    background-color: rgb(22, 24, 56);
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    border: 1px solid rgba(255,235,167);
+    border-radius:0.5rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+#CP_1 h2{
+    font-size: 1rem;
+    color: white;
+    padding-left:30%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+#CP_1 button{
+    font-size: 1rem;
+    background-color:  rgba(189,19,19);
+    margin:1.8rem;
+    margin-bottom: 0rem;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1rem;
+    color:  rgba(255,235,167);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+/*---------------------------------------------------------*/
 #C-Busqueda{
     grid-row: 1;
-    background-color: brown;
+    background-color: rgb(22, 24, 56);
+    margin: 5%;
+    margin-top: 0;
+    border-radius: 4rem;
+    padding-left: 2%;
+    /* padding-right: 20%; */ 
 }
 #C-Tabla{
     grid-row: 2;
-    background-color:crimson;
+    background-color: rgb(22, 24, 56);
+    margin: 5%;
+    margin-top: 0;
+    border-radius: 1rem;
+    padding-left: 2%;
 }
+.C-Busqueda {
+    display: flex;
+    /* justify-content: center;
+    margin-top: 20px; */
+}
+  
+
 /*Estilo para la pagina:BandejaPrinicipal(MenuPrinciapl)*/
 .C-MP1{
     grid-row: 1;
@@ -161,9 +260,9 @@
 /*Estilo para la pagina:Resumen de Registros*/
 .C-R1{
     grid-row: 1;
-    background-color: teal; 
+    background-color: rgba(22,24,56); 
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 0rem;
 }
 .C-R2{
     grid-row: 2/span 3;
@@ -173,6 +272,14 @@
     grid-row: 5;
     background-color:springgreen;
 }
+.C-R1 h1{
+    grid-row: 1;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    
+}
 #BoxR1{
     grid-row: 1;
     background-color: green;
@@ -180,36 +287,95 @@
 /*Estilo para la pagina: Más sobre nosotros*/
 .C-MAS1{
     grid-row: 1;
-    background-color: teal; 
+    background-color:  rgba(22,24,56); 
+    height: 2rem;
 }
 .C-MAS2{
     grid-row: 2/span 3;
-    background-color: tomato;  
     display: grid;
     grid-template-rows: auto auto auto auto;  
+    background-image: url(fondo\ mas.png);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 .C-MAS3{
     grid-row: 5;
     background-color:springgreen;
 }
+.Contenedor{
+    display: flex;
+}
 #C1{
     grid-row: 1;
-    /* background-color: brown; */
+    /* background-image: url(a_0.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; */
 }
 #C2{
     grid-row: 2;
-    /* background-color: green */
+    /* background-image: url(a_2.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; */
 }
 #C3{
     grid-row: 3;
-    /* background-color: brown; */
+    /* background-image: url(a_3.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; */
 }
 #C4{
     grid-row: 4;
-    /* background-color: green; */
+    /* background-image: url(a_4.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; */
+}
+.C-MAS1 h1{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+.C-MAS2 h2{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 2rem;
+    font-weight: bold;
+}
+.C-MAS2 P{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 1rem;
+    width: 80%;
+}
+.C-MAS2 .Cont{
+    margin-left: 10%;
+}
+.C-MAS2 .imagen{
+    margin:5%;
+}
+.imagen img{
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.47);
 }
 /* ESTILO PARA LA PAGINA : MÁS SOBRE NOSOTROS*/
-.CuerpoPagina .Contenedor{
+#Img3 img{
+    width: 80px;
+    border-radius: 2rem; 
+}
+
+/* .CuerpoPagina .Contenedor{
     background-color: rgba(0, 128, 128, 0.436);
     display: flex;
     width: 85%;
@@ -217,9 +383,4 @@
     margin-right: 10%;
     margin-top: auto;
     margin-bottom: 5%;
-}
-.Id img{
-    width: 80px;
-    border-radius: 2rem;
-    
-}
+} */

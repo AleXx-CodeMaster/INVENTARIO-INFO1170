@@ -4,59 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descubre más sobre nosotros</title>
-    <link rel="stylesheet" href="CSS/z_estilo.css">
     <link rel="stylesheet" href="CSS/y_estilo.css">
 </head>
 <body>
     <nav class="MenuIzq">
-        <div class="m Menu-1">
-            <img src="Logo.jpg" alt="Logo de la aplicación web" >
-            <p>S.d.G</p>
+        <div class = "Part1_Menu1" >
+            <div id = 'INF_Usuer'>
+                <img id = 'ImagenUsuario' src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQL-YDLwDpdjFxnqI9CgnAH3nBDTc3NEp9UA&usqp=CAU" alt="Imagen del usuario" width="40px"> <!--Usar una funcion con java scrpit , para cabaiar la imagen , he ir actualizando-->
+                <div id = 'bloque_de_Parrafo'>
+                    <ul>
+                        <li>User:<span>..........</span></li>
+                        <li>Empresa:<span>.......</span></li>
+                        <li>Cargo:<span>.........</span></li>
+                        <li>Codigo:<span>........</span></li>
+                    </ul>
+                </div>
+            </div><hr>
         </div>
-        <div class="Menu-2">
-            <div id="m1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQL-YDLwDpdjFxnqI9CgnAH3nBDTc3NEp9UA&usqp=CAU" alt="Imag of User"></div>
-            <div id="m2">
-                <ul>
-                    <li>User:<span>.........</span</li>
-                    <li>Empresa:<span>.........</span></li>
-                    <li>Cargo:<span>.........</span></li>
-                    <li>Codigo: #<span>01010101010</span></li>
-                </ul>
-                
-            </div>
-        </div>
-        <div class="Menu-3">
+        <div class = " Part1_Menu2">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Bandeja Principal</a></li>
-                <li><a href="#">Calendario</a></li>
-                <li><a href="#">Grafico</a></li>
-                <li><a href="#">Ayuda</a></li>
+                <li><a href="calendario">Calendario</a></li>
+                <li><a href="#">Menu Principal</a></li>
+                <li><a href="#">Clientes</a></li>
             </ul>
             <hr>
             <ul>
-                <li><details><summary>Gestion de Productos</summary>
-                   <ul>
-                        <li><a href="#">Categorias</a></li>
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Provedores</a></li>
-                   </ul> </details></li>
-                <li><details><summary>Gestion de Existencia</summary>                   
+                <li><details> <summary>Gestion de Productos</summary>
+                <ul>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Provedores</a></li>
+                </ul> </details> </li>
+                <li><details><summary>Gestion de Existencias</summary>
                     <ul>
                         <li><a href="#">Entrada</a></li>
                         <li><a href="#">Salida&Factura</a></li>
-                   </ul> </details></li>
-                <li><details><summary>Gestion de Clientes</summary>                   
-                    <ul>
-                        <li><a href="#">Opcion1</a></li>
-                        <li><a href="#">Opcion2</a></li>
-                        <li><a href="#">Opcion3</a></li>
-                   </ul> </details></li>
+                    </ul></details></li>
             </ul>
             <hr>
             <ul>
-                <li><a href="#">Más sobre nosotros</a></li>
+                <li><a href="#">MÃ¡s sobre Nosotros</a></li>
                 <li><a href="#">Ajustes</a></li>
+                <li><a href="#">Ayuda</a></li>
                 <li><a href="#">Terminos y Reglamentos</a></li>
             </ul>
         </div>
@@ -67,7 +58,7 @@
         </header>
         <main class="C-MAS2">
             <section Class = 'Contenedor' id="C1">
-                <div class ='C'>
+                <div class ="Cont">
                     <h2>Nuestra app</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facilis ipsa cumque dolor modi aliquid 
                         voluptas, magnam obcaecati deserunt aperiam nihil commodi nisi temporibus, laborum sapiente unde molestias?
@@ -76,13 +67,13 @@
                         sapiente tempora quo nihil dolor voluptatum consectetur mollitia? Ullam minima voluptas consequatur nobis! Mollitia 
                         corporis esse eaque id soluta veniam aperiam praesentium, voluptates voluptatum! Numquam iste, harum unde consequatur, 
                         non exercitationem, omnis cum deleniti rem ad qui ex! Quae, aperiam magnam?</p></div>
-                <div class = 'I'> 
-                    <img id = 'Logo' src="Logo.jpg" alt="Logo de nuestra aplicación web"> 
+                <div class = 'imagen'> 
+                    <img id = 'Logo' src="Logo.jpg" alt="Logo de nuestra aplicación web" width="300px"> 
                 </div>
             </section>  
 
             <section Class = 'Contenedor' id="C2">
-                <div class ='C'>
+                <div class ="Cont">
                     <h2>Historia</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facilis ipsa cumque dolor modi aliquid 
                         voluptas, magnam obcaecati deserunt aperiam nihil commodi nisi temporibus, laborum sapiente unde molestias?
@@ -91,13 +82,13 @@
                         sapiente tempora quo nihil dolor voluptatum consectetur mollitia? Ullam minima voluptas consequatur nobis! Mollitia 
                         corporis esse eaque id soluta veniam aperiam praesentium, voluptates voluptatum! Numquam iste, harum unde consequatur, 
                         non exercitationem, omnis cum deleniti rem ad qui ex! Quae, aperiam magnam?</p></div>
-                <div class = 'I'>
-                    <img src="https://us.123rf.com/450wm/robuart/robuart2012/robuart201201289/161103170-trabajadores-hombres-y-mujeres-investigando-y-desarrollando-informes-gr%C3%A1ficos-icono-de-negocios.jpg?ver=6" alt="Algun colach de trabajos"> 
+                <div class = 'imagen'>
+                    <img src="https://us.123rf.com/450wm/robuart/robuart2012/robuart201201289/161103170-trabajadores-hombres-y-mujeres-investigando-y-desarrollando-informes-gr%C3%A1ficos-icono-de-negocios.jpg?ver=6" alt="Algun colach de trabajos" width="200px"> 
                 </div>
             </section>  
 
             <section Class = 'Contenedor' id="C3">
-                <div class ='C'>
+                <div class ="Cont">
                     <h2>Como fue creada la pagina</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facilis ipsa cumque dolor modi aliquid 
                         voluptas, magnam obcaecati deserunt aperiam nihil commodi nisi temporibus, laborum sapiente unde molestias?
@@ -106,7 +97,7 @@
                         sapiente tempora quo nihil dolor voluptatum consectetur mollitia? Ullam minima voluptas consequatur nobis! Mollitia 
                         corporis esse eaque id soluta veniam aperiam praesentium, voluptates voluptatum! Numquam iste, harum unde consequatur, 
                         non exercitationem, omnis cum deleniti rem ad qui ex! Quae, aperiam magnam?</p></div>
-                <div class = 'Id' >
+                <div class="imagen" id="Img3" >
                     <img src="https://img.freepik.com/vector-premium/icono-personas-dibujos-animados-estilo-comic-pictograma-ilustracion-usuarios-trabajo-equipo-persona-signo-splash-concepto-negocio_157943-4266.jpg?w=2000" alt="Imagen de nosotros , Iconos"> 
                     <img src="https://img.freepik.com/vector-premium/icono-personas-dibujos-animados-estilo-comic-pictograma-ilustracion-usuarios-trabajo-equipo-persona-signo-splash-concepto-negocio_157943-4266.jpg?w=2000" alt="Imagen de nosotros , Iconos"> 
                     <img src="https://img.freepik.com/vector-premium/icono-personas-dibujos-animados-estilo-comic-pictograma-ilustracion-usuarios-trabajo-equipo-persona-signo-splash-concepto-negocio_157943-4266.jpg?w=2000" alt="Imagen de nosotros , Iconos"> 
@@ -116,7 +107,7 @@
             </section>  
 
             <section Class = 'Contenedor' id="C4">
-                <div class ='C'>
+                <div class ="Cont">
                     <h2>Contactanos</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facilis ipsa cumque dolor modi aliquid 
                         voluptas, magnam obcaecati deserunt aperiam nihil commodi nisi temporibus, laborum sapiente unde molestias?
@@ -125,8 +116,8 @@
                         sapiente tempora quo nihil dolor voluptatum consectetur mollitia? Ullam minima voluptas consequatur nobis! Mollitia 
                         corporis esse eaque id soluta veniam aperiam praesentium, voluptates voluptatum! Numquam iste, harum unde consequatur, 
                         non exercitationem, omnis cum deleniti rem ad qui ex! Quae, aperiam magnam?</p></div>
-                <div class = 'I'>
-                    <img src="" alt="imagen o colocar otra cosa"> </div>
+                <div class = 'imagen'>
+                    <img src="https://depor.com/resizer/IJDgahyOVA0cq2NvyjgHE-wLm7A=/580x330/smart/filters:format(jpeg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/NEAIF2G5M5FIFLIO5GWMV4PMLM.jpg" alt="imagen o colocar otra cosa" width="200px"> </div>
             </section>
         </main>
         <footer class="C-MAS3">@2023-09-23-Sistema de Gestiones de empresa</footer>    

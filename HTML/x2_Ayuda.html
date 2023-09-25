@@ -5,73 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Comó ayudarte?</title>
     <link rel="stylesheet" href="CSS/y_estilo.css">
-    <link rel="stylesheet" href="CSS/z_estilo.css">
 </head>
 <body>
-    <nav class="MenuIzq"> 
-            <div class="m Menu-1">
-                <img src="Logo.jpg" alt="Logo de la aplicación web" >
-                <p>S.d.G</p>
-            </div>
-            <div class="Menu-2">
-                <div id="m1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQL-YDLwDpdjFxnqI9CgnAH3nBDTc3NEp9UA&usqp=CAU" alt="Imag of User"></div>
-                <div id="m2">
+    <nav class="MenuIzq">
+        <div class = "Part1_Menu1" >
+            <div id = 'INF_Usuer'>
+                <img id = 'ImagenUsuario' src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQL-YDLwDpdjFxnqI9CgnAH3nBDTc3NEp9UA&usqp=CAU" alt="Imagen del usuario" width="40px"> <!--Usar una funcion con java scrpit , para cabaiar la imagen , he ir actualizando-->
+                <div id = 'bloque_de_Parrafo'>
                     <ul>
-                        <li>User:<span>.........</span</li>
-                        <li>Empresa:<span>.........</span></li>
+                        <li>User:<span>..........</span></li>
+                        <li>Empresa:<span>.......</span></li>
                         <li>Cargo:<span>.........</span></li>
-                        <li>Codigo: #<span>01010101010</span></li>
+                        <li>Codigo:<span>........</span></li>
                     </ul>
-                    
                 </div>
-            </div>
-            <div class="Menu-3">
+            </div><hr>
+        </div>
+        <div class = " Part1_Menu2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Bandeja Principal</a></li>
+                <li><a href="calendario">Calendario</a></li>
+                <li><a href="#">Menu Principal</a></li>
+                <li><a href="#">Clientes</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li><details> <summary>Gestion de Productos</summary>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Bandeja Principal</a></li>
-                    <li><a href="#">Calendario</a></li>
-                    <li><a href="#">Grafico</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
-                <hr>
-                <ul>
-                    <li><details><summary>Gestion de Productos</summary>
-                       <ul>
-                            <li><a href="#">Categorias</a></li>
-                            <li><a href="#">Productos</a></li>
-                            <li><a href="#">Provedores</a></li>
-                       </ul> </details></li>
-                    <li><details><summary>Gestion de Existencia</summary>                   
-                        <ul>
-                            <li><a href="#">Entrada</a></li>
-                            <li><a href="#">Salida&Factura</a></li>
-                       </ul> </details></li>
-                    <li><details><summary>Gestion de Clientes</summary>                   
-                        <ul>
-                            <li><a href="#">Opcion1</a></li>
-                            <li><a href="#">Opcion2</a></li>
-                            <li><a href="#">Opcion3</a></li>
-                       </ul> </details></li>
-                </ul>
-                <hr>
-                <ul>
-                    <li><a href="#">Más sobre nosotros</a></li>
-                    <li><a href="#">Ajustes</a></li>
-                    <li><a href="#">Terminos y Reglamentos</a></li>
-                </ul>
-            </div>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Provedores</a></li>
+                </ul> </details> </li>
+                <li><details><summary>Gestion de Existencias</summary>
+                    <ul>
+                        <li><a href="#">Entrada</a></li>
+                        <li><a href="#">Salida&Factura</a></li>
+                    </ul></details></li>
+            </ul>
+            <hr>
+            <ul>
+                <li><a href="#">MÃ¡s sobre Nosotros</a></li>
+                <li><a href="#">Ajustes</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Terminos y Reglamentos</a></li>
+            </ul>
+        </div>
     </nav>
     <div class="CuerpoPagina">
         <header class="Cont-A1">
-            <div >
-                <h1>Ayuda</h1>
-                <p>Aca encontraras las preguntas que te podrian surgir, tambien algunos tips
-                    de como manejar algunos problemas que estes teniendo
-                </p>
-            </div>
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE4kosh8trEM8P28FiWEjiAB4payUsjiLKDA&usqp=CAU" alt="Logo de ayuda">
-            </div>
+            <h1>Ayuda</h1>
+            <hr> 
         </header>
         <main class = 'Cont-A2'>
             <section id ="Box1-a">
@@ -79,7 +63,9 @@
                 <div class = 'Cont3'>
                     <ul >
                         <li><details><summary>¿Duda1:Como agregar un registro en productos?</summary>
-                            <p>Texto expplicando la duda 1</p></details></li>
+                            <p>Texto expplicando la duda 1
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea inventore omnis aut totam, illo ipsa molestias alias laboriosam officiis est hic? Fugit voluptate officiis harum ea dignissimos sequi nam veniam!
+                            </p></details></li>
                         <li><details><summary>¿Duda2:Donde se encuntra la opción para cambiar el tamaño de letra de mis tablas?</summary>
                             <p>Texto expplicando la duda 2</p></details></li>
                         <li><details><summary>¿Duda3?</summary>

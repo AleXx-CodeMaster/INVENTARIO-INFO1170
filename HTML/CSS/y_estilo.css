@@ -1,57 +1,311 @@
-/*ESTILO solo para el Menu izquierdo"*/
-*.MenuIzq{
-    font-family: monospace;
-    color: rgba(255, 255, 255, 0.669);
-    padding-bottom: 10rem;
+/*Especificar estilo de la Pagina en General*/
+* body {
+    display: grid;                                     /*Indicar que se trabajara con columnas y filas para posicionar los objetos*/
+    margin: 0;                                         /* Esto elimina el margen alrededor del cuerpo */
+    padding: 0;                                        /* Esto elimina el relleno alrededor del cuerpo */
+    font-family:monospace;
+    flex-grow: 1;
+    grid-template-columns: 20rem auto;                  /* Esto crea dos columnas: una de 200px para el menú lateral y otra que ocupa el espacio restante para el contenido y el menú superior */
+}
+/* Especificar Menu inquierdo 1/2 de la pagina en formato de la anchura*/
+.MenuIzq {
+    height: 120vh;
+    width: 50vh;
+    background-color: rgba(22,24,56);                           /*El color de fondo de este contenedor*/
+    grid-column: 1;                                               /*Indica que ocupara la columna 1 de la pagina*/
+    box-shadow: 0.1rem 0.2rem 0.2rem rgba(4, 4, 4, 0.615);;     /* sobmbra para el bloque |posibilidad de borrrar ma´s adelante|*/
+    margin-bottom:auto;
+    border-right: 3px solid black;
+    position: fixed;                             /*Colacarle un borde*/
 }
 .MenuIzq a,summary{
     width: 100%;
     list-style-type: none;
     text-decoration: none;
 }
-.Menu a{
-    color:rgb(85,26,139)
+/*Especificar Cuerpo perten al 2/2 de la anchura de la pagina*/
+.CuerpoPagina{
+    grid-column: 2;                   /*Ocupara la columna 2 de la pagina*/
 }
-.MenuIzq li:hover{
-    color: rgba(255, 255, 255, 0.831);
-    background-color: black;
+/*ESTILO PARA EL BLOQUE MENU DE Pagina : 'paginaGENERAL'*/
+*.Part1_Menu1 {
+    display:block;                 /*Indicar que este sera un bloque*/
+    border: 1px solid black;     /*Indicar el borde del bloque*/
+    border-bottom: none;           /*Indicar el borde de inferior no tendra*/
+    border-radius: 1px;            /*indicar que tendra un borde de radios de 1 px*/
+    font-family:monospace;         /*Estilo de letra*/
+    font-size: 1rem;               /*Tamaño de letra*/
 }
-.Menu-1{
-    /* grid-row: 1; */
-    display: grid;
-    background-color: rgba(189,19,19);
-    grid-template-columns: 4rem auto;
-    padding: 1rem;
-}
-.Menu-1 img{
-    grid-column: 1;
-    height: 100%;
-    width: 100%;
-    border: 5px;
-}
-.Menu-2{
-    background-color:rgb(22, 24, 56);
-    color:  rgba(255, 255, 255, 0.669);;
-    /* grid-row: 2; */
-    display: flex;
+/*Estilo para el bloque que contendra la informacion del usuario*/
+#INF_Usuer{
+    background-color: rgba(22,24,56);
+    color: rgba(255,255,255,0.669);
+    display: flex;  /*Ïndicar que sera un bloque que ocupas los espacios vacíos*/
     margin: 0.5rem;
     padding: 0.4rem;
 }
-.Menu-2 img{
-    width: 50px;
-    border-radius:2rem;
-    border:4px solid rgba(255, 255, 255, 0.142);
-}
-.Menu-2 li{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.Menu-2 ul{
-    padding-left: 10px;
-}
-.Menu-3{
-    border-top: 1px solid white;
-    /* grid-row: 3; */
+#bloque_de_Parrafo{
     display: block;
+    list-style: none;
+    width: 80%;
+    font-size: 13px;
+}
+/*Estilo para los BOTONES de configuración pertenecientes del menu*/
+#B_configuracion{
+    background-color:  rgba(205, 206, 206, 0.535);  /*Colocar una funcion para que este tenga el color de fondo */
+    border: none;  /*eliminar contontorno del boton*/
+    float: right;
+    margin-right: 2rem;
+    padding: 0.6rem;
+    /*Codigo para el boton*/
+}
+/*Estilo para la IMAGEN del usuario */
+#ImagenUsuario {
+    width: 100px;
+    height: 100px;
+    border-radius: 4rem;
+    border: 4px solid rgba(255,255,255,0.142);
+  }
+/*ESTILO  Para la segunda parte del menu, donde estan las opciones*/
+*.Part1_Menu2 {
+    display:block;
+    font-size: 1rem;
+    /*Codigo de todas las opciones disponibles en el menu*/
+}
+/*Estilo para el encabezado del menu "Apartado del Menu"*/
+nav label{
+    display: block;
+    background-color:  rgba(0, 0, 0, 0.879);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+/* Estilo para todos los URL del menu*/
+nav a{
+    color: white;   /* URL de color negro */
+    text-decoration: none;            /*Quitar linia de URL*/
+}
+/* Estilo para todos los li del menu*/
+nav ul li {
+    color: white;
+    margin-bottom: 0.5em;  /*Esto agrega un espacio debajo de cada elemento de la lista */
+}
+
+.Part1_Menu1 ul{
+    list-style-type: none;
+}
+/* -------------------------------------------------------------*/
+.CuerpoPagina{
+    grid-column: 2;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.04);
+    grid-template-rows: auto auto auto auto auto;
+    flex-grow: 1;
+} 
+.CuerpoPagina header{
+    width: 100%;
+}
+/*            estilo de la pagina Ayuda*/
+.Cont-A1 h1{
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    color: rgba(22,24,56);
+    text-align: center;
+    font-size: 3rem;
+}
+.Cont-A1 hr{
+    border: none;
+    border-top: 2px solid  rgba(189,19,19);
+    width: 90%;
+    text-align: center;
+}
+.Cont-A2 ul {
+    list-style: none;
+  }
+  
+.Cont-A2 li summary::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right:1rem;
+    border-radius: 50%;
+    background-color:  rgba(22,24,56);
+  }
+.Cont-A2 summary{
+    font-size: 0.9rem;
+    color: rgb(8, 10, 34);
+    font-weight: bold;
+    
+}
+.Cont-A2 p{
+    margin-left: 2rem;
+    padding: 0;
+    width: 70%;
+    font-size: 0.8rem;
+}
+.Cont-A2 h3{
+    text-align:start;
+    padding-left:10%;
+    font-size: 1.2rem;
+    color: rgba(189,19,19);
+}
+/*Estilo para la pagina: 'Mas sobre nosotros*/
+.C-MAS1{
+    grid-row: 1;
+    background-color:  rgba(22,24,56); 
+    height: 2rem;
+}
+.C-MAS2{
+    grid-row: 2/span 3;
+    display: grid;
+    grid-template-rows: auto auto auto auto;  
+    background-image: url(fondoMAS.png);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.C-MAS3{
+    grid-row: 5;
+    background-color:springgreen;
+}
+.Contenedor{
+    display: flex;
+}
+#C1{
+    grid-row: 1;
+}
+#C2{
+    grid-row: 2;
+}
+#C3{
+    grid-row: 3;
+}
+#C4{
+    grid-row: 4;
+}
+.C-MAS1 h1{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+.C-MAS2 h2{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 2rem;
+    font-weight: bold;
+}
+.C-MAS2 P{
+    width: 80%;
+}
+.C-MAS2 .Cont{
+    margin-left: 10%;
+}
+.C-MAS2 .imagen{
+    margin:5%;
+}
+.imagen img{
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.47);
+}
+/* estilo a la imagen de las 5 que dice como fue creada la pagina*/
+#Img3 img{
+    width: 80px;
+    border-radius: 2rem; 
+}
+/*----------------------------------------------------------------------------------------*/
+/*          Estilo para la pagina cliente,provedores(juaco),productos y registros */
+/*Estilo para La Pagina:Clientes*/
+.tittle{
+    grid-row: 1;
+    text-align: center;
+    font-size: 125%;  
+}
+.tittle hr{
+    border-top: 2px solid rgba(189,19,19);
+    width: 90%;
+    text-align: center;
+}
+.prov-dat{
+    width: 88%;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.busqueda{
+    grid-row: 2;
+    text-align: center;
+    word-spacing: 50px;
+}
+.busqueda input{
+    font-family: monospace;
+    background: white;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 25%;
+    right: 25%;
+}
+.prov-info{
+    padding: 10px 20px 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px 0px 20px;
+    width: 100%;
+}
+.proovedores{
+    grid-row:3/span 3;
+    display: grid;
+}
+/* contenido de provedores */
+.prov-dat{
+    grid-row: 1;
+}
+.prov2{
+    grid-row:2;
+    padding: 50px 50px 0px 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.table-prov2{
+    width: 100%;
+
+}
+.table-prov2 th{
+    padding: 0px 50px 0px 20px;
+    text-align: left;
+}
+.prov{
+    grid-row: 3 ;
+    padding: 20px 50px 50px 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.table-prov{
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.table-prov th{
+    border-bottom: 1px solid black;
+    width: 80px;
+    height: 100px;
+    padding: 0px 0px 0px 17px;
+    justify-content: space-between;
+    text-align: left;
+}
+.table-prov th.li1{
+    width: 0px;
+    font-size: 70px;
+    text-align: right;
+    color: blue;
+}
+.table-prov th.li2{
+    width: 0px;
+    font-size: 70px;
+    text-align: right;
+    color: red;
 }
