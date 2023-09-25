@@ -12,7 +12,7 @@
         <input type="submit" name="" id="" value="Buscar por correo">
         <input type="submit" name="" id="" value="Buscar por telefono">
     </nav>
-    <section class="proovedores">
+    <section class="proveedores">
         <header class="prov-dat">
         </header>
         <div class="prov2">
@@ -28,24 +28,64 @@
             </table>
         </div>
         <div class="prov">
-            <table class="table-prov">
-                <tr>
-                    <th>Joaquin</th>
-                    <th>canteroxx92@gmail.com</th>
-                    <th>+56963028619</th>
-                    <th>Balmaceda194</th>
-                    <th class="li1"><li></li></th>
-                    <th class="li2"><li></li></th>
-                </tr>
-                <tr>
-                    <th>Joaquin</th>
-                    <th>canteroxx92@gmail.com</th>
-                    <th>+56928188128</th>
-                    <th>Pastor Oscar Alarcon 181</th>
-                    <th class="li1"><li></li></th>
-                    <th class="li2"><li></li></th>
-                </tr>
-            </table>
+                <table class="table-prov">
+                    <tr>
+                        <th>Joaquin</th>
+                        <th>canteroxx92@gmail.com</th>
+                        <th>+56963028619</th>
+                        <th>Balmaceda194</th>
+                        <th class="li1"><li></li></th>
+                        <th class="li2"><li></li></th>
+                    </tr>
+                    <tr>
+                        <th>Joaquin</th>
+                        <th>canteroxx92@gmail.com</th>
+                        <th>+56963028619</th>
+                        <th>Balmaceda194</th>
+                        <th class="li1"><li></li></th>
+                        <th class="li2"><li></li></th>
+                    </tr>
+                    <tr>
+                        <th>Joaquin</th>
+                        <th>canteroxx92@gmail.com</th>
+                        <th>+56963028619</th>
+                        <th>Balmaceda194</th>
+                        <th class="li1"><li></li></th>
+                        <th class="li2"><li></li></th>
+                    </tr>
+                    <tr>
+                        <th>Joaquin</th>
+                        <th>canteroxx92@gmail.com</th>
+                        <th>+56963028619</th>
+                        <th>Balmaceda194</th>
+                        <th class="li1"><li></li></th>
+                        <th class="li2"><li></li></th>
+                    </tr>
+                    <tr>
+                        <th>Joaquin</th>
+                        <th>canteroxx92@gmail.com</th>
+                        <th>+56963028619</th>
+                        <th>Balmaceda194</th>
+                        <th class="li1"><li></li></th>
+                        <th class="li2"><li></li></th>
+                    </tr>
+                    <tr>
+                        <th>Joaquin</th>
+                        <th>canteroxx92@gmail.com</th>
+                        <th>+56963028619</th>
+                        <th>Balmaceda194</th>
+                        <th class="li1"><li></li></th>
+                        <th class="li2"><li></li></th>
+                    </tr>
+                    <tr>
+                        <th>Joaquin</th>
+                        <th>canteroxx92@gmail.com</th>
+                        <th>+56928188128</th>
+                        <th>Pastor Oscar Alarcon 181</th>
+                        <th class="li1"><li></li></th>
+                        <th class="li2"><li></li></th>
+                    </tr>
+                </table>
         </div>
     </section>
 @endsection
