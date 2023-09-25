@@ -6,7 +6,6 @@
         <hr>
     </header>
     <div>
-        <input type="submit" name="" id="" value="Nuevo Proovedor">
     </div> <br>
     <nav class="busqueda">
         <input type="submit" name="" id="" value="Buscar por nombre">
@@ -14,21 +13,37 @@
         <input type="submit" name="" id="" value="Buscar por telefono">
     </nav>
     <section class="proovedores">
-        <div class="nav-prov">
-            <p>Nombre</p>
-            <p>Correo Electronico</p>
-            <p>Telefono</p>
-            <p>Direccion</p>
-            <p>Editar</p>
-            <p>Eliminar</p>
+        <header class="prov-dat">
+        </header>
+        <div class="prov2">
+            <table class="table-prov2">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo Electronico</th>
+                    <th>Telefono</th>
+                    <th>Direccion</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </table>
         </div>
         <div class="prov">
-            <table>
+            <table class="table-prov">
                 <tr>
-                    <th>Ejemplo</th>
+                    <th>Joaquin</th>
+                    <th>canteroxx92@gmail.com</th>
+                    <th>+56963028619</th>
+                    <th>Balmaceda194</th>
+                    <th class="li1"><li></li></th>
+                    <th class="li2"><li></li></th>
                 </tr>
                 <tr>
-                    <th>Hola</th>
+                    <th>Joaquin</th>
+                    <th>canteroxx92@gmail.com</th>
+                    <th>+56928188128</th>
+                    <th>Pastor Oscar Alarcon 181</th>
+                    <th class="li1"><li></li></th>
+                    <th class="li2"><li></li></th>
                 </tr>
             </table>
         </div>

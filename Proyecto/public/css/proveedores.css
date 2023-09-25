@@ -1,10 +1,19 @@
 .tittle{
     text-align: center;
+    font-size: 125%;
 }
 .tittle hr{
     border-top: 2px solid rgba(189,19,19);
     width: 90%;
     text-align: center;
+}
+.prov-dat{
+    width: 88%;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 .busqueda{
     text-align: center;
@@ -18,20 +27,56 @@
     width: 25%;
     right: 25%;
 }
-.proovedores{
-    align-items: center;
-}
-.nav-prov{
+.prov-info{
+    padding: 10px 20px 10px 5px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 40px;
-    width: 90%;
+    margin: 10px 20px 0px 20px;
+    width: 100%;
 }
 .prov{
-    border: black;
-    padding: 20px;
-    border-radius: 5px;
-    width: 80%;
-    border-top: 2px solid black;
+    padding: 20px 50px 50px 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.table-prov{
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.table-prov th{
+    border-bottom: 1px solid black;
+    width: 80px;
+    height: 100px;
+    padding: 0px 0px 0px 17px;
+    justify-content: space-between;
+    text-align: left;
+}
+.table-prov th.li1{
+    width: 0px;
+    font-size: 70px;
+    text-align: right;
+    color: blue;
+}
+.table-prov th.li2{
+    width: 0px;
+    font-size: 70px;
+    text-align: right;
+    color: red;
+}
+
+.prov2{
+    padding: 50px 50px 0px 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.table-prov2{
+    width: 100%;
+
+}
+.table-prov2 th{
+    padding: 0px 50px 0px 20px;
+    text-align: left;
 }
