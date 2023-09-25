@@ -14,10 +14,10 @@
                 <img id = 'ImagenUsuario' src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQL-YDLwDpdjFxnqI9CgnAH3nBDTc3NEp9UA&usqp=CAU" alt="Imagen del usuario" width="40px"> <!--Usar una funcion con java scrpit , para cabaiar la imagen , he ir actualizando-->
                 <div id = 'bloque_de_Parrafo'>
                     <ul>
-                        <li>User:<span>..........</span></li>
-                        <li>Empresa:<span>.......</span></li>
-                        <li>Cargo:<span>.........</span></li>
-                        <li>Codigo:<span>........</span></li>
+                        <li>User: <span>Joaquin Cantero</span></li>
+                        <li>Empresa: <span>Cansue</span></li>
+                        <li>Cargo: <span>Admin</span></li>
+                        <li>Codigo: <span>#00001</span></li>
                     </ul>
                 </div>
             </div><hr>

@@ -51,5 +51,5 @@
 @endsection
 
 @section('css')
-    <link rel="stylesheet" href="{{asset('css/y_estilo.css')}}">
+    <link rel="stylesheet" href="{{asset('css/home.css')}}">
 @endsection
