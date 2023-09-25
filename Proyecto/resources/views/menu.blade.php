@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Principal</title>
     <link rel="stylesheet" href="{{asset('css/menu.css') }}">
+    @yield('css')
 </head>
 <body>
     <nav class="MenuIzq">
@@ -25,7 +26,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Bandeja Principal</a></li>
-                <li><a href="#">Calendario</a></li>
+                <li><a href="calendario">Calendario</a></li>
                 <li><a href="#">Menu Principal</a></li>
                 <li><a href="#">Clientes</a></li>
             </ul>
@@ -52,6 +53,8 @@
             </ul>
         </div>
     </nav>
-    @yield('menu')
+    <div class="CuerpoPagina">
+        @yield('menu')
+    </div>
 </body>
 </html>

@@ -5,7 +5,6 @@
     display: grid;    /*Indicar que se trabajara con columnas y filas para posicionar los objetos*/
     margin: 0;        /* Esto elimina el margen alrededor del cuerpo */
     padding: 0;       /* Esto elimina el relleno alrededor del cuerpo */
-    color: white;
     font-family:monospace;
     flex-grow: 1;
     grid-template-columns: 20rem auto; /* Esto crea dos columnas: una de 200px para el menú lateral y otra que ocupa el espacio restante para el contenido y el menú superior */
@@ -15,10 +14,10 @@
 .MenuIzq {
     height: 100vh;
     background-color: rgba(22,24,56);            /*El color de fondo de este contenedor*/
-    grid-column: 1;                                            /*Indica que ocupara la columna 1 de la pagina*/
+    grid-column: 1;                                         /*Indica que ocupara la columna 1 de la pagina*/
     box-shadow: 0.1rem 0.2rem 0.2rem rgba(4, 4, 4, 0.615);;  /* sobmbra para el bloque |posibilidad de borrrar ma´s adelante|*/
     margin-bottom:auto;
-    border-right: 3px solid black;                                 /*Colacarle un borde*/
+    border-right: 2px solid black;                                 /*Colacarle un borde*/
 }
 
 .MenuIzq a,summary{
@@ -26,22 +25,18 @@
     list-style-type: none;
     text-decoration: none;
 }
-
 /* Este aparrtado seria para el 2/2 de la pagina en sentido de lo que ocupara
   Y es donde cada pagina cambiara , se tiene la idea de que el estilo de la pagina
    se coloque en  un 2 archivo para evitar , tener muchos codigos css */
 .CuerpoPagina{
-    background-color: wheat;       /*IColor de fondo*/
     grid-column: 2;                  /*Ocupara la columna 2 de la pagina*/
 }
-
-
 /*A continuacion se le colacar estilo a cada objeto que este menu , se recomienda que si se llega agregar mas etiquetas en el menu y se le quiere colocar
    estilos , lo coloque devajo del comentario que dice "NUEVO" */
 /*ESTILO PARA EL BLOQUE MENU DE Pagina : 'paginaGENERAL'*/
 *.Part1_Menu1 {
     display:block;                 /*Indicar que este sera un bloque*/
-    border: 2px solid black;     /*Indicar el borde del bloque*/
+    border: 1px solid black;     /*Indicar el borde del bloque*/
     border-bottom: none;           /*Indicar el borde de inferior no tendra*/
     border-radius: 1px;            /*indicar que tendra un borde de radios de 1 px*/
     font-family:monospace;         /*Estilo de letra*/
@@ -102,5 +97,10 @@ nav a{
 }
 /* Estilo para todos los li del menu*/
 nav ul li {
+    color: white;
     margin-bottom: 0.5em;  /*Esto agrega un espacio debajo de cada elemento de la lista */
+}
+
+.Part1_Menu1 ul{
+    list-style-type: none;
 }

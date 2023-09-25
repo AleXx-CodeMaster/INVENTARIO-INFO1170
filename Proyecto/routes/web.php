@@ -21,7 +21,7 @@ Route::get('/menu', function () {
     return view('menu');
 });
 
-Route::get('/calendario', function () {
-    return view('paginas.calendario');
+Route::get('/proveedores', function () {
+    return view('paginas.proveedores');
 });
 
