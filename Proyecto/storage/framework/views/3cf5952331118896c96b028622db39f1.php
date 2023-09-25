@@ -35,7 +35,7 @@
                 <ul>
                     <li><a href="categorias">Categorias</a></li>
                     <li><a href="productos">Productos</a></li>
-                    <li><a href="proveedores">Provedores</a></li>
+                    <li><a href="proveedores">Proveedores</a></li>
                 </ul> </details> </li>
                 <li><details><summary>Gestion de Existencias</summary>
                     <ul>
