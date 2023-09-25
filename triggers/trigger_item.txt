@@ -1,0 +1,7 @@
+--
+CREATE TRIGGER `tr_items_delete` BEFORE DELETE ON `items` FOR EACH ROW INSERT INTO log_items VALUES(old.ID_I,old.Nombre,old.Cantidad,old.Tipo_Producto,CURRENT_DATE);
+--
+CREATE TRIGGER `tr_items_insert` AFTER INSERT ON `items` FOR EACH ROW INSERT INTO log_items VALUES(new.ID_I,new.Nombre,new.Cantidad,new.Tipo_Producto,CURRENT_DATE);
+--
+CREATE TRIGGER `tr_items_update` BEFORE UPDATE ON `items` FOR EACH ROW INSERT INTO log_items VALUES(old.ID_I,old.Nombre,old.Cantidad,old.Tipo_Producto,CURRENT_DATE);
+--

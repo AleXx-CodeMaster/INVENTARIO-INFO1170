@@ -1,0 +1,7 @@
+--
+CREATE TRIGGER `tr_empleados_delete` BEFORE DELETE ON `empleados` FOR EACH ROW INSERT INTO log_empleados VALUES(old.ID_N,old.Oficio,old.Contrasena,old.Fecha_Nacimiento,CURRENT_DATE);
+--
+CREATE TRIGGER `tr_empleados_insert` AFTER INSERT ON `empleados` FOR EACH ROW INSERT INTO log_empleados VALUES(new.ID_N,new.Oficio,new.Contrasena,new.Fecha_Nacimiento,CURRENT_DATE);
+--
+CREATE TRIGGER `tr_empledos_update` BEFORE UPDATE ON `empleados` FOR EACH ROW INSERT INTO log_empleados VALUES(old.ID_N,old.Oficio,old.Contrasena,old.Fecha_Nacimiento,CURRENT_DATE);
+--

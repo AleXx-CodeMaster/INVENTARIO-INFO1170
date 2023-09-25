@@ -1,0 +1,8 @@
+
+--
+CREATE TRIGGER `tr_administrador_delete` BEFORE DELETE ON `administrador` FOR EACH ROW INSERT INTO log_administrador VALUES(old.ID_A,old.ID_N,old.Nombre,old.Fecha,old.Contrasena,CURRENT_DATE);
+--
+CREATE TRIGGER `tr_administrador_insert` AFTER INSERT ON `administrador` FOR EACH ROW INSERT INTO log_administrador VALUES(new.ID_A,new.ID_N,new.Nombre,new.Contrasena,new.Fecha,CURRENT_DATE);
+--
+CREATE TRIGGER `tr_administrador_update` AFTER UPDATE ON `administrador` FOR EACH ROW INSERT INTO log_administrador VALUES(old.ID_A,old.ID_N,old.Nombre,old.Contrasena,old.Fecha,CURRENT_DATE);
+--

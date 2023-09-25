@@ -1,0 +1,7 @@
+--
+CREATE TRIGGER `tr_empresas_insert` AFTER INSERT ON `empresas` FOR EACH ROW INSERT INTO log_empresas VALUES(new.ID_E,new.Nombre,new.Fecha_Creacion,new.Tipo_Negocio,new.Cant_Empleados,CURRENT_DATE);
+--
+CREATE TRIGGER `tr_empresas_update` BEFORE UPDATE ON `empresas` FOR EACH ROW INSERT INTO log_empresas VALUES(old.ID_E,old.Nombre,new.Fecha_Creacion,new.Tipo_Negocio,new.Cant_Empleados,CURRENT_DATE);
+--
+CREATE TRIGGER `tr_empresas_delete` BEFORE DELETE ON `empresas` FOR EACH ROW INSERT INTO log_empresas VALUES(old.ID_E,old.Nombre,old.Fecha_Creacion,old.Tipo_Negocio,old.Cant_Empleados,CURRENT_DATE);
+--

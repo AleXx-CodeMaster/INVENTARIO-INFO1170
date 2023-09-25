@@ -1,0 +1,7 @@
+--
+CREATE TRIGGER `tr_calendario_delete` BEFORE DELETE ON `calendario` FOR EACH ROW INSERT INTO log_calendarios VALUES(old.ID_F,old.Fecha,old.Recordatorio,CURRENT_DATE);
+--
+CREATE TRIGGER `tr_calendario_insert` AFTER INSERT ON `calendario` FOR EACH ROW INSERT INTO log_calendarios VALUES(new.ID_F,new.Fecha,new.Recordatorio,CURRENT_DATE);
+--
+CREATE TRIGGER `tr_calendario_update` BEFORE UPDATE ON `calendario` FOR EACH ROW INSERT INTO log_calendarios VALUES(old.ID_F,old.Fecha,old.Recordatorio,CURRENT_DATE);
+--
