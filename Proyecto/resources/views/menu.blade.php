@@ -24,32 +24,31 @@
         </div>
         <div class = " Part1_Menu2">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="home">Home</a></li>
                 <li><a href="#">Bandeja Principal</a></li>
                 <li><a href="calendario">Calendario</a></li>
-                <li><a href="#">Menu Principal</a></li>
-                <li><a href="#">Clientes</a></li>
+                <li><a href="clientes">Clientes</a></li>
             </ul>
             <hr>
             <ul>
                 <li><details> <summary>Gestion de Productos</summary>
                 <ul>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Provedores</a></li>
+                    <li><a href="categorias">Categorias</a></li>
+                    <li><a href="productos">Productos</a></li>
+                    <li><a href="proveedores">Provedores</a></li>
                 </ul> </details> </li>
                 <li><details><summary>Gestion de Existencias</summary>
                     <ul>
-                        <li><a href="#">Entrada</a></li>
-                        <li><a href="#">Salida&Factura</a></li>
+                        <li><a href="entrada">Entrada</a></li>
+                        <li><a href="salida&factura">Salida&Factura</a></li>
                     </ul></details></li>
             </ul>
             <hr>
             <ul>
-                <li><a href="#">Más sobre Nosotros</a></li>
-                <li><a href="#">Ajustes</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Terminos y Reglamentos</a></li>
+                <li><a href="nosotros">Más sobre Nosotros</a></li>
+                <li><a href="ajustes">Ajustes</a></li>
+                <li><a href="ayuda">Ayuda</a></li>
+                <li><a href="terminos">Terminos y Reglamentos</a></li>
             </ul>
         </div>
     </nav>

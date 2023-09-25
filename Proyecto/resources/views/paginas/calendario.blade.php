@@ -4,5 +4,5 @@
 @endsection
 
 @section('css')
-    <link rel="stylesheet" href="{{asset('css/')}}">
+    <link rel="stylesheet" href="{{asset('css/calendar.css')}}">
 @endsection

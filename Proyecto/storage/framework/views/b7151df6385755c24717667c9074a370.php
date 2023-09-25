@@ -1,7 +1,4 @@
 <?php $__env->startSection('menu'); ?>
-    <div class="calendar">
-        <h1>Provedores</h1>
-    </div>
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('css'); ?>
