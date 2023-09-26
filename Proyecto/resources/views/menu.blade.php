@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Principal</title>
     <link rel="stylesheet" href="{{asset('css/menu.css') }}">
     @yield('css')
 </head>
@@ -25,7 +24,7 @@
         <div class = " Part1_Menu2">
             <ul>
                 <li><a href="home">Home</a></li>
-                <li><a href="#">Bandeja Principal</a></li>
+                <li><a href="bandeja">Bandeja Principal</a></li>
                 <li><a href="calendario">Calendario</a></li>
                 <li><a href="clientes">Clientes</a></li>
             </ul>

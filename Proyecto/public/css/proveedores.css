@@ -77,12 +77,9 @@
     padding: 0px 50px 0px 20px;
     text-align: left;
 }
-/* Aplicar border-bottom solo a las filas, excluyendo la última fila */
 .table-prov tr:not(:last-child) th {
     border-bottom: 2px solid black;
 }
-
-/* Eliminar border-bottom en la última fila horizontal */
 .table-prov tr:last-child th {
     border-bottom: none;
 }

@@ -1,4 +1,5 @@
 <?php $__env->startSection('menu'); ?>
+<title>Calendario</title>
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('css'); ?>

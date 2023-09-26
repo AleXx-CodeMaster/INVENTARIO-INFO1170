@@ -28,6 +28,9 @@ Route::get('/registro', function () {
 Route::get('/parte', function () {
     return view('paginas.parte');
 });
+Route::get('/bandeja', function () {
+    return view('paginas.bandeja');
+});
 Route::get('/home', function () {
     return view('paginas.home');
 });

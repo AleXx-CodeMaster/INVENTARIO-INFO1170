@@ -1,6 +1,7 @@
 @extends('menu')
 
 @section('menu')
+<title>Calendario</title>
 @endsection
 
 @section('css')

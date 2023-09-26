@@ -1,6 +1,7 @@
 @extends('menu')
 
 @section('menu')
+<title>Salida / Factura</title>
 <div class="CuerpoPagina">
     <header class="tittle">
         <h1>Salida / Factura    </h1>

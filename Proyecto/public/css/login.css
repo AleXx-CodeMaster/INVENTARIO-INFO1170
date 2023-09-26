@@ -629,28 +629,20 @@ align-items: center; /* Alinea verticalmente los elementos al centro del contene
 
 #cabecera ul li {
 /* Estilo para elementos de lista dentro del elemento con el id cabecera: */
-
 list-style: none; /* Elimina los marcadores de lista. */
 margin-left: 10px; /* Agrega un margen izquierdo de 10px a cada elemento de lista. */
 }
 
 #cabecera ul li a {
 /* Estilo para los enlaces dentro de los elementos de lista en el elemento con el id cabecera: */
-
 font-size: 20px; /* Establece el tamaño de fuente en 20px. */
 text-decoration: none; /* Elimina la decoración de subrayado de los enlaces. */
 padding: 8px 60px; /* Agrega un relleno vertical de 8px y un relleno horizontal de 60px a los enlaces. */
 color: var(--primary); /* Establece el color de texto utilizando una variable CSS llamada --primary. */
 border-radius: 30px; /* Agrega un borde redondeado de 30px a los enlaces. */
 }
-
 #bodegaRango {
 /* Estilo para el elemento con el id bodegaRango: */
-
 width: 410px; /* Establece el ancho del elemento en 410px. */
 height: 67px; /* Establece la altura del elemento en 67px. */
 }
-
-
-
-

@@ -1,6 +1,7 @@
 @extends('menu')
 
 @section('menu')
+<title>Ayuda</title>
 <div class="CuerpoPagina">
     <header class="Cont-A1">
         <h1>Ayuda</h1>

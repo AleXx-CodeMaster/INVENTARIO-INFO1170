@@ -1,6 +1,7 @@
 @extends('menu')
 
 @section('menu')
+<title>Categorias</title>
 @endsection
 
 @section('css')
