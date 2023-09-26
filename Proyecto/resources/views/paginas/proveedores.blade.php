@@ -1,7 +1,6 @@
 @extends('menu')
 
 @section('menu')
-<title>Proveedores</title>
     <header class="tittle">
         <h1>Proveedores</h1>
         <hr>

@@ -49,6 +49,7 @@
                 <li><a href="ajustes">Ajustes</a></li>
                 <li><a href="ayuda">Ayuda</a></li>
                 <li><a href="terminos">Terminos y Reglamentos</a></li>
+                <li><a href="login">Inicio de sesion</a></li>
             </ul>
         </div>
     </nav>

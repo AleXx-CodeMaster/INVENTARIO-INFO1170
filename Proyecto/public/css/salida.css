@@ -17,14 +17,14 @@
 }
 .busqueda{
     text-align: center;
-    word-spacing: 50px;
+    word-spacing: 100px;
 }
 .busqueda input{
     font-family: monospace;
     background: white;
     border-radius: 10px;
     font-size: 15px;
-    width: 25%;
+    width: 30%;
     right: 25%;
 }
 .prov{
@@ -74,7 +74,7 @@
 
 }
 .table-prov2 th{
-    padding: 0px 50px 0px 20px;
+    padding: 0px 0px 0px 0px;
     text-align: left;
 }
 /* Aplicar border-bottom solo a las filas, excluyendo la última fila */
