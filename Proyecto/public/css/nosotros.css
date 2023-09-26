@@ -1,0 +1,61 @@
+.C-MAS1{
+    grid-row: 1;
+    background-color:  rgba(22,24,56);
+    height: 2rem;
+}
+.C-MAS2{
+    grid-row: 2/span 3;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    background-image: url(fondoMAS.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.C-MAS3{
+    grid-row: 5;
+    background-color:springgreen;
+}
+.Contenedor{
+    display: flex;
+}
+#C1{
+    grid-row: 1;
+}
+#C2{
+    grid-row: 2;
+}
+#C3{
+    grid-row: 3;
+}
+#C4{
+    grid-row: 4;
+}
+.C-MAS1 h1{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+.C-MAS2 h2{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 2rem;
+    font-weight: bold;
+}
+.C-MAS2 P{
+    width: 80%;
+}
+.C-MAS2 .Cont{
+    margin-left: 10%;
+}
+.C-MAS2 .imagen{
+    margin:5%;
+}
+.imagen img{
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.47);
+}
+#Img3 img{
+    width: 80px;
+    border-radius: 2rem;
+}
