@@ -4,26 +4,60 @@
 }
 .tittle h1{
     margin-top: 3rem;
-    margin-bottom: 0rem;
+    margin-bottom: 3rem;
     color: rgba(22,24,56);
     text-align: center;
     font-size: 3rem;
-    padding: 0px 0px 20px 0px;
 }
 .tittle hr{
     border-top: 2px solid rgba(189,19,19);
     width: 90%;
     text-align: center;
+    margin-bottom: 3rem;
 }
 .busqueda{
     text-align: center;
-    word-spacing: 50px;
 }
-.busqueda input{
+.busqueda a{
     font-family: monospace;
     background: white;
-    border-radius: 10px;
+    text-decoration: none;
     font-size: 15px;
-    width: 25%;
-    right: 25%;
+    border: 2px solid black;
+    margin-bottom: 50px;
+    width: 200px;
+    padding: 50px;
 }
+.boton{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 15px;
+}
+.inicio{
+    margin: 5rem 1rem 5rem 1rem;
+
+}
+#cabecera ul {
+    /* Estilo para listas desordenadas dentro del elemento con el id cabecera: */
+
+    display: flex; /* Muestra los elementos de la lista como un flex container. */
+    justify-content: flex-end; /* Justifica los elementos en el extremo derecho del contenedor flex. */
+    align-items: center; /* Alinea verticalmente los elementos al centro del contenedor. */
+    }
+
+    #cabecera ul li {
+    /* Estilo para elementos de lista dentro del elemento con el id cabecera: */
+    list-style: none; /* Elimina los marcadores de lista. */
+    margin-left: 10px; /* Agrega un margen izquierdo de 10px a cada elemento de lista. */
+    }
+
+    #cabecera ul li a {
+    /* Estilo para los enlaces dentro de los elementos de lista en el elemento con el id cabecera: */
+    font-size: 20px; /* Establece el tamaño de fuente en 20px. */
+    text-decoration: none; /* Elimina la decoración de subrayado de los enlaces. */
+    padding: 8px 60px; /* Agrega un relleno vertical de 8px y un relleno horizontal de 60px a los enlaces. */
+    color: var(--primary); /* Establece el color de texto utilizando una variable CSS llamada --primary. */
+    border-radius: 30px; /* Agrega un borde redondeado de 30px a los enlaces. */
+    }

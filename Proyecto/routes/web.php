@@ -14,7 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('paginas.home');
+    return view('home');
+});
+Route::get('/menu', function () {
+    return view('menu');
 });
 Route::get('/login', function () {
     return view('paginas.login');
@@ -32,7 +35,7 @@ Route::get('/bandeja', function () {
     return view('paginas.bandeja');
 });
 Route::get('/home', function () {
-    return view('paginas.home');
+    return view('home');
 });
 Route::get('/proveedores', function () {
     return view('paginas.proveedores');
@@ -67,4 +70,3 @@ Route::get('/salida&factura', function () {
 Route::get('/terminos', function () {
     return view('paginas.terminos');
 });
-
