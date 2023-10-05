@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta etiquetas para SEO y accesibilidad -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Tienda de campaña">
+
+    <title>Forest</title>
+
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header id="cabezera">
+      <a href="Arb1.html" class="logo"> Elemental </a>
+      <ul>
+        <!-- Enlaces de navegación -->
+        <li><a href="Arb1.html" class="active"> Home</a></li>
+        <li><a href="Productos_y_Servicios.html" class="active"> Productos y Servicios</a></li>
+        <li><a href="Quienes_Somos.html" class="active"> Quienes Somos</a></li>
+        <li><a href="Contacto.html" class="active"> Contacto</a></li>
+      </ul>
+    </header>
+
+    <!-- Sección principal de la página -->
+    <section>
+        <h2 id="text"><span>Busca Tus Propias Historias</span><br>Adventure</h2>
+        <!-- Imágenes con atributos "alt" para accesibilidad -->
+        <img src="../imagenes/pajaro1.png" id="pajaro-1" alt="Pájaro volando">
+        <img src="../imagenes/pajaro2.png" id="pajaro-2" alt="Pájaro volando">
+        <img src="../imagenes/bosque1.png" id="bosque" alt="Bosque">
+
+        <!-- Enlace para explorar con identificador -->
+        <a href="#text-2-1" id="btn">Explorar</a>
+
+        <!-- Imágenes con atributos "alt" para accesibilidad -->
+        <img src="../imagenes/piedras1.png" id="rocas" alt="Piedras">
+        <img src="../imagenes/oceano1.png" id="agua" alt="Océano">
+    </section>
+
+    <!-- Contenido secundario de la página -->
+    <div class="sec">
+       <!-- Títulos y texto descriptivo -->
+       <h2 id="text-2-1"><span>BIENVENIDO</span><br></h2>
+       <h2 id="text-3"><span>Conoce Nuestras Ofertas</span></h2>
+       <h2 id="text-4">Esto es lo Último que tenemos en Tendencia</h2>
+       <br><br>
+        <!-- Contenedor de elementos -->
+        <div class="Contenedor">
+            <div>
+                <!-- Imagen con atributo "alt" para accesibilidad -->
+                <img class="img-border1" src="../IMAGENES_DE_TIENDA/Oferta_de_chaqueta_y_pantalon.jpg" alt="Mujer Posando con ropa de campaña">
+                <!-- Descripción y precio del producto -->
+                <h3>Chaqueta Marca Elemental Color Negro y<br> Pantalón Verde. <br> $30.990</h3> 
+            </div>
+            <div>
+                <!-- Imagen con atributo "alt" para accesibilidad -->
+                <img class="img-border2" src="../IMAGENES_DE_TIENDA/Oferta_de_chaqueta_y_pantalon_2.jpg" alt="Otra mujer Posando con ropa de campaña">
+                <!-- Descripción y precio del producto -->
+                <h3>Zapatos De Campaña y Chaqueta Color Azul Marino. <br> $40.990</h3>
+            </div>
+            <div>
+                <!-- Imagen con atributo "alt" para accesibilidad -->
+                <img class="img-border3" src="../IMAGENES_DE_TIENDA/Oferta_de_chaqueta_mochila_gorro_1.jpg" alt="Hombre Posando con ropa de campaña">
+                <!-- Descripción y precio del producto -->
+                <h3>PACK: Shords, Gorro y Chaqueta Color Azul<br> Para lluvia Marca Elemental.<br> $80.990</h3>
+            </div>
+            <div>
+                <!-- Imagen con atributo "alt" para accesibilidad -->
+                <img class="img-border4" src="../IMAGENES_DE_TIENDA/Oferta_de_chaqueta_y_pantalon_3.jpg"  alt="Otro hombre posando con ropa de campaña">
+                <!-- Descripción y precio del producto -->
+                <h3>Mochila Roja Táctica de Tamaño Grande. <br> $30.990 </h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controlador de animación -->
+    <script>
+        let text = document.getElementById('text');
+        let pajaro1 = document.getElementById('pajaro-1');
+        let pajaro2 = document.getElementById('pajaro-2');
+        let btn = document.getElementById('btn');
+        let rocas = document.getElementById('rocas');
+        let bosque = document.getElementById('bosque');
+        let agua = document.getElementById('agua');
+        let cabezera = document.getElementById('cabezera');
+         
+        //escuchar eventos
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+
+            // Control de animación
+            text.style.top = 50 + value * -.1 + '%';
+            pajaro2.style.top = value * -1.5 + 'px';
+            pajaro2.style.left = value * 2 + 'px';
+            pajaro1.style.top = value * -1.5 + 'px';
+            pajaro1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocas.style.top = value * -.12 + 'px';
+            bosque.style.top = value * .25 + 'px';
+            cabezera.style.top = value * .5 + 'px';
+        })
+    </script>
+
+     <!-- Pie de página -->
+    <footer>
+       <!-- Derechos de autor con enlace -->
+       <p><small style="color: rgb(205, 23, 23);">Derechos de Autor:</small> <a href="https://www.instagram.com/alexhotz._/"  target="_blank" rel="noopener noreferrer">alexis monsalve</a></p>
+    </footer>
+</body>
+</html>
+
+

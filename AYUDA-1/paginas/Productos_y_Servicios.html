@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Tienda de campaña">
+    <title>Productos y Servicios</title>
+    <link rel="stylesheet" href="../css/styleproductosyservicios.css">
+</head>
+<body>
+    <header id="cabezera">
+        <a href="Arb1.html" class="logo"> Elemental </a>
+        <ul>
+            <!--para bajar de carpeta para poder ir al menú principal es: ../-->
+            <li><a href="Arb1.html" class="active"> Home</a></li>
+            <li><a href="Productos_y_Servicios.html" class="active"> Productos y Servicios</a></li>
+            <li><a href="Quienes_Somos.html" class="active"> Quienes Somos</a></li>
+            <li><a href="Contacto.html" class="active"> Contacto</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>Busca Tus Propias Historias</span><br>Adventure</h2>
+        <img src="../imagenes/pajaro1.png" id="pajaro-1" alt="Pájaro 1">
+        <img src="../imagenes/pajaro2.png" id="pajaro-2" alt="Pájaro 2">
+        <img src="../imagenes/bosque1.png" id="bosque" alt="Bosque">
+
+        <a href="#text-2-1" id="btn">Conoce Nuestros Productos!</a>
+
+        <img src="../imagenes/piedras1.png" id="rocas" alt="Piedras">
+        <img src="../imagenes/oceano1.png" id="agua" alt="Océano">
+    </section>
+
+    <div class="sec">
+
+       <h2 id="text-2-1"><span>Productos con un 10% de Descuento</span><br></h2>
+
+       <h2 id="text-3"><span>Usando el Código: ElementalNatural</span></h2>        
+
+       <br> <br>
+
+       <!--IMÁGENES DE PRODUCTOS-->
+        <div class="Contenedor">
+
+            <div>
+                <img class="img-border5" src="../IMAGENES_DE_TIENDA/CAMISETA_NEGRA.jpg" alt="Camiseta negra de hombre para campaña">
+                <h3>Camiseta Color Negro de Hombre <br>Para Montaña y Nieve. <br> $10.990</h3> 
+            </div>
+
+            <div>
+                <img class="img-border6" src="../IMAGENES_DE_TIENDA/CAPA_INTERIOR_PARA_ACTIVIDADES_DE_MONTAÑA.jpg" alt="Camiseta para montaña">
+                <h3>Camiseta de hombre interior para Trakking <br> $11.990</h3> 
+            </div>
+
+            <div>
+                <img class="img-border7" src="../IMAGENES_DE_TIENDA/CHAQUETA_DE_MONTAÑA_HOMBRE.jpg" alt="Chaqueta de montaña de hombre ">
+                <h3>Chaqueta para Montaña y Nieve <br> de Hombre Color Azul <br> $32.990</h3> 
+            </div>
+
+            <br>
+
+            <div>
+                <img class="img-border8" src="../IMAGENES_DE_TIENDA/CHAQUETA_NEGRA_DE_MONTAÑA_HOMBRE.jpg" alt="Chaqueta negra de montaña de hombre">
+                <h3>Chaqueta Para Montaña Color Negro de Hombre <br> $40.990</h3> 
+            </div>
+
+            <div>
+                <img class="img-border9" src="../IMAGENES_DE_TIENDA/CHAQUETA_VERDE_DE_MONTAÑA_HOMBRE.jpg" alt="Chaqueta verde de montaña de hombre">
+                <h3>Chaqueta Marca Elemental Color Negro<br> y Verde. <br> $30.990</h3> 
+            </div>
+
+            <div>
+                <img class="img-border10" src="../IMAGENES_DE_TIENDA/PANTALONES_NEGRO_ELEMENTAL.jpg" alt="Pantalones negro de hombre ">
+                <h3>Pantalón Marca Elemental Color Negro<br> $30.990</h3> 
+            </div>
+
+            <br>
+
+            <div>
+                <img class="img-border11" src="../IMAGENES_DE_TIENDA/PANTALONES_TREKKING_Y_MONTAÑA.jpg" alt="Pantalones de hombre de campaña">
+                <h3>Pantalón Verde con Negro para Montaña y Nieve <br> $32.990</h3> 
+            </div>
+
+            <div>
+                <img class="img-border12" src="../IMAGENES_DE_TIENDA/ZAPATOS_AMARILLOS_CON_ROJOS_DE_ESCALADA_Y_MONTAÑA.jpg" alt="Zapatos amarillos con rojo de campaña de escalada">
+                <h3>Zapatos de Escalada Amarillos Con Rojo Para <br> Montaña y Nieve<br> $60.990</h3> 
+            </div>
+
+            <div>
+                <img class="img-border13" src="../IMAGENES_DE_TIENDA/ZAPATOS_AZULES_DE_ESCALADA_Y_MONTAÑA.jpg" alt="Zapatos azules de escalada de montaña">
+                <h3>Zapatos de Escalada Color Azul Con Negro <br> $60.990</h3> 
+            </div>                
+                                    
+        </div>
+    </div>
+    
+    <!-- controlador de animación -->
+    <script>
+        let text = document.getElementById('text');
+        let pajaro1 = document.getElementById('pajaro-1');
+        let pajaro2 = document.getElementById('pajaro-2');
+        let btn = document.getElementById('btn');
+        let rocas = document.getElementById('rocas');
+        let bosque = document.getElementById('bosque');
+        let agua = document.getElementById('agua');
+        let cabezera = document.getElementById('cabezera');
+        
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.1 + '%';
+            pajaro2.style.top = value * -1.5 + 'px';
+            pajaro2.style.left = value * 2 + 'px';
+            pajaro1.style.top = value * -1.5 + 'px';
+            pajaro1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocas.style.top = value * -0.12 + 'px';
+            bosque.style.top = value * 0.25 + 'px';
+            cabezera.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>

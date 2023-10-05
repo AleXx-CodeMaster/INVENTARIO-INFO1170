@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Tienda de campaña">
+    
+    <title>Quienes Somos</title>
+
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="../css/quienessomos.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header id="cabezera">
+      <a href="Arb1.html" class="logo"> Elemental </a>
+      <ul>
+        <!-- Menú de navegación -->
+        <li><a href="Arb1.html" class="active"> Home</a></li>
+        <li><a href="Productos_y_Servicios.html" class="active"> Productos y Servicios</a></li>
+        <li><a href="Quienes_Somos.html" class="active"> Quienes Somos</a></li>
+        <li><a href="Contacto.html" class="active"> Contacto</a></li>
+      </ul>
+    </header>
+    <!-- Sección principal de la página -->
+    <section>
+        <h2 id="text"><span>Busca Tus Propias Historias</span><br>Adventure</h2>
+        <!-- Imágenes con atributos alt para accesibilidad -->
+        <img src="../imagenes/pajaro1.png" id="pajaro-1" alt="Pájaro 1">
+        <img src="../imagenes/pajaro2.png" id="pajaro-2" alt="Pájaro 2">
+        <img src="../imagenes/bosque1.png" id="bosque" alt="Bosque">
+
+        <a href="#text-2" id="btn">Conócenos</a>
+
+        <!-- Más imágenes con atributos alt -->
+        <img src="../imagenes/piedras1.png" id="rocas" alt="Rocas">
+        <img src="../imagenes/oceano1.png" id="agua" alt="Océano">
+    </section>
+
+    <!-- Contenido secundario de la página -->
+    <div class="sec">
+       <h2 id="text-2"><span>¿Quiénes Somos?</span><br></h2>
+       <!-- Texto descriptivo sobre la empresa -->
+       <h1>Somos un grupo dedicado con Nuestro Lider Alexis Monsalve nos comprometemos a facilitar la vida y ofrecer excelentes productos para aquellos que deseen aventurarse en la montaña o en la nieve, ya sea en compañía de su familia o de manera individual.
+         Desde hace tres años, nos hemos dedicado a proporcionar equipos especializados para este tipo de viajes, dado que son actividades inherentemente peligrosas.</h1>
+        <br>
+        <!-- Más información sobre la empresa -->
+        <h1>Nuestro compromiso es asegurarnos de que quienes deseen explorar estos entornos desafiantes lo hagan de manera segura y con la tranquilidad de contar con el equipo apropiado. 
+            Nos enorgullece ofrecer una amplia gama de productos diseñados específicamente para satisfacer las necesidades de nuestros clientes, brindando la confianza y la preparación necesaria para enfrentar los desafíos de la montaña y la nieve.</h1>
+        <br>
+        <!-- Más información sobre los servicios de la empresa -->
+        <h1>Ya sea que esté planeando una excursión en familia o una expedición en solitario, nuestro equipo especializado está listo para acompañarle en su aventura. 
+            Nuestro objetivo es que todos los entusiastas de la montaña y la nieve puedan disfrutar de estas experiencias de manera segura y memorable, confiando en la calidad y la idoneidad de nuestros productos.</h1>
+    </div>
+
+    <!-- Controlador de animación para efectos de desplazamiento -->
+    <script>
+        let text = document.getElementById('text');
+        let pajaro1 = document.getElementById('pajaro-1');
+        let pajaro2 = document.getElementById('pajaro-2');
+        let btn = document.getElementById('btn');
+        let rocas = document.getElementById('rocas');
+        let bosque = document.getElementById('bosque');
+        let agua = document.getElementById('agua');
+        let cabezera = document.getElementById('cabezera');
+        
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+
+            // Aplicación de efectos de desplazamiento a elementos
+            text.style.top = 50 + value * -.1 + '%';
+            pajaro2.style.top = value * -1.5 + 'px';
+            pajaro2.style.left = value * 2 + 'px';
+            pajaro1.style.top = value * -1.5 + 'px';
+            pajaro1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocas.style.top = value * -.12 + 'px';
+            bosque.style.top = value * .25 + 'px';
+            cabezera.style.top = value * .5 + 'px';
+        })
+    </script>
+</body>
+</html>
+

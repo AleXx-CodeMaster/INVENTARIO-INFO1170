@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Tienda de campaña">
+    
+    <title>Contactanos</title>
+
+    <!-- Enlace al archivo CSS para estilos -->
+    <link rel="stylesheet" href="../css/stylecontacto.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header id="cabezera">
+      <a href="Arb1.html" class="logo"> Elemental </a>
+      <ul>
+        <li><a href="Arb1.html" class="active"> Home</a></li>
+        <li><a href="Productos_y_Servicios.html" class="active"> Productos y Servicios</a></li>
+        <li><a href="Quienes_Somos.html" class="active"> Quienes Somos</a></li>
+        <li><a href="Contacto.html" class="active"> Contacto</a></li>
+      </ul>
+    </header>
+
+    <!-- Sección principal de la página -->
+    <section>
+        <h2 id="text"><span>Busca Tus Propias Historias</span><br>Adventure</h2>
+        <!-- Imágenes con descripción alternativa -->
+        <img src="../imagenes/pajaro1.png" id="pajaro-1" alt="Imagen de pájaro 1">
+        <img src="../imagenes/pajaro2.png" id="pajaro-2" alt="Imagen de pájaro 2">
+        <img src="../imagenes/bosque1.png" id="bosque" alt="Imagen del bosque">
+
+        <!-- Botón de contacto -->
+        <a href="#form1" id="btn">Contactanos!</a>
+
+        <!-- Más imágenes con descripción alternativa -->
+        <img src="../imagenes/piedras1.png" id="rocas" alt="Imagen de piedras">
+        <img src="../imagenes/oceano1.png" id="agua" alt="Imagen del océano">
+    </section>
+
+    <!-- Contenido adicional de la página -->
+    <div class="sec">
+        <h2 id="text-2"><span>BIENVENIDO</span><br></h2>
+        <h2 id="text-3"><span>Si necesitas ayuda, no dudes en preguntarnos</span></h2>        
+
+        <br><br>
+
+        <!-- Formulario de contacto -->
+        <div class="container">
+            <h1 id="form1">Formulario de Contacto</h1>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label>Género:</label>
+                    <input type="radio" id="genero-m" name="genero" value="masculino">
+                    <label for="genero-m">Masculino</label>
+                    <input type="radio" id="genero-f" name="genero" value="femenino">
+                    <label for="genero-f">Femenino</label>
+                </div>
+                <div class="form-group">
+                    <label for="terminos">Acepto los términos y condiciones:</label>
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Controlador de animación -->
+    <script>
+        let text = document.getElementById('text');
+        let pajaro1 = document.getElementById('pajaro-1');
+        let pajaro2 = document.getElementById('pajaro-2');
+        let btn = document.getElementById('btn');
+        let rocas = document.getElementById('rocas');
+        let bosque = document.getElementById('bosque');
+        let agua = document.getElementById('agua');
+        let cabezera = document.getElementById('cabezera');
+        
+        // Agrega efectos de desplazamiento mientras se desplaza por la página
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -.1 + '%';
+            pajaro2.style.top = value * -1.5 + 'px';
+            pajaro2.style.left = value * 2 + 'px';
+            pajaro1.style.top = value * -1.5 + 'px';
+            pajaro1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocas.style.top = value * -.12 + 'px';
+            bosque.style.top = value * .25 + 'px';
+            cabezera.style.top = value * .5 + 'px';
+        })
+    </script>
+</body>
+</html>
