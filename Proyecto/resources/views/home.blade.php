@@ -21,6 +21,7 @@
     </header>
     <div class="inicio">
         <img src="images/icon2.png" alt="">
+        <h1>Bienvenido</h1>
     </div>
     <div class="CuerpoPagina">
         <header class="tittle">

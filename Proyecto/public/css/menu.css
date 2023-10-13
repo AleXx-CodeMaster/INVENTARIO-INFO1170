@@ -7,6 +7,7 @@
     padding: 0;       /* Esto elimina el relleno alrededor del cuerpo */
     font-family:monospace;
     flex-grow: 1;
+    background: #f5f7fa;
     grid-template-columns: 20rem auto; /* Esto crea dos columnas: una de 200px para el menú lateral y otra que ocupa el espacio restante para el contenido y el menú superior */
 }
 /* Aca se indicaria el menu que se encuntra en la izquirda que tomara la
