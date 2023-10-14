@@ -15,6 +15,21 @@
     width: 90%;
     text-align: center;
 }
+.add{
+    text-align: left;
+    margin-left: 50px;
+
+}
+.add input{
+    font-family: monospace;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 25%;
+    padding: 15px;
+    right: 25%;
+}
 .busqueda{
     text-align: center;
     word-spacing: 50px;

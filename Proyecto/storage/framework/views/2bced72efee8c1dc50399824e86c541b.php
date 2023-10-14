@@ -5,6 +5,9 @@
     </header>
     <div>
     </div> <br>
+    <div class="add">
+        <input type="submit" value="Cliente Nuevo">
+    </div> <br> <br> <br>
     <nav class="busqueda">
         <input type="submit" name="" id="" value="Buscar por nombre">
         <input type="submit" name="" id="" value="Buscar por correo">

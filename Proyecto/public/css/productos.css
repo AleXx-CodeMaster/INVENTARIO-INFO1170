@@ -17,15 +17,41 @@
 }
 .busqueda{
     text-align: center;
-    word-spacing: 50px;
+    columns: 2
 }
 .busqueda input{
     font-family: monospace;
     background: white;
     border-radius: 10px;
     font-size: 15px;
+    width: 50%;
+}
+.busqueda select{
+    font-family: monospace;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 15px;
+    width: 50%;
+}
+.add{
+    text-align: left;
+    margin-left: 50px;
+
+}
+.add input{
+    font-family: monospace;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
     width: 25%;
+    padding: 15px;
     right: 25%;
+}
+.NameCat{
+    text-align: left;
+    margin-left: 50px;
 }
 .prov{
     padding: 20px 50px 50px 50px;

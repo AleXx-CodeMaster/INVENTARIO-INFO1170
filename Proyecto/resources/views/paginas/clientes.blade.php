@@ -7,12 +7,15 @@
         <h1>Clientes</h1>
         <hr>
     </header> <br>
+    <div class="add">
+        <input type="submit" value="Cliente Nuevo">
+    </div> <br> <br> <br>
     <nav class="busqueda">
         <input type="submit" name="" id="" value="Buscar por nombre">
         <input type="submit" name="" id="" value="Buscar por correo">
         <input type="submit" name="" id="" value="Buscar por telefono">
     </nav>
-    <section class="proovedores">
+    <section class="proovedorses">
         <header class="prov-dat">
         </header>
         <div class="prov2">
