@@ -24,20 +24,9 @@
     text-decoration: none;
 }
 /*Especificar Cuerpo perten al 2/2 de la anchura de la pagina*/
-/* .CuerpoPagina{
-    grid-column: 2;                  } /*Ocupara la columna 2 de la pagina*/
-
 .CuerpoPagina{
-    grid-column: 2;
-    display: grid;
-    background-color: rgba(0, 0, 0, 0.04);
-    grid-template-rows: auto auto auto auto auto;
-    flex-grow: 1;
-} 
-.CuerpoPagina header{
-    width: 100%;
+    grid-column: 2;                   /*Ocupara la columna 2 de la pagina*/
 }
-/*-------------------------------------------------------------------------------------------------------*/
 /*ESTILO PARA EL BLOQUE MENU DE Pagina : 'paginaGENERAL'*/
 *.Part1_Menu1 {
     display:block;                 /*Indicar que este sera un bloque*/
@@ -106,6 +95,16 @@ nav ul li {
     list-style-type: none;
 }
 /* -------------------------------------------------------------*/
+.CuerpoPagina{
+    grid-column: 2;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.04);
+    grid-template-rows: auto auto auto auto auto;
+    flex-grow: 1;
+} 
+.CuerpoPagina header{
+    width: 100%;
+}
 /*            estilo de la pagina Ayuda*/
 .Cont-A1 h1{
     margin-top: 3rem;
@@ -123,6 +122,12 @@ nav ul li {
 .Cont-A2 ul {
     list-style: none;
   }
+.Cont-A2 button{
+    width: 30%;
+    border-radius: 2rem;
+    display: block;
+    margin: 0 auto;
+}
   
 .Cont-A2 li summary::before {
     content: "";
@@ -161,7 +166,7 @@ nav ul li {
     grid-row: 2/span 3;
     display: grid;
     grid-template-rows: auto auto auto auto;  
-    background-image: url(fondo\ mas.png);
+    background-image: url(fondoMAS.png);
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
