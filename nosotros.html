@@ -53,35 +53,36 @@
                     <button id="Bonton_c">Siguiente</button>
                 </div>
             </section> 
-        </main>    
-        <footer class="C-MAS3">@2023-09-23-Sistema de Gestiones de empresa</footer>    
+            </main>    
+            <footer class="C-MAS3">@2023-09-23-Sistema de Gestiones de empresa</footer>    
             
-        <script>
+            <script>
                 var contenidoNC = document.querySelector('#encargados')
-                function persona(num_vol){
+                var num_vol = -1;
+                var boton_c = document.querySelector('#Bonton_c');
+            
+                function persona(){
+                    num_vol += 1
+                    if(num_vol === 5){
+                        num_vol = 0;
+                    }
                     fetch('Contribuidores.json')
                         .then( res => res.json())
                         .then( datos => {
-                            Datos_C(datos, num_vol)
+                            Datos_C(datos)
                         })
                 }
             
-                function Datos_C(data, num_vol){
-                    num_vol += 1
-                    if(num_vol === 4){
-                        num_vol = 0;
-                    }
+                function Datos_C(data){
                     contenidoNC.innerHTML = `
                         <img src="${data[num_vol].Photo}" alt="Img de un Contribuidor">
                         <p>${data[num_vol].Cargo}${data[num_vol].Nombre}</p>
                         <p>${data[num_vol].Tipo_Contribucion}</p>
                         `
                 }
-                var num_vol = -1;
-                var boton_c = document.querySelector('#Bonton_c');
-                boton_c.addEventListener("click", function(){persona(num_vol)});
             
-        </script>           
+                boton_c.addEventListener("click", persona);
+            </script>                        
     </div>
 </body>
 </html>
