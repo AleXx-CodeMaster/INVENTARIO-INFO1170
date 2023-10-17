@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "Nombre":"Joaquin Cantero",
+        "Cargo":"Líder del Equipo: ",
+        "Photo":"https://avatars.githubusercontent.com/u/135163607?v=4",
+        "Tipo_Contribucion":"Organizador del equipo, y contribuyendo al manejo de las funcionalidades de la pagina"
+    },
+    {
+        "id":2,
+        "Nombre":"Alexis Monsalve",
+        "Cargo":"Diseñador: ",
+        "Photo":"https://avatars.githubusercontent.com/u/125103323?v=4",
+        "Tipo_Contribucion":"Encargada de administrar la interfaz grafica de la pagina (aspecto), y manejo interno de los datos"
+    },
+    {
+        "id":3,
+        "Nombre":"Yaninna Álvarez",
+        "Cargo":"Diseñadora: ",
+        "Photo":"https://avatars.githubusercontent.com/u/134446812?v=4",
+        "Tipo_Contribucion":"Encargada de admintrar la interfaz grafica de la pagina (aspecto), y generar algunas funcionalidades"
+    },
+    {
+        "id":4,
+        "Nombre":"Antonio Sarabia",
+        "Cargo":"Administrador de Datos: ",
+        "Photo":"https://avatars.githubusercontent.com/u/142558630?v=4",
+        "Tipo_Contribucion":"Encargado de administra los datos y que la pagina cumpla con los funcionaminetos basicos "
+    },
+    {
+        "id":5,
+        "Nombre":"Maximo Orellana",
+        "Cargo":"Administrador de Datos: ",
+        "Photo":"imgColegaMax.png",
+        "Tipo_Contribucion":"Encargado de admistrar la base de datos , y crear funcionalidades para cada manejo de dato."
+    }
+]
