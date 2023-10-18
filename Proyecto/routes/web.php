@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Items;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,9 +62,12 @@ Route::get('/entrada', function () {
 Route::get('/nosotros', function () {
     return view('paginas.nosotros');
 });
-Route::get('/productos', function () {
-    return view('paginas.productos');
-});
+Route::get('/productos', [Items::class,'listarItems'])->name('productos.listar');
+
+Route::get('/productos/agregar', [Items::class,'agregarItems'])->name('productos.agregar');
+
+Route::post('/productos/agregar', [Items::class,'guardarItems'])->name('productos.guardar');
+
 Route::get('/salida&factura', function () {
     return view('paginas.salida&factura');
 });

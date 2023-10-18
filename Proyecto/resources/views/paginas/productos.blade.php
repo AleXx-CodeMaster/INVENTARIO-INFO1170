@@ -8,7 +8,7 @@
         <hr>
     </header> <br>
     <div class="add">
-        <input type="submit" value="Cliente Nuevo">
+        <a href="{{route('productos.agregar')}}">Agregar Producto</a>
     </div> <br> <br> <br>
     <nav class="busqueda">
         <div class="NameCat">
@@ -35,30 +35,40 @@
         </div>
         <div class="prov">
             <table class="table-prov">
+                @foreach($productos as $producto)
                 <tr>
+                    <th>{{$producto->Nombre}}</th>
+                    <th>{{$producto->Cantidad}}</th>
+                    <th>{{$producto->Tipo_Producto}}</th>
+                    <th class="li1"><li></li></th>
+                    <th class="li2"><li></li></th>
+                </tr>
+                @endforeach
+                <!-- <tr>
                     <th>Joaquin</th>
                     <th>canteroxx92@gmail.com</th>
                     <th>Balmaceda194</th>
                     <th class="li1"><li></li></th>
                     <th class="li2"><li></li></th>
-                </tr>
-                <tr>
+                </tr> -->
+                <!-- <tr>
                     <th>Joaquin</th>
                     <th>+56928188128</th>
                     <th>Pastor Oscar Alarcon 181</th>
                     <th class="li1"><li></li></th>
                     <th class="li2"><li></li></th>
-                </tr>
-                <tr>
+                </tr> -->
+                <!-- <tr>
                     <th>Joaquin</th>
                     <th>+56928188128</th>
                     <th>Pastor Oscar Alarcon 181</th>
                     <th class="li1"><li></li></th>
                     <th class="li2"><li></li></th>
-                </tr>
+                </tr> -->
             </table>
         </div>
     </section>
+    <!-- <h1>{{$productos}}</h1>  -->
 </div>
 @endsection
 
