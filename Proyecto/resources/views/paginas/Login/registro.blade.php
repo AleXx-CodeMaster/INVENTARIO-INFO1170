@@ -92,6 +92,6 @@
             </div>
         </div>
     </div>
-    <img src="images/icon.png" alt="logo de inventario">
+    <img src="images/icon2.png" alt="logo de inventario">
 </body>
 </html>

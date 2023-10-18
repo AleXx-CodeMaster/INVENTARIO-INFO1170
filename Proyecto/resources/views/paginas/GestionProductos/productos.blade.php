@@ -25,11 +25,11 @@
         <div class="prov2">
             <table class="table-prov2">
                 <tr>
-                    <th class="izq">Categoria</th>
+                    <th class="izq">Imagen</th>
                     <th class="izq">Nombre</th>
-                    <th class="izq">Informacion</th>
-                    <th class="der">Editar</th>
-                    <th class="der">Eliminar</th>
+                    <th class="izq">Cantidad</th>
+                    <th class="der">Categoria</th>
+                    <th class="der">Descripcion</th>
                 </tr>
             </table>
         </div>
@@ -37,11 +37,11 @@
             <table class="table-prov">
                 @foreach($productos as $producto)
                 <tr>
+                    <th>{{$producto->img}}</th>
                     <th>{{$producto->Nombre}}</th>
                     <th>{{$producto->Cantidad}}</th>
-                    <th>{{$producto->Tipo_Producto}}</th>
-                    <th class="li1"><li></li></th>
-                    <th class="li2"><li></li></th>
+                    <th>{{$producto->Categoria}}</th>
+                    <th>{{$producto->Descripcion}}</th>
                 </tr>
                 @endforeach
                 <!-- <tr>
