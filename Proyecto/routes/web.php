@@ -21,43 +21,43 @@ Route::get('/menu', function () {
     return view('menu');
 });
 Route::get('/login', function () {
-    return view('paginas.Login.login');
+    return view('Login.login');
 });
 Route::get('/contraseña', function () {
-    return view('paginas.Login.contraseña');
+    return view('Login.contraseña');
 });
 Route::get('/registro', function () {
-    return view('paginas.Login.registro');
+    return view('Login.registro');
 });
 Route::get('/parte', function () {
-    return view('paginas.Login.parte');
+    return view('Login.parte');
 });
 Route::get('/home', function () {
     return view('home');
 });
 Route::get('/proveedores', function () {
-    return view('paginas.GestionProductos.proveedores');
+    return view('GestionProductos.proveedores');
 });
 Route::get('/calendario', function () {
-    return view('paginas.Informacion.calendario');
+    return view('Informacion.calendario');
 });
 Route::get('/ajustes', function () {
-    return view('paginas.ajustes');
+    return view('ajustes');
 });
 Route::get('/ayuda', function () {
-    return view('paginas.Informacion.ayuda');
+    return view('Informacion.ayuda');
 });
 Route::get('/categorias', function () {
-    return view('paginas.GestionProductos.categorias');
+    return view('GestionProductos.categorias');
 });
 Route::get('/clientes', function () {
-    return view('paginas.Informacion.clientes');
+    return view('Informacion.clientes');
 });
 Route::get('/entrada', function () {
-    return view('paginas.GestionExistencias.entrada');
+    return view('GestionExistencias.entrada');
 });
 Route::get('/nosotros', function () {
-    return view('paginas.Informacion.nosotros');
+    return view('Informacion.nosotros');
 });
 Route::get('/productos', [Items::class,'listarItems'])->name('productos.listar');
 
@@ -66,8 +66,8 @@ Route::get('/productos/agregar', [Items::class,'agregarItems'])->name('productos
 Route::post('/productos/agregar', [Items::class,'guardarItems'])->name('productos.guardar');
 
 Route::get('/salida&factura', function () {
-    return view('paginas.GestionExistencias.salida&factura');
+    return view('GestionExistencias.salida&factura');
 });
 Route::get('/terminos', function () {
-    return view('paginas.terminos');
+    return view('terminos');
 });

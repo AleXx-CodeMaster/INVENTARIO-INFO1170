@@ -10,11 +10,11 @@ class Items extends Controller
     public function listarItems(){
 
         $productos = DB::table('items')->get();
-        return view('paginas.GestionProductos.productos',compact('productos'));
+        return view('GestionProductos.productos',compact('productos'));
     }
     public function agregarItems(){
 
-        return view ('paginas.GestionProductos.AddProd');
+        return view ('GestionProductos.AddProd');
     }
 
     public function guardarItems(Request $request){
@@ -23,9 +23,9 @@ class Items extends Controller
             'ID_I' => $request->id,
             'Nombre' => $request->Nombre,
             'Cantidad' => $request ->Cantidad,
-            'Categoria' => $request ->Categoria,
-            'img' => $request ->img,
-            'Descripcion'=> $request ->Descripcion,
+            'Tipo_Producto' => $request ->Tipo_Producto,
+            'Prod_foto' => $request ->Prod_foto,
+            'Categoria'=> $request ->Categoria,
 
         ]);
         return redirect()->route('productos.listar');
