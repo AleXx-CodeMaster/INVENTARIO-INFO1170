@@ -10,7 +10,7 @@
 <body>
     <header id="cabecera">
         <ul>
-            <li><a href="{{route('SesionPrincipal')}}" class="active">Inicio</a></li>
+            <li><a href="{{route('login.store')}}" class="active">Inicio</a></li>
             <li class="menu-item">
                 <a href="#" class="active">Acerca de Nosotros</a>
                 <div class="dropdown-content">
@@ -67,7 +67,7 @@
                                         <input type="password" name="logpass" class="form-style" placeholder="Repita su nueva contraseña" id="logpass" autocomplete="off">
 
                                     </div>
-                                       <a href="{{route('SesionPrincipal')}}" class="btn mt-4">Realizar cambio de contraseña</a>
+                                       <a href="{{route('login.store')}}" class="btn mt-4">Realizar cambio de contraseña</a>
                                 </div>
                             </div>
                         </div>

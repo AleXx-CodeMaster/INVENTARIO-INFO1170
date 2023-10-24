@@ -10,7 +10,7 @@
 <body>
     <header id="cabecera">
         <ul>
-            <li><a href="{{route('SesionPrincipal')}}" class="active">Inicio</a></li>
+            <li><a href="{{route('login.store')}}" class="active">Inicio</a></li>
             <li class="menu-item">
                 <a href="#" class="active">Acerca de Nosotros</a>
                 <div class="dropdown-content">

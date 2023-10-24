@@ -10,7 +10,7 @@
 <body>
     <header id="cabecera">
         <ul>
-            <li><a href="{{route('SesionPrincipal')}}" class="active">Inicio</a></li>
+            <li><a href="{{route('inicio')}}" class="active">Inicio</a></li>
             <li class="menu-item">
                 <a href="#" class="active">Acerca de Nosotros</a>
                 <div class="dropdown-content">
@@ -67,31 +67,35 @@
                                     <div class="center-wrap">
                                         <!-- Envoltorio para centrar contenido -->
                                         <div class="section text-center">
+
                                             <!-- Sección para el contenido -->
                                             <h4 class="mb-4 pb-3">Inicia Sesión</h4>
                                             <!-- Encabezado para la sección de inicio de sesión -->
-                                            <div class="form-group">
-                                                <!-- Grupo de formulario para el correo electrónico -->
-                                                <input type="email" name="logemail" class="form-style" placeholder="Su correo electrónico" id="logemail" autocomplete="off">
-                                                <!-- Campo de entrada para el correo electrónico -->
-                                                <i class="input-icon uil uil-at"></i>
-                                                <!-- Icono de correo electrónico -->
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <!-- Grupo de formulario para la contraseña -->
-                                                <input type="password" name="logpass" class="form-style" placeholder="Su contraseña" id="logpass" autocomplete="off">
-                                                <!-- Campo de entrada para la contraseña -->
-                                                <i class="input-icon uil uil-lock-alt"></i>
-                                                <!-- Icono de candado -->
-                                            </div>
-                                            <a href="#" class="btn mt-4">Ingresar</a>
+                                            <form action="{{ route('login.store') }}" method="POST">
+                                            @csrf
+                                                <div class="form-group">
+
+                                                    <!-- Grupo de formulario para el correo electrónico -->
+                                                    <input type="email" name="logemail" class="form-style" placeholder="Su correo electrónico" id="logemail" autocomplete="off">
+
+                                                    <!-- Grupo de formulario para la contraseña -->
+                                                    <input type="password" name="logpass" class="form-style" placeholder="Su contraseña" id="logpass" autocomplete="off">
+                                                </div>
+                                                <button  type="submit" class="btn mt-4">Ingresar</button>
+
+                                            </form>
+
                                             <!-- Enlace para enviar el formulario de inicio de sesión -->
                                             <p class="mb-0 mt-4 text-center"><a href="cambioContraseña" class="link">Deseas realizar un cambio de contraseña?</a></p>
+
                                             <!-- Párrafo con enlace para recuperar contraseña -->
                                             <p class="mb-0 mt-4 text-center"><a href="RegistraTuEmpresa" class="link">Deseas registrar una empresa?</a></p>
+
                                             <!-- Párrafo con enlace para registro de empresa -->
+
                                             <p class="mb-0 mt-4 text-center"><a href="InicioDeEmpresa" class="link">Tienes una empresa o Cumples con algún Rol?</a></p>
                                             <!-- Párrafo con enlace para pertenecer a una empresa -->
+
                                         </div>
                                     </div>
                                 </div>
@@ -102,49 +106,57 @@
                                         <div class="section text-center">
                                             <!-- Sección para el contenido -->
                                             <h4 class="mb-4 pb-3">Regístrate</h4>
-                                            <!-- Encabezado para la sección de registro -->
-                                            <div class="form-group">
-                                                <!-- Grupo de formulario para el nombre completo -->
-                                                <input type="text" name="logname" class="form-style" placeholder="Su nombre completo" id="logname" autocomplete="off">
-                                                <!-- Campo de entrada para el nombre completo -->
-                                                <i class="input-icon uil uil-user"></i>
-                                                <!-- Icono de usuario -->
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <!-- Grupo de formulario para el Rut -->
-                                                <input type="number" name="yourut" class="form-style" placeholder="Su Rut (con el dígito verificador)" id="Rut" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                                                <!-- Campo de entrada para el rut(agregar implementacion de dígito verificador) -->
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <!-- Grupo de formulario para el correo electrónico -->
-                                                <input type="email" name="logemail" class="form-style" placeholder="Su correo electrónico" id="logemail" autocomplete="off">
-                                                <!-- Campo de entrada para el correo electrónico -->
-                                                <i class="input-icon uil uil-at"></i>
-                                                <!-- Icono de correo electrónico -->
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <!-- Grupo de formulario para la contraseña -->
-                                                <input type="password" name="logpass" class="form-style" placeholder="Su contraseña" id="logpass" autocomplete="off">
-                                                <!-- Campo de entrada para la contraseña -->
-                                                <i class="input-icon uil uil-lock-alt"></i>
-                                                <!-- Icono de candado -->
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <!-- Grupo de formulario para repetir la contraseña -->
-                                                <input type="password" name="logpass" class="form-style" placeholder="Repetir su contraseña" id="logpass" autocomplete="off">
-                                                <!-- Campo de entrada para repetir la contraseña -->
-                                                <i class="input-icon uil uil-lock-alt"></i>
-                                                <!-- Icono de candado -->
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <!-- Grupo de formulario para el nombre completo -->
-                                                <input type="text" name="namework" class="form-style" placeholder="Ingresa la empresa a la cual perteneces" id="logname" autocomplete="off" autocapitalize="characters">
-                                                <!-- Campo de entrada para el nombre completo -->
-                                                <i class="input-icon uil uil-user"></i>
-                                                <!-- Icono de usuario -->
-                                            </div>
-                                            <a href="#" class="btn mt-4">Registrarse</a>
-                                            <!-- Enlace para enviar el formulario de registro -->
+                                            <form action="">
+                                            @csrf
+                                                    <!-- Encabezado para la sección de registro -->
+                                                <div class="form-group">
+                                                    <!-- Grupo de formulario para el nombre completo -->
+                                                    <input type="text" name="logname" class="form-style" placeholder="Su nombre completo" id="logname" autocomplete="off">
+                                                    <!-- Campo de entrada para el nombre completo -->
+
+                                                    <!-- Icono de usuario -->
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <!-- Grupo de formulario para el Rut -->
+                                                    <input type="number" name="yourut" class="form-style" placeholder="Su Rut (con el dígito verificador)" id="yourut" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                                                    <!-- Campo de entrada para el rut(agregar implementacion de dígito verificador) -->
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <!-- Grupo de formulario para el correo electrónico -->
+                                                    <input type="email" name="logemail2" class="form-style" placeholder="Su correo electrónico" id="logemail2" autocomplete="off">
+                                                    <!-- Campo de entrada para el correo electrónico -->
+
+
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <!-- Grupo de formulario para la contraseña -->
+                                                    <input type="password" name="logpass" class="form-style" placeholder="Su contraseña" id="logpass" autocomplete="off">
+                                                    <!-- Campo de entrada para la contraseña -->
+
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <!-- Grupo de formulario para repetir la contraseña -->
+                                                    <input type="password" name="logpass" class="form-style" placeholder="Repetir su contraseña" id="logpass" autocomplete="off">
+                                                    <!-- Campo de entrada para repetir la contraseña -->
+
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <!-- Grupo de formulario para la fecha de nacimiento -->
+                                                    <input type="date" name="fecha_nacimiento" class="form-style" id="fecha_nacimiento" autocomplete="off">
+                                                    <!-- Campo de entrada para la fecha de nacimiento -->
+                                                </div>
+
+                                                <div class="form-group mt-2">
+                                                    <!-- Grupo de formulario para el nombre completo -->
+                                                    <input type="text" name="namework" class="form-style" placeholder="Ingresa la empresa a la cual perteneces" id="namework" autocomplete="off" autocapitalize="characters">
+                                                    <!-- Campo de entrada para el nombre completo -->
+
+                                                </div>
+                                                <button type="submit" href="#" class="btn mt-4">Registrarse</button>
+                                                <!-- Enlace para enviar el formulario de registro -->
+
+                                            </form>
+
                                         </div>
                                     </div>
                                 </div>

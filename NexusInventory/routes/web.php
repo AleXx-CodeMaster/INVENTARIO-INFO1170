@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\log_entriesController;
+
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +17,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//ZONA DE CONEXION DE PAGINAS
+
+
 //ZONA DE INICIO DE SESION
 
-Route::get('/', function () {
+Route::get('/login', function () {
     return view('LoginZone.InicioDeSesionYRegistro');
-})->name('SesionPrincipal'); // 'Ruta que me dijire al Inicio de sesion principal'
+})->name('inicio'); // 'Ruta que me dijire al Inicio de sesion principal'
+
+Route::post('/login' , [log_entriesController::class, 'store'])->name('login.store');
 
 Route::get('/cambioContraseña', function () {
     return view('LoginZone.cambioContraseña');
@@ -30,9 +39,6 @@ Route::get('/RegistraTuEmpresa', function () {
 Route::get('/InicioDeEmpresa', function () {
     return view('LoginZone.InicioDeEmpresa');
 });
-
-
-//PAGINAS
 
 Route::get('/ayuda', function () {
     return view('PAGINAS.ayuda');
@@ -95,5 +101,4 @@ Route::get('/ajustesempl', function () {
 Route::get('/menuprincipal', function () {
     return view('MenuPrincipal');
 });
-
 
