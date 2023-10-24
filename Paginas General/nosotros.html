@@ -75,12 +75,11 @@
             
                 function Datos_C(data){
                     contenidoNC.innerHTML = `
-                        <img src="${data[num_vol].Photo}" alt="Img de un Contribuidor">
-                        <p>${data[num_vol].Cargo}${data[num_vol].Nombre}</p>
+                        <img src="${data[num_vol].Photo}" alt="Img de un Contribuidor" id='imgAutores'>
+                        <p id='Nombre'>${data[num_vol].Cargo}${data[num_vol].Nombre}</p>
                         <p>${data[num_vol].Tipo_Contribucion}</p>
                         `
                 }
-            
                 boton_c.addEventListener("click", persona);
             </script>                        
     </div>
