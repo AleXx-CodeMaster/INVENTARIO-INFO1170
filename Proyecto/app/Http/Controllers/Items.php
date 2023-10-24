@@ -22,10 +22,15 @@ class Items extends Controller
         DB::table('items')->insert([
             'ID_I' => $request->id,
             'Nombre' => $request->Nombre,
-            'Cantidad' => $request ->Cantidad,
             'Tipo_Producto' => $request ->Tipo_Producto,
             'Prod_foto' => $request ->Prod_foto,
             'Categoria'=> $request ->Categoria,
+            'Descripcion'=> $request ->Descripcion,
+            'Proveedor'=> $request ->Proveedor,
+            'Ex_Inicial'=> $request ->Ex_Inicial,
+            'Ex_Actual'=> $request ->Ex_Actual,
+            'Precio_C'=> $request ->Precio_C,
+            'Precio_V'=> $request ->Precio_V
 
         ]);
         return redirect()->route('productos.listar');

@@ -5,12 +5,7 @@
 <header class="tittle">
     <h1>Categorias</h1>
     <hr>
-</header>
-<div>
-</div> <br>
-<div class="add">
-    <input type="submit" value="Nueva Categoria">
-</div> <br> <br> <br>
+</header> <br><br>
 <nav class="busqueda">
     <input type="submit" name="" id="" value="Buscar por nombre">
 </nav>

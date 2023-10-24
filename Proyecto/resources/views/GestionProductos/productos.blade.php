@@ -25,7 +25,8 @@
         <div class="prov2">
             <table class="table-prov2">
                 <tr>
-                    <th class="izq">Imagen</th>
+                    <th></th>
+                    <th class="izq"></th>
                     <th class="izq">Nombre</th>
                     <th class="izq">Cantidad</th>
                     <th class="der">Categoria</th>

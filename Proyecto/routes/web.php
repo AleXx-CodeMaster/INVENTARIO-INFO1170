@@ -51,7 +51,7 @@ Route::get('/categorias', function () {
     return view('GestionProductos.categorias');
 });
 Route::get('/clientes', function () {
-    return view('Informacion.clientes');
+    return view('clientes');
 });
 Route::get('/entrada', function () {
     return view('GestionExistencias.entrada');
@@ -69,5 +69,5 @@ Route::get('/salida&factura', function () {
     return view('GestionExistencias.salida&factura');
 });
 Route::get('/terminos', function () {
-    return view('terminos');
+    return view('Informacion.terminos');
 });
