@@ -53,7 +53,7 @@ Route::get('/categorias', function () {
     return view('GestionProductos.categorias');
 });
 Route::get('/clientes', function () {
-    return view('Informacion.clientes');
+    return view('clientes');
 });
 Route::get('/entrada', function () {
     return view('GestionExistencias.entrada');
@@ -63,11 +63,13 @@ Route::get('/nosotros', function () {
 });
 Route::get('/Products', [Contitems::class,'index'])->name('productos.index');
 
-Route::get('/Addprod', [Contitems::class,'prodcreate'])->name('Addprod.prodcreate');
+Route::get('/Addprod', [Contitems::class,'prodcreate'])->name('productos.prodcreate');
 
 Route::post('/Products', [Contitems::class,'guardarproducto'])->name('Products.guardarproducto');
 
-Route::get('/showprod',[Contitems::class,'devueltaalprincipio'])->name('showprod.devueltaalprincipio');
+Route::get('/betaconex/{items}',[Contitems::class,'show'])->name('showprod.show');
+
+Route::get('/Editar',[Contitems::class,'editprod'])->name('productos.edit');
 
 Route::get('/salida&factura', function () {
     return view('GestionExistencias.salida&factura');

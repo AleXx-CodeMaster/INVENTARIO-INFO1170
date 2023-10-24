@@ -12,22 +12,25 @@
         <div class="NameCat">
             <input type="submit" value="Buscar por Categoria">
             <input type="submit" value="Buscar por Nombre">
-        </div> <br>
+        </div><br>
         <select name="" id="">
             <option value="">Filtrar Categoria</option>
         </select>
     </nav> <br>
+    <a href="{{route('productos.prodcreate')}}" class="botton">Ingresar un producto</a>
     <section class="proovedores">
         <header class="prov-dat">
         </header>
         <div class="prov2">
             <table class="table-prov2">
                 <tr>
+                    <th class="izq">ID</th>
                     <th class="izq">Imagen</th>
                     <th class="izq">Nombre</th>
                     <th class="izq">Cantidad</th>
                     <th class="der">Categoria</th>
                     <th class="der">Precio</th>
+                    <th class="der">Editar</th>
                 </tr>
             </table>
         </div>
@@ -35,11 +38,13 @@
             <table class="table-prov">
                 @foreach($items as $item)
                 <tr>
+                    <th>{{$item->ID_I}}</th>    
                     <th>{{$item->img}}</th>
                     <th>{{$item->Nombre}}</th>
                     <th>{{$item->Ex_Actual}}</th>
                     <th>{{$item->Categoria}}</th>
                     <th>{{$item->Precio_V}}</th>
+                    <th><a href="{{route('productos.edit', $items) }}" class="button">Aqui</a></th>
                 </tr>
                 @endforeach
                 <!-- <tr>
