@@ -34,8 +34,6 @@ class Contitems extends Controller
 
         $items->save();
 
-        return redirect()->route('betaconex.showprod',$items);
-
     }
     public function showprod($id){
         $items = items::find($id);
