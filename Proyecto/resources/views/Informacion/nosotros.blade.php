@@ -46,7 +46,6 @@
                     <img src="https://us.123rf.com/450wm/robuart/robuart2012/robuart201201289/161103170-trabajadores-hombres-y-mujeres-investigando-y-desarrollando-informes-gr%C3%A1ficos-icono-de-negocios.jpg?ver=6" alt="Algun colach de trabajos" width="200px"> 
                 </div>
             </section>  
-
             <section Class = 'Contenedor' id="C3">
                 <div class ="Cont">
                     <h2>Contribuidores</h2>
@@ -68,7 +67,7 @@
                     if(num_vol === 5){
                         num_vol = 0;
                     }
-                    fetch('{{asset('json/Contribuidores.json')}}')
+                    fetch('Contribuidores.json')
                         .then( res => res.json())
                         .then( datos => {
                             Datos_C(datos)
@@ -77,12 +76,11 @@
             
                 function Datos_C(data){
                     contenidoNC.innerHTML = `
-                        <img src="${data[num_vol].Photo}" alt="Img de un Contribuidor">
-                        <p>${data[num_vol].Cargo}${data[num_vol].Nombre}</p>
+                        <img src="${data[num_vol].Photo}" alt="Img de un Contribuidor" id='imgAutores'>
+                        <p id='Nombre'>${data[num_vol].Cargo}${data[num_vol].Nombre}</p>
                         <p>${data[num_vol].Tipo_Contribucion}</p>
                         `
                 }
-            
                 boton_c.addEventListener("click", persona);
             </script>                        
     </div>
