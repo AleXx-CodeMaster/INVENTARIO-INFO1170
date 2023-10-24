@@ -1,0 +1,72 @@
+/* .CuerpoPagina h1{
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    color: rgba(22,24,56);
+    text-align: center;
+    font-size: 3rem;
+} */
+.CuerpoPagina hr{
+    border: none;
+    border-top: 2px solid  rgba(189,19,19);
+    width: 90%;
+    text-align: center;
+}
+.titulo{                    /*Estilo se podria aplicar para todos los titulo de la pagina */
+    grid-row: 1;
+    text-align: center;
+    font-size: 125%;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    color: rgba(22,24,56);
+    text-align: center;
+    font-size: 3rem;  
+}
+#BotonExistencia{
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+    margin-left: 2rem;
+}
+.G-Entrada form{                /*Selecionar todo el contendor que contiene a los selectores*/
+    display: block;
+    text-align: center;
+} 
+.Selector{                     
+    font-family: monospace;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    /* border-radius: 1rem; */
+}
+#ContTablas{
+    display: block;
+    margin: 3rem;
+
+}
+.tabla{
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid rgb(0, 0, 0)
+} 
+.tabla th{
+    padding:1rem;
+    border-radius: 1rem;
+
+}
+.tabla td{
+    text-align: center;
+}
+.tabla button{
+    border-radius: 50%;
+    padding: 1rem;
+}
+#AgregarDato{
+    background-color: rgb(0, 234, 247);
+}
+#EditarDato{
+    background-color: rgb(16, 16, 16);
+}
+#EliminarDato{
+    background-color: rgb(230, 41, 41);
+}

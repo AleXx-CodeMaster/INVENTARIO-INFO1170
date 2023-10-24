@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Existencia /Salida</title>
+    <link rel="stylesheet" href="../y_estilo.css"> 
+    <link rel="stylesheet" href="../New_style.css">
+</head>
+<body>
+    <!-- TABLA,  -->
+    <nav class="MenuIzq"></nav>
+    <div class="CuerpoPagina">
+        <div class="G-Salida">
+            <header class="prov-dat"> <h1 class="titulo">Gestion de existencia: Salida</h1></header>
+            <form>
+                <input type="number" placeholder="Buscar por numero de factura">
+                <input type="text" placeholder="Buscar cliente">
+                <input id='Button_Busq'type="submit" value="Buscar">
+            </form>
+            <hr>
+            <!-- tabla  
+                </table>-->
+            <div id="ContTablas">  
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th >Id</th> 
+                            <th >Factura</th>
+                            <th >Fecha</th>
+                            <th >Cliente Monto</th>
+                            <th >Total Pagado</th>
+                            <th >Debito</th>
+                            <th >Precio vendido</th>
+                            <th >Medio de Pago</th>
+                            <th >Pagos</th>
+                            <th >Abonar</th>
+                            <th >Imprimir</th>
+                            <th >Editar</th>
+                            <th >Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ContenedorDatos">
+                        <tr >
+                            <th >Num_id</th>
+                            <td> dato</td>
+                            <td> dato/td>
+                            <td> dato_</td>
+                            <td> dato </td>
+                            <td> dato </td>
+                            <td> dato </td>
+                            <td> dato </td>
+                            <td><button class="Pagos"></button></td>
+                            <td><button class="Abonar"></button></td>
+                            <td><button class="Imprimir"></button></td>
+                            <td><button id="EditarDato"></button></td> <!--Aca se muestran como id , estos , pero en relaidad son class , luego se cambiara , ya que luego cuado hagamos un api , necesitaremso que cada boton , tenga su id propio , para llamar el dato requerido-->
+                            <td><button id="EliminarDato"></button></td>      
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div> 
+    <script>
+        /*Api para generar nuevas filas a la tabla y integrar los datos , que se encuntren en la base de datos , actualemnte aun le falta procesos , 
+          es un molde de como se trabajara */
+        // var contenidoA3 = document.querySelector('#contenido_list')
+        // function Traer(){
+        //     fetch('usar mysql de base url')
+        //         .then( res => res.json())
+        //         .then( datos =>{
+        //             Lista(datos)
+        //         })
+        // }
+        // function Lista(datos){
+        //     contenidoA3.innerHTML = ''
+        //     for(let valor of datos){
+        //         contenidoA3.innerHTML += `
+        //         <tr >
+        //                     <th >${id}</th>
+        //                     <td> ${factura}</td>
+        //                     <td> ${date}</td>
+        //                     <td> ${cliente monto}</td>
+        //                     <td> ${total pagado}</td>
+        //                     <td> ${debito} </td>
+        //                     <td> ${pagos por}</td>
+        //                     <td><button  id="BS.${id}" class="Pagos"  onclick='funcionParaBoton1( ,Parametro de ide)'></button></td>
+        //                     <td><button  id="BS.${id}" class="Abonar"   onclick='funcionParaBoton2(, Parametro de ide)></button></td>
+        //                     <td><button  id="BS.${id}" class="Imprimir" onclick='funcionParaBoton3(,Parametro de ide)></button> </td>        
+                //             <td><button  id="BS.${id}" class="Editar"  onclick='funcionParaBoton1( ,Parametro de ide)'></button></td>
+        //                     <td><button  id="BS.${id}" class="Eliminar"   onclick='funcionParaBoton2(, Parametro de ide)></button></td>
+        //                 </tr>
+        //         `
+        //     }
+        // }
+    </script>
+</body>
+</html>
