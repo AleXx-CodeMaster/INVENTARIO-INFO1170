@@ -98,3 +98,19 @@
 .Pagos{
     background-color: rgb(54,151,207) ;
 }
+#imgAutores {
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+    width:  15rem;
+    height: 15rem;
+}
+#Boton_c {
+    
+    border-radius: 2px;
+    color: #500005;
+    border: 1px solid black;
+}
+#Nombre {
+    font-size:1.1rem; 
+}
