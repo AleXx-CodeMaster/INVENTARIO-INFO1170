@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+
+body {
+/* Estilos aplicados al cuerpo (body) de la página web */
+
+font-family: 'Poppins', sans-serif;
+/* Establece la fuente de texto utilizada en la página, en este caso, 'Poppins' y, si no está disponible, se usará una fuente genérica sans-serif. */
+
+font-weight: 300;
+/* Establece el peso de la fuente a 300, que generalmente se refiere a un peso de fuente ligero. */
+
+font-size: 15px;
+/* Establece el tamaño de fuente en 15 píxeles (px). */
+
+line-height: 1.7;
+/* Establece la altura de línea (espacio entre líneas) en 1.7 veces el tamaño de la fuente actual. Esto afecta al espaciado vertical entre las líneas de texto. */
+
+color: #06021d;
+/* Establece el color de texto en un tono de gris (#c4c3ca). */
+
+background-color: #ffffff;
+/* Establece el color de fondo del cuerpo en un tono de gris oscuro (#1f2029). */
+
+overflow-x: hidden;
+/* Oculta cualquier desbordamiento horizontal (scroll) en la página web. Esto puede evitar que aparezca una barra de desplazamiento horizontal en el navegador cuando el contenido se extiende más allá del ancho de la ventana del navegador. */
+}
+
+img {
+margin-top: -40%;
+margin-left: 130px;
+width: 800px;
+}
+
+a {
+/* Estilos aplicados a los enlaces (elementos <a>) */
+
+cursor: pointer;
+/* Cambia el cursor del mouse cuando se pasa sobre un enlace a una mano para indicar que es interactivo. */
+
+transition: all 200ms linear;
+/* Establece una transición suave de 200 milisegundos para todos los cambios de propiedades en los enlaces, lo que proporciona una animación suave cuando se interactúa con ellos. */
+
+text-decoration: none;
+}
+
+a:hover {
+/* Estilos aplicados a los enlaces cuando se pasa el cursor sobre ellos (estado de "hover") */
+
+text-decoration: none;
+/* Quita la decoración subrayada predeterminada de los enlaces cuando se pasa el cursor sobre ellos, lo que hace que los enlaces no se subrayen al pasar el mouse por encima. */
+}
+
+.link {
+/* Estilos aplicados a elementos con la clase "link" */
+
+color: #ffffff;
+/* Establece el color de texto para los elementos con la clase "link" en un tono de gris (#c4c3ca). */
+}
+
+.link:hover {
+/* Estilos aplicados a elementos con la clase "link" cuando se pasa el cursor sobre ellos (estado de "hover") */
+
+color: #1b0202;
+/* Cambia el color de texto a un tono de amarillo claro (#ffeba7) cuando se pasa el cursor sobre los elementos con la clase "link". */
+}
+
+h4 {
+/* Estilos aplicados a los encabezados de nivel 4 (elementos <h4>) */
+
+font-weight: 600;
+text-align: center;
+margin-left: -80px ;
+font-size: 25px;
+color: #ffffff;
+/* Establece el peso de la fuente en 600, que generalmente se refiere a un peso de fuente semibold (medio-negrita). */
+}
+
+h6 {
+text-align: right; /* Alinea el texto hacia la derecha */
+font-size: 15px;
+
+}
+
+h6 span {
+/* Estilos aplicados a elementos <span> dentro de elementos <h6> */
+position: relative;
+
+left: -160px;
+/* Estilos aplicados a elementos <span> dentro de elementos <h6> */
+
+padding: 0 60px;
+/* Agrega un espacio de relleno (padding) de 0 en la parte superior e inferior y 20 píxeles en los lados izquierdo y derecho de los elementos <span>. */
+
+text-transform: uppercase;
+/* Convierte el texto en mayúsculas (uppercase). */
+
+font-weight: 700;
+/* Establece el peso de la fuente en 700, que generalmente se refiere a un peso de fuente bold (negrita). */
+
+}
+
+.section {
+/* Estilos aplicados a elementos con la clase "section" */
+
+position: relative;
+/* Establece la posición relativa, lo que permite posicionar elementos hijos dentro de este elemento en relación con él. */
+
+width: 100%;
+/* Establece el ancho al 100% del ancho del elemento padre. */
+
+display: block;
+/* Establece el elemento para que se muestre como un bloque, ocupando todo el ancho disponible. */
+}
+
+.full-height {
+/* Estilos aplicados a elementos con la clase "full-height" */
+
+min-height: 100vh;
+/* Establece la altura mínima en 100vh (100% del alto de la ventana del navegador), lo que garantiza que el elemento ocupe al menos toda la altura de la ventana del navegador. */
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+/* Estilos aplicados a los elementos <input> de tipo "checkbox" tanto marcados como no marcados */
+
+position: absolute;
+/* Establece la posición absoluta, lo que significa que estos elementos se colocarán en una posición fija en relación con su elemento padre. */
+
+left: -9999px;
+/* Mueve los elementos muy lejos hacia la izquierda (-9999 píxeles) para que queden fuera de la vista en la pantalla. Esto se usa típicamente para ocultar los elementos de entrada de tipo "checkbox". */
+}
+
+/* CONFIGURACION DE LINEA QUE ESTA ANTES DEL PUNTO QUE SE DESPLAZARÁ DE IZQUIERDA A DERECHA*/
+.checkbox:checked + label,
+.checkbox:not(:checked) + label {
+/* Estilos aplicados a las etiquetas (<label>) asociadas a los elementos de tipo "checkbox" tanto marcados como no marcados */
+
+position: relative;
+/* Establece la posición relativa, lo que permite posicionar elementos hijos dentro de este elemento en relación con él. */
+
+left: -330px;
+/*Controlar su posicion en pantalla*/
+
+display: block;
+/* Establece el elemento para que se muestre como un bloque, ocupando todo el ancho disponible. */
+
+text-align: center;
+/* Centra el texto horizontalmente en el elemento. */
+
+width: 70px;
+/* Establece el ancho del elemento en 60 píxeles. */
+
+height: 20px;
+/* Establece la altura del elemento en 16 píxeles. */
+
+border-radius: 8px;
+/* Agrega un radio de borde de 8 píxeles, lo que crea esquinas redondeadas en el elemento. */
+
+padding: 0;
+/* Elimina cualquier espacio de relleno (padding) en el elemento. */
+
+margin-left: auto;
+/* Establece un margen superior e inferior de 10 píxeles y un margen izquierdo y derecho automáticos, lo que centra el elemento verticalmente y lo coloca en el centro horizontal de su contenedor. */
+
+cursor: pointer;
+/* Cambia el cursor del mouse a una mano para indicar que el elemento es interactivo. */
+
+background-color: hsl(221, 96%, 55%);
+/* Establece el color de fondo del elemento en un tono de amarillo claro (#ffeba7). */
+}
+
+/*CONFIGURACION DEL PUNTO DESPLAZADOR DE IZQUIERDA A DERECHA*/
+.checkbox:checked + label:before,
+.checkbox:not(:checked) + label:before {
+/* Estilos aplicados al pseudo-elemento ::before de las etiquetas (<label>) asociadas a los elementos de tipo "checkbox" tanto marcados como no marcados */
+
+position: absolute;
+/* Establece la posición absoluta para el pseudo-elemento, lo que permite colocarlo en una posición fija en relación con su elemento padre. */
+
+display: block;
+/* Establece el pseudo-elemento para que se muestre como un bloque. */
+
+width: 40px;
+/* Establece el ancho del pseudo-elemento en 36 píxeles. */
+
+height: 40px;
+/* Establece la altura del pseudo-elemento en 36 píxeles. */
+
+border-radius: 50%;
+/* Agrega un radio de borde de 50%, lo que crea un círculo alrededor del pseudo-elemento. */
+
+color: #ffffff;
+/* Establece el color del contenido del pseudo-elemento en un tono de amarillo claro (#ffeba7). */
+
+background-color: #080808;
+/* Establece el color de fondo del pseudo-elemento en negro (#000000). */
+
+font-family: 'unicons';
+/* Establece la fuente utilizada para el contenido del pseudo-elemento como 'unicons'. */
+
+content : '\eb4f';
+/* Agrega contenido al pseudo-elemento utilizando un carácter Unicode ('\eb4f'), que puede representar un icono o símbolo específico. */
+
+z-index: 20;
+/* Establece el índice z para el pseudo-elemento, lo que controla su posición en la pila de capas. */
+
+top: -10px;
+/* Desplaza el pseudo-elemento 10 píxeles hacia arriba desde la parte superior de su elemento padre. */
+
+left: -10px;
+/* Desplaza el pseudo-elemento 10 píxeles hacia la izquierda desde el lado izquierdo de su elemento padre. */
+
+line-height: 39px;
+/* Establece la altura de línea (espacio entre líneas) del contenido del pseudo-elemento en 36 píxeles. */
+
+text-align: center;
+/* Centra el contenido del pseudo-elemento horizontalmente. */
+
+font-size: 19px;
+/* Establece el tamaño de fuente del contenido del pseudo-elemento en 19 píxeles. */
+
+transition: all 0.5s ease;
+/* Agrega una transición suave de 0.5 segundos a todas las propiedades del pseudo-elemento, lo que proporciona una animación suave al interactuar con él. */
+}
+
+.checkbox:checked + label:before {
+/* Estilos aplicados al pseudo-elemento ::before de las etiquetas (<label>) asociadas a los elementos de tipo "checkbox" cuando están marcados */
+
+transform: translateX(44px) rotate(-270deg);
+/* Aplica una transformación que traslada (mueve) el pseudo-elemento 44 píxeles hacia la derecha y luego lo rota -270 grados en sentido contrario a las agujas del reloj. Esto suele utilizarse para crear una animación de cambio de estado en el checkbox, como un marcado de verificación cuando está seleccionado. */
+}
+
+.card-3d-wrap {
+/* Estilos aplicados al elemento con la clase "card-3d-wrap" */
+
+position: relative;
+/* Establece la posición relativa, lo que permite posicionar elementos hijos dentro de este elemento en relación con él. */
+
+width: 440px;
+/* Establece el ancho del elemento en 440 píxeles. */
+
+max-width: 100%;
+/* Establece el ancho máximo del elemento al 100% del ancho de su contenedor. */
+
+height: 450px;
+/* Establece la altura del elemento en 400 píxeles. */
+
+-webkit-transform-style: preserve-3d;
+/* Establece el estilo de transformación 3D para elementos en navegadores webkit (como Chrome y Safari). */
+
+transform-style: preserve-3d;
+/* Establece el estilo de transformación 3D para elementos en navegadores estándar. */
+
+perspective: 800px;
+/* Establece la perspectiva de la transformación 3D en 800 píxeles, lo que afecta la profundidad y el efecto 3D de los elementos hijos dentro de este contenedor. */
+
+margin-top: 60px;
+/* Establece un margen superior de 60 píxeles en el elemento. */
+
+margin-left: auto;
+
+left: -201px;
+
+}
+
+.card-3d-wrapper {
+/* Estilos aplicados al elemento con la clase "card-3d-wrapper" */
+
+width: 110%;
+/* Establece el ancho del elemento al 100% del ancho de su contenedor. */
+
+height: 110%;
+/* Establece la altura del elemento al 100% de la altura de su contenedor. */
+
+position: absolute;
+/* Establece la posición absoluta para el elemento, lo que permite posicionarlo en una posición fija en relación con su elemento padre. */
+
+top: 0;
+/* Coloca el elemento en la parte superior de su elemento padre. */
+
+left: 0;
+/* Coloca el elemento en la parte izquierda de su elemento padre. */
+
+-webkit-transform-style: preserve-3d;
+/* Establece el estilo de transformación 3D para elementos en navegadores webkit (como Chrome y Safari). */
+
+transform-style: preserve-3d;
+/* Establece el estilo de transformación 3D para elementos en navegadores estándar. */
+
+transition: all 600ms ease-out;
+/* Agrega una transición suave de 600 milisegundos con función de temporización "ease-out" (desaceleración al final) a todas las propiedades del elemento, lo que proporciona una animación suave al interactuar con él. */
+}
+
+.card-front, .card-back {
+/* Estilos aplicados a elementos con las clases "card-front" y "card-back" */
+
+width: 106%;
+/* Establece el ancho del elemento al 100% del ancho de su contenedor. */
+
+height: 106%;
+/* Establece la altura del elemento al 100% de la altura de su contenedor. */
+
+background-color: #bd1313;
+/* Establece el color de fondo del elemento en un tono de gris (#2a2b38). */
+
+background-position: bottom center;
+/* Alinea la posición de fondo en la parte inferior (bottom) y en el centro horizontal (center) del elemento. */
+
+background-repeat: no-repeat;
+/* Evita que el fondo se repita. */
+
+position: absolute;
+/* Establece la posición absoluta para el elemento, lo que permite posicionarlo en una posición fija en relación con su elemento padre. */
+
+border-radius: 40px;
+/* Agrega un radio de borde de 6 píxeles, lo que crea esquinas redondeadas en el elemento. */
+
+left: 0;
+/* Coloca el elemento en la parte izquierda de su elemento padre. */
+
+top: 0;
+/* Coloca el elemento en la parte superior de su elemento padre. */
+
+-webkit-transform-style: preserve-3d;
+/* Establece el estilo de transformación 3D para elementos en navegadores webkit (como Chrome y Safari). */
+
+transform-style: preserve-3d;
+/* Establece el estilo de transformación 3D para elementos en navegadores estándar. */
+
+-webkit-backface-visibility: hidden;
+/* Oculta el reverso del elemento en navegadores webkit, lo que es útil en transformaciones 3D para evitar problemas de visualización. */
+
+-moz-backface-visibility: hidden;
+/* Oculta el reverso del elemento en navegadores Mozilla (Firefox). */
+
+-o-backface-visibility: hidden;
+/* Oculta el reverso del elemento en navegadores Opera. */
+
+backface-visibility: hidden;
+/* Oculta el reverso del elemento en navegadores estándar. */
+}
+
+.card-back {
+/* Estilos aplicados al elemento con la clase "card-back" */
+
+transform: rotateY(180deg);
+/* Aplica una rotación en el eje Y de 180 grados al elemento, lo que gira el elemento y muestra su parte trasera (en un efecto de volteo 3D). Esto se utiliza para cambiar la vista del elemento desde su parte frontal a su parte trasera. */
+}
+
+.checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
+/* Estilos aplicados al elemento con la clase "card-3d-wrapper" que está precedido por un elemento con la clase "checkbox" marcado (~ indica un selector adyacente) y está dentro de un elemento con la clase "card-3d-wrap" */
+
+transform: rotateY(180deg);
+/* Aplica una rotación en el eje Y de 180 grados al elemento, lo que gira el elemento y muestra su parte trasera (en un efecto de volteo 3D). Esto se utiliza para cambiar la vista del elemento desde su parte frontal a su parte trasera cuando el checkbox está marcado. */
+}
+
+.center-wrap {
+/* Estilos aplicados al elemento con la clase "center-wrap" */
+
+position: absolute;
+/* Establece la posición absoluta para el elemento, lo que permite posicionarlo en relación con su elemento padre. */
+
+width: 100%;
+/* Establece el ancho del elemento al 100% del ancho de su contenedor. */
+
+padding: 0 35px;
+/* Establece un relleno de 0 píxeles en la parte superior e inferior y 35 píxeles en los lados izquierdo y derecho del elemento. */
+
+top: 50%;
+/* Coloca el elemento en la mitad superior de su elemento padre. */
+
+left: 0;
+/* Coloca el elemento en la parte izquierda de su elemento padre. */
+
+transform: translate(0, -50%) perspective(100px);
+/* Aplica una transformación que traslada el elemento 50% hacia arriba, lo que lo centra verticalmente en su elemento padre. También aplica una perspectiva de 100 píxeles, lo que afecta a las transformaciones 3D. */
+
+z-index: 20;
+/* Establece el índice z (profundidad) del elemento en 20, lo que controla su orden de apilamiento en relación con otros elementos. */
+
+display: block;
+/* Establece el elemento como un elemento de bloque, lo que hace que ocupe todo el ancho disponible en su contenedor. */
+}
+
+.form-group {
+/* Estilos aplicados a elementos con la clase "form-group" */
+
+position: relative;
+/* Establece la posición relativa para el elemento, lo que permite posicionar elementos hijos en relación con él. */
+
+display: block;
+/* Establece el elemento como un elemento de bloque, lo que hace que ocupe todo el ancho disponible en su contenedor. */
+
+margin: 0;
+/* Elimina el margen exterior del elemento. */
+
+padding: 0;
+/* Elimina el relleno interior del elemento. */
+}
+
+.form-style {
+/* Estilos aplicados a elementos con la clase "form-style" */
+
+padding: 13px 20px;
+/* Establece un relleno de 13 píxeles en la parte superior e inferior y 20 píxeles en los lados izquierdo y derecho del elemento. */
+
+padding-left: 55px;
+/* Agrega un relleno adicional de 55 píxeles en el lado izquierdo del elemento. */
+
+height: 47px;
+/* Establece la altura del elemento en 48 píxeles. */
+
+width: 70%;
+/* Establece el ancho del elemento al 100% del ancho de su contenedor. */
+
+font-weight: 500;
+/* Establece el peso de la fuente en 500 (generalmente es un valor entre 100 y 900 para controlar la negrita). */
+
+border-radius: 9px;
+/* Agrega un radio de borde de 4 píxeles, lo que crea esquinas ligeramente redondeadas en el elemento. */
+
+font-size: 14px;
+/* Establece el tamaño de fuente en 14 píxeles. */
+
+line-height: 22px;
+/* Establece la altura de línea en 22 píxeles, lo que controla el espacio entre las líneas de texto dentro del elemento. */
+
+letter-spacing: 0.5px;
+/* Agrega un espaciado de 0.5 píxeles entre los caracteres del texto. */
+
+outline: none;
+/* Elimina el resaltado de contorno al enfocar el elemento, lo que proporciona una apariencia más limpia. */
+
+color: #ffffff;
+/* Establece el color del texto en un tono de gris (#c4c3ca). */
+
+background-color: #161838;
+/* Establece el color de fondo del elemento en un tono oscuro (#1f2029). */
+
+border: none;
+/* Elimina los bordes del elemento. */
+
+-webkit-transition: all 200ms linear;
+/* Agrega una transición suave de 200 milisegundos con una función de temporización lineal a todas las propiedades del elemento en navegadores webkit (como Chrome y Safari). */
+
+transition: all 200ms linear;
+/* Agrega una transición suave de 200 milisegundos con una función de temporización lineal a todas las propiedades del elemento en navegadores estándar. */
+
+box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
+/* Agrega una sombra al elemento con un desplazamiento vertical de 4 píxeles, un desplazamiento horizontal de 0, un radio de difuminado de 8 píxeles y un color de sombra con un nivel de transparencia. */
+margin-top: 1%;
+/*separacion entre filas de ingreso de datos*/
+}
+
+.form-styl:focus,
+.form-style:active {
+  /* Cuando un elemento con la clase .form-styl está en estado de enfoque (focus) o activo (active): */
+
+  border: none; /* Elimina el borde del elemento. */
+  outline: none; /* Elimina el contorno predeterminado al enfocar el elemento. */
+  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2); /* Aplica una sombra al elemento con desplazamiento y opacidad. */
+}
+
+.input-icon {
+/* Estilo para elementos con la clase .input-icon: */
+
+position: absolute; /* Posiciona el elemento de forma absoluta en su contenedor. */
+top: 0; /* Lo sitúa en la parte superior de su contenedor. */
+left: 18px; /* Lo desplaza 18 píxeles desde la izquierda de su contenedor. */
+height: 48px; /* Establece la altura del elemento en 48 píxeles. */
+font-size: 24px; /* Define el tamaño de fuente en 24 píxeles. */
+line-height: 48px; /* Establece la altura de línea en 48 píxeles. */
+text-align: left; /* Alinea el texto a la izquierda dentro del elemento. */
+color: #ffeba7; /* Define el color del texto en un tono de amarillo (#ffeba7). */
+-webkit-transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades con prefijo -webkit-. */
+transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades. */
+}
+
+
+.form-group input:-ms-input-placeholder {
+/* Estilo para el placeholder en los navegadores Internet Explorer y Microsoft Edge: */
+
+color: #e1dfe9; /* Color del texto del placeholder. */
+opacity: 0.7; /* Opacidad del placeholder, lo hace un poco menos visible. */
+-webkit-transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades con prefijo -webkit-. */
+transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades. */
+}
+
+.form-group input::-moz-placeholder {
+/* Estilo para el placeholder en navegadores basados en Gecko (Firefox, etc.): */
+
+color: #fcfbff; /* Color del texto del placeholder. */
+opacity: 0.7; /* Opacidad del placeholder, lo hace un poco menos visible. */
+-webkit-transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades con prefijo -webkit-. */
+transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades. */
+}
+
+.form-group input:-moz-placeholder  {
+/* Estilo para el placeholder en navegadores basados en Gecko (Firefox, etc.): */
+
+color: #ffffff; /* Color del texto del placeholder. */
+opacity: 0.7; /* Opacidad del placeholder, lo hace un poco menos visible. */
+-webkit-transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades con prefijo -webkit-. */
+transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades. */
+}
+
+.form-group input::-webkit-input-placeholder  {
+/* Estilo para el placeholder en navegadores webkit (Safari, Chrome, etc.): */
+
+color: #ffffff; /* Color del texto del placeholder. */
+opacity: 0.7; /* Opacidad del placeholder, lo hace un poco menos visible. */
+-webkit-transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades con prefijo -webkit-. */
+transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades. */
+}
+
+.form-group input:focus:-ms-input-placeholder  {
+/* Estilo para el placeholder en estado de enfoque en Internet Explorer y Microsoft Edge: */
+
+opacity: 0; /* Hace que el placeholder desaparezca cuando el campo está enfocado. */
+-webkit-transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades con prefijo -webkit-. */
+transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades. */
+}
+
+.form-group input:focus::-moz-placeholder  {
+/* Estilo para el placeholder en estado de enfoque en navegadores basados en Gecko (Firefox, etc.): */
+
+opacity: 0; /* Hace que el placeholder desaparezca cuando el campo está enfocado. */
+-webkit-transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades con prefijo -webkit-. */
+transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades. */
+}
+
+.form-group input:focus:-moz-placeholder  {
+/* Estilo para el placeholder en estado de enfoque en navegadores basados en Gecko (Firefox, etc.): */
+
+opacity: 0; /* Hace que el placeholder desaparezca cuando el campo está enfocado. */
+-webkit-transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades con prefijo -webkit-. */
+transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades. */
+}
+
+.form-group input:focus::-webkit-input-placeholder  {
+/* Estilo para el placeholder en estado de enfoque en navegadores webkit (Safari, Chrome, etc.): */
+
+opacity: 0; /* Hace que el placeholder desaparezca cuando el campo está enfocado. */
+-webkit-transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades con prefijo -webkit-. */
+transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades. */
+}
+
+.btn {
+/* Estilo para elementos con la clase .btn: */
+
+border-radius: 4px; /* Agrega un borde redondeado de 4 píxeles alrededor del botón. */
+height: 44px; /* Establece la altura del botón en 44 píxeles. */
+font-size: 16px; /* Define el tamaño de fuente en 16 píxeles. */
+font-weight: 600; /* Establece el peso de la fuente en negrita. */
+text-transform: uppercase; /* Convierte el texto a mayúsculas. */
+-webkit-transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades con prefijo -webkit-. */
+transition: all 200ms linear; /* Aplica una transición suave de 200ms a todas las propiedades. */
+padding: 0 20px; /* Agrega un relleno horizontal de 20 píxeles y ningún relleno vertical al botón. */
+letter-spacing: 2px; /* Define el espaciado entre caracteres en 2 píxeles. */
+display: -webkit-inline-flex; /* Establece la visualización como un contenedor en línea con propiedades flexibles para navegadores con prefijo -webkit-. */
+display: -ms-inline-flexbox; /* Establece la visualización como un contenedor en línea con propiedades flexibles para navegadores con prefijo -ms-. */
+display: inline-flex; /* Establece la visualización como un contenedor en línea con propiedades flexibles. */
+-webkit-aling-items: center; /* Alinea los elementos verticalmente al centro en navegadores con prefijo -webkit-. */
+-moz-aling-items: center; /* Alinea los elementos verticalmente al centro en navegadores con prefijo -moz-. */
+-ms-aling-items: center; /* Alinea los elementos verticalmente al centro en navegadores con prefijo -ms-. */
+align-items: center; /* Alinea los elementos verticalmente al centro. */
+-webkit-justify-content: center; /* Alinea los elementos horizontalmente al centro en navegadores con prefijo -webkit-. */
+-moz-justify-content: center; /* Alinea los elementos horizontalmente al centro en navegadores con prefijo -moz-. */
+-ms-justify-content: center; /* Alinea los elementos horizontalmente al centro en navegadores con prefijo -ms-. */
+justify-content: center; /* Alinea los elementos horizontalmente al centro. */
+text-align: center; /* Centra el texto horizontalmente dentro del botón. */
+border: none; /* Elimina el borde del botón. */
+margin-top: 3%; /* Agrega un margen superior del 3% al botón. */
+background-color: #ffeba7; /* Establece el color de fondo del botón en un tono de amarillo (#ffeba7). */
+color: #000000; /* Establece el color del texto del botón en negro (#000000). */
+}
+
+.btn:active,
+.btn:focus {
+  /* Estilo para elementos con la clase .btn en estado activo o en foco: */
+
+  background-color: #102770; /* Cambia el color de fondo del botón cuando está activo o en foco a un tono de azul (#102770). */
+  color: #ffeba7; /* Cambia el color del texto del botón a amarillo (#ffeba7) cuando está activo o en foco. */
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2); /* Agrega una sombra al botón cuando está activo o en foco para darle un efecto visual. */
+}
+
+.btn:hover {
+  /* Estilo para elementos con la clase .btn cuando el cursor se encuentra sobre el botón: */
+
+  background-color: #102770; /* Cambia el color de fondo del botón cuando se coloca el cursor sobre él a un tono de azul (#102770). */
+  color: #ffeba7; /* Cambia el color del texto del botón a amarillo (#ffeba7) cuando se coloca el cursor sobre él. */
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2); /* Agrega una sombra al botón cuando se coloca el cursor sobre él para darle un efecto visual. */
+}
+
+/* Estilos para el menú desplegable */
+.menu-item {
+position: relative;
+}
+
+.dropdown-content {
+display: none;
+position: fixed; /* Cambia de 'absolute' a 'fixed' para ocupar toda la ventana */
+top: 0;
+left: 0;
+width: 100%; /* Ancho del 100% para cubrir toda la ventana */
+height: 35%; /* Alto del 100% para cubrir toda la ventana */
+background-color: rgba(249, 249, 249, 0.767); /* Color de fondo transparente */
+border: none; /* Quitamos el borde */
+z-index: 999; /* Un valor alto para que aparezca por encima del cuadro de registro */
+padding: 20px; /* Añadimos un espacio de relleno al contenido del cuadro */
+box-sizing: border-box; /* Asegura que el relleno no afecte el tamaño total */
+text-align: auto; /* Centramos el contenido verticalmente */
+}
+
+.menu-item:hover .dropdown-content {
+/* Estilo para el contenido del menú desplegable cuando el elemento .menu-item está en estado hover (cursor sobre él): */
+
+display: block; /* Muestra el contenido del menú desplegable cuando el elemento está en estado hover. */
+}
+
+#cabecera ul {
+/* Estilo para listas desordenadas dentro del elemento con el id cabecera: */
+
+display: flex; /* Muestra los elementos de la lista como un flex container. */
+justify-content: flex-end; /* Justifica los elementos en el extremo derecho del contenedor flex. */
+align-items: center; /* Alinea verticalmente los elementos al centro del contenedor. */
+}
+
+#cabecera ul li {
+/* Estilo para elementos de lista dentro del elemento con el id cabecera: */
+list-style: none; /* Elimina los marcadores de lista. */
+margin-left: 10px; /* Agrega un margen izquierdo de 10px a cada elemento de lista. */
+}
+
+#cabecera ul li a {
+/* Estilo para los enlaces dentro de los elementos de lista en el elemento con el id cabecera: */
+font-size: 20px; /* Establece el tamaño de fuente en 20px. */
+text-decoration: none; /* Elimina la decoración de subrayado de los enlaces. */
+padding: 8px 60px; /* Agrega un relleno vertical de 8px y un relleno horizontal de 60px a los enlaces. */
+color: var(--primary); /* Establece el color de texto utilizando una variable CSS llamada --primary. */
+border-radius: 30px; /* Agrega un borde redondeado de 30px a los enlaces. */
+}
+#bodegaRango {
+/* Estilo para el elemento con el id bodegaRango: */
+width: 410px; /* Establece el ancho del elemento en 410px. */
+height: 67px; /* Establece la altura del elemento en 67px. */
+}

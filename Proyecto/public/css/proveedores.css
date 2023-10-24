@@ -1,0 +1,100 @@
+.tittle{
+    text-align: center;
+    font-size: 125%;
+}
+.tittle h1{
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    color: rgba(22,24,56);
+    text-align: center;
+    font-size: 3rem;
+    padding: 0px 0px 20px 0px;
+}
+.tittle hr{
+    border-top: 2px solid rgba(189,19,19);
+    width: 90%;
+    text-align: center;
+}
+.add{
+    text-align: left;
+    margin-left: 50px;
+
+}
+.add input{
+    font-family: monospace;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 25%;
+    padding: 15px;
+    right: 25%;
+}
+.busqueda{
+    text-align: center;
+    word-spacing: 50px;
+}
+.busqueda input{
+    font-family: monospace;
+    background: white;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 25%;
+    right: 25%;
+}
+.prov{
+    padding: 20px 50px 50px 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.prov-border{
+    border-radius: 15px;
+    overflow: hidden;
+}
+.table-prov{
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.table-prov th{
+    width: 80px;
+    height: 100px;
+    padding: 0px 0px 0px 17px;
+    justify-content: space-between;
+    text-align: left;
+}
+.table-prov th.li1{
+    width: 0px;
+    font-size: 70px;
+    text-align: right;
+    color: blue;
+}
+.table-prov th.li2{
+    width: 0px;
+    font-size: 70px;
+    text-align: right;
+    color: red;
+}
+
+.prov2{
+    padding: 50px 50px 0px 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.table-prov2{
+    width: 100%;
+
+}
+.table-prov2 th{
+    padding: 0px 50px 0px 20px;
+    text-align: left;
+}
+.table-prov tr:not(:last-child) th {
+    border-bottom: 2px solid black;
+}
+.table-prov tr:last-child th {
+    border-bottom: none;
+}

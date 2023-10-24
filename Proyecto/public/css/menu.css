@@ -1,0 +1,109 @@
+/* Aca se especifica que el cuerpo de la pagina estara dividida en columnas
+   esto ms que nada para poder trabajar los objetos de mejor forma , y reducir el codigo,
+   ya que de este modo se evita estar especificando cada apartado*/
+   * body {
+    display: grid;    /*Indicar que se trabajara con columnas y filas para posicionar los objetos*/
+    margin: 0;        /* Esto elimina el margen alrededor del cuerpo */
+    padding: 0;       /* Esto elimina el relleno alrededor del cuerpo */
+    font-family:monospace;
+    flex-grow: 1;
+    background: #f5f7fa;
+    grid-template-columns: 20rem auto; /* Esto crea dos columnas: una de 200px para el menú lateral y otra que ocupa el espacio restante para el contenido y el menú superior */
+}
+/* Aca se indicaria el menu que se encuntra en la izquirda que tomara la
+    1/2 de la pagina en formato de la anchura*/
+.MenuIzq {
+    height: 120vh;
+    width: 50vh;
+    background-color: rgba(22,24,56);            /*El color de fondo de este contenedor*/
+    grid-column: 1;                                         /*Indica que ocupara la columna 1 de la pagina*/
+    box-shadow: 0.1rem 0.2rem 0.2rem rgba(4, 4, 4, 0.615);;  /* sobmbra para el bloque |posibilidad de borrrar ma´s adelante|*/
+    margin-bottom:auto;
+    border-right: 3px solid black;
+    position: fixed;                             /*Colacarle un borde*/
+}
+
+.MenuIzq a,summary{
+    width: 100%;
+    list-style-type: none;
+    text-decoration: none;
+}
+/* Este aparrtado seria para el 2/2 de la pagina en sentido de lo que ocupara
+  Y es donde cada pagina cambiara , se tiene la idea de que el estilo de la pagina
+   se coloque en  un 2 archivo para evitar , tener muchos codigos css */
+.CuerpoPagina{
+    grid-column: 2;                  /*Ocupara la columna 2 de la pagina*/
+}
+/*A continuacion se le colacar estilo a cada objeto que este menu , se recomienda que si se llega agregar mas etiquetas en el menu y se le quiere colocar
+   estilos , lo coloque devajo del comentario que dice "NUEVO" */
+/*ESTILO PARA EL BLOQUE MENU DE Pagina : 'paginaGENERAL'*/
+*.Part1_Menu1 {
+    display:block;                 /*Indicar que este sera un bloque*/
+    border: 1px solid black;     /*Indicar el borde del bloque*/
+    border-bottom: none;           /*Indicar el borde de inferior no tendra*/
+    border-radius: 1px;            /*indicar que tendra un borde de radios de 1 px*/
+    font-family:monospace;         /*Estilo de letra*/
+    font-size: 1rem;               /*Tamaño de letra*/
+    /*Codigo para el menu donde estara los datos de la pagina*/
+}
+/*Estilo para el bloque que contendra la informacion del usuario*/
+#INF_Usuer{
+    background-color: rgba(22,24,56);
+    color: rgba(255,255,255,0.669);
+    display: flex;  /*Ïndicar que sera un bloque que ocupas los espacios vacíos*/
+    margin: 0.5rem;
+    padding: 0.4rem;
+}
+/*Estilo para los parrafos , esto esto mas que nada, es para poder ajustarlo y especificar estilo
+  ah estos datos que apareceran en pantalla, que serán pertenecientes del usario, y
+  que posiblemente los datos si son muy grandes no se salgan de pantalla**/
+#bloque_de_Parrafo{
+    display: block;
+    list-style: none;
+    width: 80%;
+    font-size: 13px;
+}
+/*Estilo para los BOTONES de configuración pertenecientes del menu*/
+#B_configuracion{
+    background-color:  rgba(205, 206, 206, 0.535);  /*Colocar una funcion para que este tenga el color de fondo */
+    border: none;  /*eliminar contontorno del boton*/
+    float: right;
+    margin-right: 2rem;
+    padding: 0.6rem;
+    /*Codigo para el boton*/
+}
+/*Estilo para la IMAGEN del usuario */
+#ImagenUsuario {
+    width: 100px;
+    height: 100px;
+    border-radius: 4rem;
+    border: 4px solid rgba(255,255,255,0.142);
+  }
+/*ESTILO  Para la segunda parte del menu, donde estan las opciones*/
+*.Part1_Menu2 {
+    display:block;
+    font-size: 1rem;
+    /*Codigo de todas las opciones disponibles en el menu*/
+}
+/*Estilo para el encabezado del menu "Apartado del Menu"*/
+nav label{
+    display: block;
+    background-color:  rgba(0, 0, 0, 0.879);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+/* Estilo para todos los URL del menu*/
+nav a{
+    color: white;   /* URL de color negro */
+    text-decoration: none;            /*Quitar linia de URL*/
+}
+/* Estilo para todos los li del menu*/
+nav ul li {
+    color: white;
+    margin-bottom: 0.5em;  /*Esto agrega un espacio debajo de cada elemento de la lista */
+}
+
+.Part1_Menu1 ul{
+    list-style-type: none;
+}
