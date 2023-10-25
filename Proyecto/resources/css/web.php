@@ -1,12 +1,8 @@
 <?php
 
-use App\Http\Controllers\Contitems;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\FormularioController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Items;
-use App\Http\Controllers\Contempresas;
-use App\Http\Controllers\Contclientes;
-use App\Http\Controllers\FormularioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,14 +36,9 @@ Route::get('/parte', function () {
 Route::get('/home', function () {
     return view('home');
 });
-Route::get('/Proveedores', [Contempresas::class,'index'])->name('empresas.index');
-
-Route::get('/Addempre',[Contempresas::class,'empcreador'])->name('empresas.create');
-
-Route::post('/Proveedores',[Contempresas::class,'guardarempresas'])->name('empresas.store');
-
-Route::get('/betaconex/{empresas}',[Contitems::class,'show'])->name('empresas.show');
-
+Route::get('/proveedores', function () {
+    return view('GestionProductos.proveedores');
+});
 Route::get('/calendario', function () {
     return view('Informacion.calendario');
 });
@@ -60,36 +51,29 @@ Route::get('/ayuda', function () {
 Route::get('/categorias', function () {
     return view('GestionProductos.categorias');
 });
-Route::get('/clientes', [Contclientes::class,'index'])->name('clientes.index');
-
-Route::get('/Addclientes', [Contclientes::class, 'clientescreate'])->name('clientes.create');
-
-Route::post('/clientes', [Contclientes::class, 'guardarclientes'])->name('clientes.store');
-
-Route::get('/betaconex/{clientes}', [Contclientes::class, 'show'])->name('clientes.show');
-
+Route::get('/clientes', function () {
+    return view('clientes');
+});
 Route::get('/entrada', function () {
     return view('GestionExistencias.entrada');
 });
 Route::get('/nosotros', function () {
     return view('Informacion.nosotros');
 });
-Route::get('/Products', [Contitems::class,'index'])->name('productos.index');
+Route::get('/productos', [Items::class,'listarItems'])->name('productos.listar');
 
-Route::get('/Addprod', [Contitems::class,'prodcreate'])->name('productos.prodcreate');
+Route::get('/productos/agregar', [Items::class,'agregarItems'])->name('productos.agregar');
 
-Route::post('/Products', [Contitems::class,'guardarproducto'])->name('Products.guardarproducto');
+Route::post('/productos/agregar', [Items::class,'guardarItems'])->name('productos.guardar');
 
-Route::get('/betaconex/{items}',[Contitems::class,'show'])->name('showprod.show');
+Route::get('/formulario', [FormularioController::class, 'index'])->name('formulario');
 
-Route::get('/betaconex/{item}/edit',[Contitems::class,'editprod'])->name('productos.edit');
+Route::post('/procesar-formulario', [FormularioController::class, 'procesarFormulario'])->name('procesar.formulario');
 
 Route::get('/salida&factura', function () {
     return view('GestionExistencias.salida&factura');
 });
 Route::get('/terminos', function () {
-    return view('terminos');
+    return view('Informacion.terminos');
 });
-Route::get('/escaner', [FormularioController::class,'index'])->name('formulario');
 
-Route::post('/escaner',[FormularioController::class,'procesarFormulario'])->name('procesar.formulario');
