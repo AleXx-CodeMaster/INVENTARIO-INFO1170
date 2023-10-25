@@ -31,6 +31,6 @@ class Contclientes extends Controller
     }
     public function show($clientes){ 
 
-        return view('betaconex.showprod', compact('clientes'));
+        return view('betaconex.showclientes', compact('clientes'));
     }
 }

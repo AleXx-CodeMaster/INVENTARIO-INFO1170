@@ -36,8 +36,8 @@
                 <a href="clientes" class="boton">Clientes</a>
             </nav>
             <nav>
-                <a href="Proveedores" class="boton">Proveedores</a>
-                <a href="Products" class="boton">Producto</a>
+                <a href="proveedores" class="boton">Proveedores</a>
+                <a href="productos" class="boton">Producto</a>
                 <a href="categorias" class="boton">Categorias</a>
             </nav>
             <nav>
@@ -49,6 +49,9 @@
                 <a href="nosotros" class="boton">Nosotros</a>
                 <a href="ayuda" class="boton">Ayuda</a>
                 <a href="terminos" class="boton">Terminos y Reglamentos</a>
+            </nav>
+            <nav>
+                <a href="escaner" class="boton">Escaner</a>
             </nav>
         </nav>
     </div>

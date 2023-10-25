@@ -37,7 +37,7 @@ class contempresas extends Controller
     }
     public function show($empresas){ 
 
-        return view('betaconex.showprod', compact('empresas'));
+        return view('betaconex.showempresa', compact('empresas'));
     }
     
 }
