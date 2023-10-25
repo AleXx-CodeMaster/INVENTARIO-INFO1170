@@ -2,8 +2,45 @@
 
 @section('menu')
 <title>Terminos</title>
+<div class="CuerpoPagina">
+    <header> <h1 class="tittle"> Terminos&Condiciones</h1>
+             <h3 id="h3">Reglamentos de NexuIventory</h3></header>
+    <section class="Reglamentos">
+        <div id="Informacion">
+            <ul class="contenido_list">
+            </ul>
+        </div>
+        <div>
+            <p id="Info"> Al utilizar la plataforma de gestión de inventario de NexusInventori, usted acepta estar sujeto a estos términos y condiciones. Si no está de acuerdo con alguno de estos términos, le recomendamos que no utilice nuestros servicios. Si tiene alguna pregunta o inquietud, no dude en ponerse en contacto con nosotros. </p>
+        </div>
+    </section>
+</div>
+<script>
+    var contenidoA3 = document.querySelector('.contenido_list')
+    function Traer(){
+        fetch('json/Terminos_condiciones.json')
+            .then( res => res.json())
+            .then( datos =>{
+                Lista(datos)
+            })
+    }
+    function Lista(datos){
+        contenidoA3.innerHTML = ''
+        for(let valor of datos){
+            contenidoA3.innerHTML += `
+            <li>
+                <h4 id="h4">${valor.Condicion}</h4>
+                <P>${valor.Detalles}</p>
+            </li>
+            `
+        }
+    }
+    Traer()
+</script>
 @endsection
 
 @section('css')
-    <link rel="stylesheet" href="{{asset('css/')}}">
+    <link rel="stylesheet" href="{{asset('css/stilo.css')}}">
+    <link rel="stylesheet" href="{{asset('css/New_style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/y_estilo.css')}}">
 @endsection
