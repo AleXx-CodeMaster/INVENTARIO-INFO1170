@@ -71,3 +71,6 @@ Route::get('/salida&factura', function () {
 Route::get('/terminos', function () {
     return view('Informacion.terminos');
 });
+Route::get('/codigo_barra', function () {
+    return view('codigo_barra');
+});

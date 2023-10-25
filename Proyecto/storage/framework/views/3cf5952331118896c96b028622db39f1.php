@@ -26,6 +26,7 @@
                 <li><a href="home">Home</a></li>
                 <li><a href="calendario">Calendario</a></li>
                 <li><a href="clientes">Clientes</a></li>
+                <li><a href="codigo_barra">Codigo de Barras</a></li>
             </ul>
             <hr>
             <ul>
