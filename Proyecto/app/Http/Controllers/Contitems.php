@@ -42,9 +42,6 @@ class Contitems extends Controller
 
         return view('betaconex.showprod', compact('items'));
     }
-    public function editprod(){
+    
+ }
 
-        return view('betaconex.updateprod');
-    }
-
-}
