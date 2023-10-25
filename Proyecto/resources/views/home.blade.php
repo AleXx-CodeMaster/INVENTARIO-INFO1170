@@ -37,7 +37,7 @@
             </nav>
             <nav>
                 <a href="proveedores" class="boton">Proveedores</a>
-                <a href="Products" class="boton">Producto</a>
+                <a href="productos" class="boton">Producto</a>
                 <a href="categorias" class="boton">Categorias</a>
             </nav>
             <nav>

@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\Contitems;
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Items;
 use App\Http\Controllers\Contempresas;
@@ -60,6 +58,9 @@ Route::get('/ayuda', function () {
 Route::get('/categorias', function () {
     return view('GestionProductos.categorias');
 });
+Route::get('/clientes', function () {
+    return view('clientes');
+});
 Route::get('/clientes', [Contclientes::class,'index'])->name('clientes.index');
 
 Route::get('/Addclientes', [Contclientes::class, 'clientescreate'])->name('clientes.create');
@@ -74,7 +75,11 @@ Route::get('/entrada', function () {
 Route::get('/nosotros', function () {
     return view('Informacion.nosotros');
 });
-Route::get('/Products', [Contitems::class,'index'])->name('productos.index');
+Route::get('/productos', [Items::class,'listarItems'])->name('productos.listar');
+
+Route::get('/productos/agregar', [Items::class,'agregarItems'])->name('productos.agregar');
+
+Route::post('/productos/agregar', [Items::class,'guardarItems'])->name('productos.guardar');
 
 Route::get('/Addprod', [Contitems::class,'prodcreate'])->name('productos.prodcreate');
 
@@ -88,7 +93,10 @@ Route::get('/salida&factura', function () {
     return view('GestionExistencias.salida&factura');
 });
 Route::get('/terminos', function () {
-    return view('terminos');
+    return view('Informacion.terminos');
+});
+Route::get('/codigo_barra', function () {
+    return view('codigo_barra');
 });
 Route::get('/escaner', [FormularioController::class,'index'])->name('formulario');
 

@@ -3,62 +3,59 @@
 @section('menu')
 <title>Salida / Factura</title>
 <div class="CuerpoPagina">
-    <header class="tittle">
-        <h1>Salida / Factura    </h1>
-        <hr>
-    </header> <br>
-    <nav class="busqueda">
-        <input type="submit" name="" id="" value="Buscar por numero de factura">
-        <input type="submit" name="" id="" value="Buscar Cliente">
-    </nav>
-    <section class="proovedores">
-        <header class="prov-dat">
-        </header>
-        <div class="prov2">
-            <table class="table-prov2">
-                <tr>
-                    <th>Factura</th>
-                    <th>Fecha</th>
-                    <th>Monto del Cliente</th>
-                    <th>Total Pagado</th>
-                    <th>Debido</th>
-                    <th>Vendido por</th>
-                    <th>Pagado por</th>
-                    <th>pagos</th>
-                    <th>abonar</th>
-                    <th>imprimir</th>
-                    <th>editar</th>
-                    <th>eliminar</th>
-                </tr>
-            </table>
+        <div class="G-Salida">
+            <header class="prov-dat"> <h1 class="titulo">Gestion de existencia: Salida</h1></header>
+            <form>
+                <input type="number" placeholder="Buscar por numero de factura">
+                <input type="text" placeholder="Buscar cliente">
+                <input id='Button_Busq'type="submit" value="Buscar">
+            </form>
+            <hr>
+            <!-- tabla  
+                </table>-->
+            <div id="ContTablas">  
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th >Id</th> 
+                            <th >Factura</th>
+                            <th >Fecha</th>
+                            <th >Cliente Monto</th>
+                            <th >Total Pagado</th>
+                            <th >Debito</th>
+                            <th >Precio vendido</th>
+                            <th >Medio de Pago</th>
+                            <th >Pagos</th>
+                            <th >Abonar</th>
+                            <th >Imprimir</th>
+                            <th >Editar</th>
+                            <th >Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ContenedorDatos">
+                        <tr >
+                            <th >Num_id</th>
+                            <td> dato</td>
+                            <td> dato/td>
+                            <td> dato_</td>
+                            <td> dato </td>
+                            <td> dato </td>
+                            <td> dato </td>
+                            <td> dato </td>
+                            <td><button class="Pagos"></button></td>
+                            <td><button class="Abonar"></button></td>
+                            <td><button class="Imprimir"></button></td>
+                            <td><button id="EditarDato"></button></td> <!--Aca se muestran como id , estos , pero en relaidad son class , luego se cambiara , ya que luego cuado hagamos un api , necesitaremso que cada boton , tenga su id propio , para llamar el dato requerido-->
+                            <td><button id="EliminarDato"></button></td>      
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="prov">
-            <table class="table-prov">
-                <tr>
-                    <th>Joaquin</th>
-                    <th>canteroxx92@gmail.com</th>
-                    <th>+56963028619</th>
-                    <th>Balmaceda194</th>
-                    <th class="li1"><li></li></th>
-                    <th class="li2"><li></li></th>
-                    <th class="li3"><li></li></th>
-                    <th class="li4"><li></li></th>
-                    <th class="li5"><li></li></th>
-                </tr>
-                <tr>
-                    <th>Joaquin</th>
-                    <th>canteroxx92@gmail.com</th>
-                    <th>+56928188128</th>
-                    <th>Pastor Oscar Alarcon 181</th>
-                    <th class="li1"><li></li></th>
-                    <th class="li2"><li></li></th>
-                </tr>
-            </table>
-        </div>
-    </section>
-</div>
+    </div> 
 @endsection
 
 @section('css')
     <link rel="stylesheet" href="{{asset('css/salida.css')}}">
+    <link rel="stylesheet" href="{{asset('css/New_style.css')}}">
 @endsection
