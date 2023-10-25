@@ -15,6 +15,7 @@
         <input type="submit" name="" id="" value="Buscar por correo">
         <input type="submit" name="" id="" value="Buscar por telefono">
     </nav>
+    <a href="{{route('clientes.create')}}" class="button">Agregar un cliente a la base de datos</a>
     <section class="proovedorses">
         <header class="prov-dat">
         </header>
@@ -25,35 +26,47 @@
                     <th>Correo Electronico</th>
                     <th>Telefono</th>
                     <th>Direccion</th>
-                    <th>Editar</th>
-                    <th>Eliminar</th>
                 </tr>
             </table>
         </div>
         <div class="prov">
             <table class="table-prov">
+                @foreach($clientes as $cliente)
                 <tr>
+                    <th>{{$cliente->ID_C}}</th>    
+                    <th>{{$cliente->Nombre}}</th>
+                    <th>{{$cliente->Correo}}</th>
+                    <th>{{$cliente->Telefono}}</th>
+                    <th>{{$cliente->Direccion}}</th>
+                </tr>
+                @endforeach
+                <!-- <tr>
                     <th>Joaquin</th>
                     <th>canteroxx92@gmail.com</th>
-                    <th>+56963028619</th>
                     <th>Balmaceda194</th>
                     <th class="li1"><li></li></th>
                     <th class="li2"><li></li></th>
-                </tr>
-                <tr>
+                </tr> -->
+                <!-- <tr>
                     <th>Joaquin</th>
-                    <th>canteroxx92@gmail.com</th>
                     <th>+56928188128</th>
                     <th>Pastor Oscar Alarcon 181</th>
                     <th class="li1"><li></li></th>
                     <th class="li2"><li></li></th>
-                </tr>
+                </tr> -->
+                <!-- <tr>
+                    <th>Joaquin</th>
+                    <th>+56928188128</th>
+                    <th>Pastor Oscar Alarcon 181</th>
+                    <th class="li1"><li></li></th>
+                    <th class="li2"><li></li></th>
+                </tr> -->
             </table>
         </div>
     </section>
+    <!-- <h1>{{$clientes}}</h1>  -->
 </div>
 @endsection
-
 @section('css')
     <link rel="stylesheet" href="{{asset('css/clientes.css')}}">
 @endsection

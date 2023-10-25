@@ -18,6 +18,7 @@ class Contitems extends Controller
         return view('betaconex.Addprod');
     }
     public function guardarproducto(Request $request){
+        ini_set('max_execution_time', 180);
         $items = new items();
 
         $items->ID_I = $request->ID_I;
@@ -34,11 +35,13 @@ class Contitems extends Controller
 
         $items->save();
 
+        return redirect()->route('showprod.show',$items->ID_I);
+
     }
-    public function showprod($id){
-        $items = items::find($id);
+    public function show($items){ 
 
         return view('betaconex.showprod', compact('items'));
     }
+    
+ }
 
-}

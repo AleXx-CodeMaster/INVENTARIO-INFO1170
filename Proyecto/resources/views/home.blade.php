@@ -50,6 +50,9 @@
                 <a href="ayuda" class="boton">Ayuda</a>
                 <a href="terminos" class="boton">Terminos y Reglamentos</a>
             </nav>
+            <nav>
+                <a href="escaner" class="boton">Escaner</a>
+            </nav>
         </nav>
     </div>
 </body>
