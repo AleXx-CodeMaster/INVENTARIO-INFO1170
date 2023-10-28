@@ -1,0 +1,20 @@
+Leyendo lo que tenias en el documento veo que quieres que busque una forma de eliminar datos especificos por lo que entiendo pero en la base de datos
+cuando uno quiere eliminar datos normalmente uno elminina la fila completa
+EJ:
+Base de datos:datos
+Nombre|Fecha|Dinero
+----------------------------------------------------------------------------------------
+dato1|dato2|dato3|
+dato4|dato2|dato6|
+
+Consulta:
+DELETE FROM datos WHERE NOMBRE=dato4
+Resultado:
+Nombre|Fecha|Dinero
+----------------------------------------------------------------------------------------
+dato1|dato2|dato3|
+
+Para explicar en base de datos uno le consulta a la base si puede eliminar el registro que contiene los datos espicificados donde se eliminar la fila completa lo unico que hay que espicificar es el dato con el cual se quiere verificar los registros a eliminar por ejemplo si le hubiera dicho que eliminara con la fecha espicifica(dato2) las dos filas serian eliminadas
+espero que con este documento se te levanten tus dudas.
+
+Y si te preguntas que pasa si no agregas el WHERE dentro de la consulta la base de datos eliminara todos los registros dentro de la tabla denjandola vacia

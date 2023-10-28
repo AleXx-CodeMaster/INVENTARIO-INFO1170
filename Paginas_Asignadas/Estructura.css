@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: monospace;
+}
+body{
+    display: grid;
+    grid-template-columns: 20rem auto;
+    grid-template-rows: 100%;
+}
+.Menu{
+    background-color: rgba(22,24,56); 
+    width: 100%;
+    bottom: auto;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+}
+.Cuerpo__Pagina{
+    background-color: bisque;
+    bottom: auto;
+    width: 90%;
+    height:auto;
+    grid-column: 2;
+    margin: auto;
+}
