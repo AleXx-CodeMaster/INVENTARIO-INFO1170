@@ -1,0 +1,12 @@
+* Relizar las paginas dentro de la etiqueta de clase: Cuerpo__Pagina
+
+* En caso de crear funcionalidades a los botones , usar javascript.
+llamando los objetos ( Como los mensajes de alerta, o cambio de tamaño de algo).
+
+
+*Deven subir las paginas en una carpeta("Paginas__Asignadas"):Dentro de esta carpeta , colocan las paginas. y archivos javascript(si trabajaron con js)
+
+
+*Todas las paginas seran con HTML.
+
+*Domingo 29, convertiremos las paginas en php, para poder conectarlas a la base de datos , y trabajar las consultas.

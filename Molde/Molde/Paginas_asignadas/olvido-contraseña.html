@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olvidé Contraseña</title>
+</head>
+<body>
+    <h1>Olvidé Contraseña</h1>
+    <form>
+        <label for="tipo">Seleccione el tipo de usuario:</label>
+        <select name="tipo" required>
+            <option value="empleado">Empleado</option>
+            <option value="admin">Administrador</option>
+        </select>
+        
+        <label for="correo">Ingrese correo electrónico:</label>
+        <input type="email" name="correo" required>
+        
+        <input type="submit" value="Enviar Correo de Restablecimiento">
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIAR SESION</title>
+</head>
+<body>
+    <img src="./images/logo-empresa.png" lt="Logo de la empresa">
+
+    <p>Definicion de la empresa</p>
+
+    <form>
+        <label for="nombre_empresa"> Ingrese El Nombre De La Empresa:</label> 
+
+        <input type="text" id="nombre_empresa" name="nombre_empresa" required><br>
+
+        <label for="rol">Seleccione El Rol:</label><br>
+
+        <select name="rol" id="rol" required> 
+            <option value="Empleado">Empleado</option> 
+            <option value="Administrador">Administrador</option> 
+        </select><br>
+
+        <label for="contrasena_empleado">Ingrese contraseña (Empleado):</label> 
+        <input type="password" id="contrasena_empleado" name="contrasena_empleado" required><br>
+
+        <label for="contrasena_admin">Ingrese contraseña (Administrador):</label> 
+        <input type="password" id="contrasena_admin" name="contrasena_admin" required><br>
+
+        <label for="contrasena_plataforma_admin">Ingrese contraseña de plataforma (Administrador):</label> 
+        <input type="password" id="contrasena_plataforma_admin" name="contrasena_plataforma_admin" required><br>
+
+
+        <input type="submit" value="Enviar Datos"><br>
+
+
+        <a href="olvido-contraseña.html">Olvidé mi contraseña</a><br>
+        <a href="registro_1.1.html">Registrarse</a>
+
+
+    </form>
+    

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <form action="procesar_registro.php" method="post">
+        <p>Seleccione el tipo de registro:</p>
+        <select id="tipo_registro" name="tipo_registro" required>
+            <option value="Admin">Administrador</option>
+            <option value="Individual">Individual</option>
+        </select>
+        
+        <input type="submit" value="Continuar">
+    </form>
+
+    <p>Texto sobre el registro de Administrador.</p>
+    <p>Texto sobre el registro Individual.</p>
+</body>
+</html>
