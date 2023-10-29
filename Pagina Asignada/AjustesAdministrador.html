@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molde de paginas Parte 1</title>
+    <link rel="stylesheet" href="Estructura.css">
+</head>
+<body id="body">
+    <nav class="Menu">
+        <!-- Etiquestas del menu -->
+    </nav>
+    <div class="Cuerpo__Pagina">
+        <header id="Encabezado"><h1>Ajuste Administrador</h1></header>
+        <button> ^--Volver</button>
+        <div class="Cuerpo">
+            <!-- Etiquetas que se veran en la pagina -->
+            <div id="Ajuste_Personalidar"></div>
+            <div id="Ajustes_sistema"></div>
+            <div id="Informacion_Servidor">
+                <p>Nombre de Servidor: <span id="NameServ">Name_Servidor</span><br>
+                   Codigo del Servidor: <span id="Code">#01010101</span><br>
+                   Contraseña Server: <span id="Password_S">**********</span><br>
+                </p>
+                <button>Editar perfil de Servidor</button>
+            </div>
+            <div id="Informacion_Usario">
+                <h1>Mi cuenta</h1>
+                <img id="ImagenUsuario" src = "https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Imagen del usuario" >
+                <p>Nombre de Usuario:  <span id="NameUser">Name_Usuario</span><br>
+                   Contraseña: <span id="Password_User">**********</span><br>
+                   Fecha ingreso al sistema:<span id="Fecha">DD/MM/AA</span><br>
+                   Modo: <span id="Tipo_Entrada">Administrador</span>
+                   Correo Electrónico: <span id="Correo"> CorreoElectronico@gamil.com</span><br>
+                   Telefono: <span id="Telefono">90000000000</span></p>
+                <button>Editar perfil de usuario</button>
+            </div> 
+            <div id="ELIMINAR">
+                <section>
+                    <h4>SUPRESIÓN DE CUENTA</h4>
+                    <p>Puedes elimar el servidor , pero ten en cuenta que si eliminar tu servidor , 
+                    todos las paginas de los empleados seran eliminadas y no habra forma de recupera
+                    este servidor . segun los reglamentos por NexuIventori <a href="#">Terminos&Condicciones</a>
+                    </p>
+                    <button>Eliminar Servidor</button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="menu_administrador.js"></script>
+    <script src=""> // Codigo para gestionar el cambio de imagen y conecta a la Bd para actualizar datos Usuario
+    // Codigo de personalizar la pagina
+    // Codigo de modificar y ver datos de Informacion del servidor
+    </script>
+
+</body>
+</html>
