@@ -1,5 +1,3 @@
-
-
 const menu = document.querySelector('.Menu')
 menu.innerHTML = `
 
@@ -18,14 +16,14 @@ menu.innerHTML = `
 <hr>
 <div id="menu__Parte-Dos">
 <ul class="Seleccion-Uno">
-    <li> <a href="Bienvenida.html">Bienvenida</a> </li>
     <li> <a href="#">Home      </a> </li>
     <li> <a href="#">Calendario  </a> </li>
     <li> <a href="#">Categorias  </a> </li>
     <li id="Provedores"></li>
     <li id="Productos"></li>
     <li>  <a href="#">Almacenamiento </a> </li>
-    <li>  <a href="#">Conctastar  Adm   </a> </li>
+    <li>  <a href="#">Mensajes Empleados      </a> </li>
+    <li id="Trabajadores"></li>
     <li>  <a href="#">Historial       </a> </li>
 </ul>
 <hr>
@@ -68,14 +66,14 @@ function cambiarTamano() {
     <hr>
     <div id="menu__Parte-Dos">
     <ul class="Seleccion-Uno">
-        <li> <a href="Bienvenida.html">Bienvenida</a> </li>
         <li> <a href="#">Home      </a> </li>
         <li> <a href="#">Calendario  </a> </li>
         <li> <a href="#">Categorias  </a> </li>
         <li id="Provedores"></li>
         <li id="Productos"></li>
         <li>  <a href="#">Almacenamiento </a> </li>
-        <li>  <a href="#">Conctastar  Adm   </a> </li>
+        <li>  <a href="#">Mensajes Empleados      </a> </li>
+        <li id="Trabajadores"></li>
         <li>  <a href="#">Historial       </a> </li>
     </ul>
     <hr>
@@ -95,26 +93,52 @@ function cambiarTamano() {
 function mas_item(){
     const Productos_list = document.querySelector('#Productos');
     const Provedores_list = document.querySelector('#Provedores');
+    const Trabajadores_list = document.querySelector('#Trabajadores');
+
 
     Productos_list.innerHTML = `<a href="#">Productos  </a>`;
-    Provedores_list.innerHTML = `<a href="#">Provedores</a>`;
+    Provedores_list.innerHTML = `<a href="#">Proveedores</a>`;
+    Trabajadores_list.innerHTML = `<a href="#">Trabajadores</a>`;
 
-    var bloque_1, bloque = true;
+    var bloque_1, bloque,bloque2 = true;
 
     Productos_list.addEventListener('click', function() {Lista_Productos(this);});
     Provedores_list.addEventListener('click', function() { Lista_Provedores(this);});
+    Trabajadores_list.addEventListener('click', function() { Lista_Trabajadores(this);});
+
+    function Lista_Trabajadores(objeto){
+        if(bloque2){
+            bloque2 = false;
+            objeto.innerHTML= `
+            <a href="#"><span id="Trab">Trabajadores</span></a>
+            <ul>
+            <li>  <a href="#">Registro Trabajadores </a> </li>
+            <li>  <a href="#">Agregar Trabajador  </a> </li>
+            <li>  <a href="#">Trabajador Posteriores </a> </li>
+            </ul>
+            `;
+            const t = document.querySelector('#Trab');
+            t.style.color = '#FFEBA7';
+        }
+        else {
+            bloque2 = true;
+            objeto.innerHTML = `<a href="#">Trabajadores</a> `;
+        };
+    }
 
     function Lista_Productos(objeto){
         if(bloque_1){
             bloque_1 = false;
             objeto.innerHTML= `
-            <a href="#">Productos</a>
+            <a href="#"><span id='P1'>Productos</span></a>
             <ul>
             <li>  <a href="#">Registro Producto </a> </li>
             <li>  <a href="#">Agregar Producto  </a> </li>
             <li>  <a href="#">Eliminar Producto </a> </li>
             </ul>
             `;
+            const p = document.querySelector('#P1');
+            p.style.color = '#FFEBA7';
         }
         else {
             bloque_1 = true;
@@ -126,14 +150,15 @@ function mas_item(){
         if(bloque){
             bloque = false;
             objeto.innerHTML= `
-            <a href="#">Proveedores </a>
+            <a href="#"><span id="P2">Proveedores</span></a>
             <ul>
                 <li>  <a href="#">Registro Proveedor   </a> </li>
-                <li>  <a href="#">Información Proveedor</a> </li>
                 <li>  <a href="#">Agregar Proveedor    </a> </li>
-                <li>  <a href="#">Eliminar Proveedor   </a> </li>
+                <li>  <a href="#">Proveddores posteriores </a> </li>
             </ul>
             `;
+            const p = document.querySelector('#P2');
+            p.style.color = '#FFEBA7';
         }
         else {
             bloque = true;
@@ -141,5 +166,4 @@ function mas_item(){
         };
     }
 }
-
 mas_item()
