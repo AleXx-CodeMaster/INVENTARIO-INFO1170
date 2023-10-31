@@ -1,3 +1,5 @@
+
+
 const menu = document.querySelector('.Menu')
 menu.innerHTML = `
 
@@ -22,8 +24,7 @@ menu.innerHTML = `
     <li id="Provedores"></li>
     <li id="Productos"></li>
     <li>  <a href="#">Almacenamiento </a> </li>
-    <li>  <a href="#">Mensajes Empleados      </a> </li>
-    <li id="Trabajadores"></li>
+    <li>  <a href="#">Contactar  Administrador   </a> </li>
     <li>  <a href="#">Historial       </a> </li>
 </ul>
 <hr>
@@ -72,8 +73,7 @@ function cambiarTamano() {
         <li id="Provedores"></li>
         <li id="Productos"></li>
         <li>  <a href="#">Almacenamiento </a> </li>
-        <li>  <a href="#">Mensajes Empleados      </a> </li>
-        <li id="Trabajadores"></li>
+        <li>  <a href="#">Conctastar  Adm   </a> </li>
         <li>  <a href="#">Historial       </a> </li>
     </ul>
     <hr>
@@ -93,38 +93,14 @@ function cambiarTamano() {
 function mas_item(){
     const Productos_list = document.querySelector('#Productos');
     const Provedores_list = document.querySelector('#Provedores');
-    const Trabajadores_list = document.querySelector('#Trabajadores');
-
 
     Productos_list.innerHTML = `<a href="#">Productos  </a>`;
     Provedores_list.innerHTML = `<a href="#">Proveedores</a>`;
-    Trabajadores_list.innerHTML = `<a href="#">Trabajadores</a>`;
 
-    var bloque_1, bloque,bloque2 = true;
+    var bloque_1, bloque = true;
 
     Productos_list.addEventListener('click', function() {Lista_Productos(this);});
     Provedores_list.addEventListener('click', function() { Lista_Provedores(this);});
-    Trabajadores_list.addEventListener('click', function() { Lista_Trabajadores(this);});
-
-    function Lista_Trabajadores(objeto){
-        if(bloque2){
-            bloque2 = false;
-            objeto.innerHTML= `
-            <a href="#"><span id="Trab">Trabajadores</span></a>
-            <ul>
-            <li>  <a href="#">Registro Trabajadores </a> </li>
-            <li>  <a href="#">Agregar Trabajador  </a> </li>
-            <li>  <a href="#">Trabajador Posteriores </a> </li>
-            </ul>
-            `;
-            const t = document.querySelector('#Trab');
-            t.style.color = '#FFEBA7';
-        }
-        else {
-            bloque2 = true;
-            objeto.innerHTML = `<a href="#">Trabajadores</a> `;
-        };
-    }
 
     function Lista_Productos(objeto){
         if(bloque_1){
@@ -166,4 +142,5 @@ function mas_item(){
         };
     }
 }
+
 mas_item()
