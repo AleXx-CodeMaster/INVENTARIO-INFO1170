@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedores</title>
+    <link rel="stylesheet" href="Proveedores.css">
+</head>
+<body id="body">
+    <nav class="Menu">
+    </nav>
+    <div class="Cuerpo__Pagina">
+        <header id="Encabezado"><h1>Proveedores</h1></header>
+        <div class="Cuerpo"> <br><br>
+            <button id="BotonExistencia">Nueva Existencia</button> 
+            <button id="BotonAntiguo">Proveedores Antiguos</button><br>
+            <input type="text" class="Selector" placeholder="Buscar por Nombre">
+            <input type="text" class="Selector" placeholder="Buscar por Correo">
+            <input type="text" class="Selector" placeholder="Buscar por Telefono">
+        </div>
+        <div id="ContTablas">  
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th >Nombre</th> 
+                        <th >Correo Electronico</th>
+                        <th >Telefono</th>
+                        <th >Direccion</th>
+                        <th >Editar</th>
+                        <th >Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="ContenedorDatos">
+                    <tr >
+                        <th> Joaquin </th>
+                        <td> canteroxx92@gmail.com </td>
+                        <td> +56963028619 </td>
+                        <td> Balmaceda 194 </td>
+                        <td><button id="EditarDato"><a href="#"></a></button></td>
+                        <td><button id="EliminarDato"><a href="#"></a></button> </td>        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="add" class="modal">
+        <div class="modal-content">
+            <div id="Form">
+                <h1>Agregar Proveedor</h1>
+                <input type="text" class="Selector" placeholder="Nombre"> <br>
+                <input type="text" class="Selector" placeholder="Correo"> <br>
+                <input type="text" class="Selector" placeholder="Telefono"> <br>
+                <input type="text" class="Selector" placeholder="Direccion"> <br>
+                <button id="CerrarModal" class="Selector">Cerrar</button>
+            </div>
+        </div>
+    </div>
+    <div id="modify" class="modal">
+        <div class="modal-content">
+            <div id="Form">
+                <h1>Editar Proveedor</h1>
+                <input type="text" class="Selector" placeholder="Nombre"> <br>
+                <input type="text" class="Selector" placeholder="Correo"> <br>
+                <input type="text" class="Selector" placeholder="Telefono"> <br>
+                <input type="text" class="Selector" placeholder="Direccion"> <br>
+                <button id="CerrarModal" class="Selector">Cerrar</button>
+            </div>
+        </div>
+    </div>
+    <div id="antiguo" class="modal">
+        <div class="modal-content">
+            <div id="Form">
+                <h1>Proveedores Antiguos</h1>
+                <div id="ContTablas">  
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th >Nombre</th> 
+                                <th >Correo Electronico</th>
+                                <th >Telefono</th>
+                                <th >Direccion</th>
+                                <th >Editar</th>
+                                <th >Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ContenedorDatos">
+                            <tr >
+                                <th> Joaquin </th>
+                                <td> canteroxx92@gmail.com </td>
+                                <td> +56963028619 </td>
+                                <td> Balmaceda 194 </td>
+                                <td><button id="EditarDato"><a href="#"></a></button></td>
+                                <td><button id="EliminarDato"><a href="#"></a></button> </td>        
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button id="CerrarModal" class="Selector">Cerrar</button>
+            </div>
+        </div>
+    </div>
+    <script src="menu__despegable.js"></script>
+    <script src="antiguos.js"></script>
+    <script src="agregar.js"></script>
+    <script src="editar.js"></script>
+    <!-- Todo esto aún no esta funcional esta solo el esquema-->
+</body>
+</html>
