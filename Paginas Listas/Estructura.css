@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    font-size: monospace;
 }
 body{
     display: grid;
@@ -19,7 +18,7 @@ body{
 .Cuerpo__Pagina{
     background-color: bisque;
     bottom: auto;
-    width: 90%;
+    width: 100%;
     height:auto;
     grid-column: 2;
     margin: auto;
