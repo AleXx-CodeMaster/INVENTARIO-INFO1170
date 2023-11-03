@@ -6,9 +6,6 @@ footer {
     grid-template-columns: auto 20rem;
     list-style-type: none;
     margin-bottom: 0;
-    position: relative;
-    bottom: 0;
-
 }
 
 .footer-content{
@@ -17,7 +14,7 @@ footer {
 }
 .footer-content p{
      width: 35rem;
-     margin:  1rem 0rem 0rem -3rem;
+     margin:  1rem 0rem 0rem 0rem;
      font-size: 12px;
 }
 .footer-bottom{
@@ -52,8 +49,7 @@ footer li {
     width: 180px;
 }
 #Redes{
-    text-align: center;
-    margin: 2rem 0rem 0rem 7rem;
+    text-align: end;
     font-size: 14px;
     font-family:monospace;
 }
@@ -61,5 +57,5 @@ footer li {
     font-size: 12px;
     width: 170px;
     text-align: end;
-    padding: 0rem 0rem 0rem 7rem;
+    margin: 0% 0% 0% 50%;
 }

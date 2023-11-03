@@ -1,97 +1,3 @@
-
-
-const menu = document.querySelector('.Menu')
-menu.innerHTML = `
-
-<button id="Boton__Menu"onclick="cambiarTamano()"></button>
-<div id="menu__Parte Uno">
-<img id="ImagenUsuario" src = "https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Imagen del usuario" > 
-<div id="bloque_informativo">
-    <ul>
-        <li>User:      <span id="NombreUsuaario">Joaquin Cantero Olivera</span></li>
-        <li>Localhost: <span id="NombreEmpresa">Cansue</span></li>
-        <li>Formato    <span id="TipoEntrada">  Admin/Colaborador</span></li>
-        <li>Codigo:    <span id="CodigoRutaBd"> #00001</span></li>
-    </ul>
-</div>
-</div>
-<hr>
-<div id="menu__Parte-Dos">
-<ul class="Seleccion-Uno">
-    <li> <a href="#">Home      </a> </li>
-    <li> <a href="#">Calendario  </a> </li>
-    <li> <a href="#">Categorias  </a> </li>
-    <li id="Provedores"></li>
-    <li id="Productos"></li>
-    <li>  <a href="#">Almacenamiento </a> </li>
-    <li>  <a href="#">Mensajes Empleados      </a> </li>
-    <li id="Trabajadores"></li>
-    <li>  <a href="#">Historial       </a> </li>
-</ul>
-<hr>
-<ul class="Seleccion-Dos">
-    <li id="ajuste"> <a href="#">Ajustes           </a> </li>
-    <li id="ifo"> <a href="#">Mas sobre nosotros</a> </li>
-    <li id="ayuda"> <a href="#">Ayuda             </a></li>
-    <li id="condicion"> <a href="#">Termino y reglamentos</a></li>
-</ul>
-</div>
-`
-
-var bloqueGrande = true;
-
-function cambiarTamano() {
-  var body = document.getElementById("body");
-  const menu = document.querySelector('.Menu')
-  
-  if (bloqueGrande) {
-    body.style.gridTemplateColumns = "20px auto";
-    bloqueGrande = false;
-    menu.innerHTML = `
-        <button id="Boton__Menu"onclick="cambiarTamano()"></button>
-    `
-  } else {
-    body.style.gridTemplateColumns = "20rem auto";
-    bloqueGrande = true;
-    menu.innerHTML += `
-    <div id="menu__Parte Uno">
-    <img id="ImagenUsuario" src = "https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Imagen del usuario" > 
-    <div id="bloque_informativo">
-        <ul>
-            <li>User:      <span id="NombreUsuaario">Joaquin Cantero Olivera</span></li>
-            <li>Localhost: <span id="NombreEmpresa">Cansue</span></li>
-            <li>Formato    <span id="TipoEntrada">  Admin/Colaborador</span></li>
-            <li>Codigo:    <span id="CodigoRutaBd"> #00001</span></li>
-        </ul>
-    </div>
-    </div>
-    <hr>
-    <div id="menu__Parte-Dos">
-    <ul class="Seleccion-Uno">
-        <li> <a href="#">Home      </a> </li>
-        <li> <a href="#">Calendario  </a> </li>
-        <li> <a href="#">Categorias  </a> </li>
-        <li id="Provedores"></li>
-        <li id="Productos"></li>
-        <li>  <a href="#">Almacenamiento </a> </li>
-        <li>  <a href="#">Mensajes Empleados      </a> </li>
-        <li id="Trabajadores"></li>
-        <li>  <a href="#">Historial       </a> </li>
-    </ul>
-    <hr>
-    <ul class="Seleccion-Dos">
-        <li id="ajuste"> <a href="#">Ajustes           </a> </li>
-        <li id="ifo"> <a href="#">Mas sobre nosotros</a> </li>
-        <li id="ayuda"> <a href="#">Ayuda             </a></li>
-        <li id="condicion"> <a href="#">Termino y reglamentos</a></li>
-    </ul>
-    </div>
-                    `
-    mas_item()
-  }
-
-}
-
 function mas_item(){
     const Productos_list = document.querySelector('#Productos');
     const Provedores_list = document.querySelector('#Provedores');
@@ -167,5 +73,95 @@ function mas_item(){
             objeto.innerHTML = `<a href="#">Proveedores </a>`;
         };
     }
+}
+
+const menu = document.querySelector('.Menu')
+menu.innerHTML = `
+<button id="Boton__Menu"onclick="cambiarTamano()"></button>
+<div id="menu__Parte Uno">
+<img id="ImagenUsuario" src = "https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Imagen del usuario" > 
+<div id="bloque_informativo">
+    <ul>
+        <li>User:      <span id="NombreUsuaario">Joaquin Cantero Olivera</span></li>
+        <li>Localhost: <span id="NombreEmpresa">Cansue</span></li>
+        <li>Formato    <span id="TipoEntrada">  Admin/Colaborador</span></li>
+        <li>Codigo:    <span id="CodigoRutaBd"> #00001</span></li>
+    </ul>
+</div>
+</div>
+<hr>
+<div id="menu__Parte-Dos">
+<ul class="Seleccion-Uno">
+    <li> <a href="#">Home      </a> </li>
+    <li> <a href="#">Calendario  </a> </li>
+    <li> <a href="#">Categorias  </a> </li>
+    <li id="Provedores"></li>
+    <li id="Productos"></li>
+    <li>  <a href="#">Almacenamiento </a> </li>
+    <li>  <a href="#">Mensajes Empleados      </a> </li>
+    <li id="Trabajadores"></li>
+    <li>  <a href="#">Historial       </a> </li>
+</ul>
+<hr>
+<ul class="Seleccion-Dos">
+    <li id="ajuste"> <a href="#">Ajustes           </a> </li>
+    <li id="ifo"> <a href="#">Mas sobre nosotros</a> </li>
+    <li id="ayuda"> <a href="#">Ayuda             </a></li>
+    <li id="condicion"> <a href="#">Termino y reglamentos</a></li>
+</ul>
+</div>
+`
+var bloqueGrande = true;
+
+function cambiarTamano() {
+  var body = document.getElementById("body");
+  const menu = document.querySelector('.Menu')
+  
+  if (bloqueGrande) {
+    body.style.gridTemplateColumns = "1% auto";
+    bloqueGrande = false;
+    menu.innerHTML = `
+        <button id="Boton__Menu"onclick="cambiarTamano()"></button>
+    `
+  } else {
+    body.style.gridTemplateColumns = "18rem auto";
+    bloqueGrande = true;
+    menu.innerHTML += `
+    <div id="menu__Parte Uno">
+    <img id="ImagenUsuario" src = "https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Imagen del usuario" > 
+    <div id="bloque_informativo">
+        <ul>
+            <li>User:      <span id="NombreUsuaario">Joaquin Cantero Olivera</span></li>
+            <li>Localhost: <span id="NombreEmpresa">Cansue</span></li>
+            <li>Formato    <span id="TipoEntrada">  Admin/Colaborador</span></li>
+            <li>Codigo:    <span id="CodigoRutaBd"> #00001</span></li>
+        </ul>
+    </div>
+    </div>
+    <hr>
+    <div id="menu__Parte-Dos">
+    <ul class="Seleccion-Uno">
+        <li> <a href="#">Home      </a> </li>
+        <li> <a href="#">Calendario  </a> </li>
+        <li> <a href="#">Categorias  </a> </li>
+        <li id="Provedores"></li>
+        <li id="Productos"></li>
+        <li>  <a href="#">Almacenamiento </a> </li>
+        <li>  <a href="#">Mensajes Empleados      </a> </li>
+        <li id="Trabajadores"></li>
+        <li>  <a href="#">Historial       </a> </li>
+    </ul>
+    <hr>
+    <ul class="Seleccion-Dos">
+        <li id="ajuste"> <a href="#">Ajustes           </a> </li>
+        <li id="ifo"> <a href="#">Mas sobre nosotros</a> </li>
+        <li id="ayuda"> <a href="#">Ayuda             </a></li>
+        <li id="condicion"> <a href="#">Termino y reglamentos</a></li>
+    </ul>
+    </div>
+    `
+    mas_item()
+  }
+
 }
 mas_item()

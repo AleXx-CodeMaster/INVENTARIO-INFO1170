@@ -10,9 +10,9 @@ function Lista(datos){
     contenidoA3.innerHTML = ''
     for(let valor of datos){
         contenidoA3.innerHTML += `
-        <li>
+        <li id="li">
             <h4 id="h4">${valor.Condicion}</h4>
-            <P>${valor.Detalles}</p>
+            <p id="p">${valor.Detalles}</p>
         </li> 
         `
     }

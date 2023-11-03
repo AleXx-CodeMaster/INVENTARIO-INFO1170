@@ -44,13 +44,13 @@ function cambiarTamano() {
   const menu = document.querySelector('.Menu')
   
   if (bloqueGrande) {
-    body.style.gridTemplateColumns = "20px auto";
+    body.style.gridTemplateColumns = "1% auto";
     bloqueGrande = false;
     menu.innerHTML = `
         <button id="Boton__Menu"onclick="cambiarTamano()"></button>
     `
   } else {
-    body.style.gridTemplateColumns = "20rem auto";
+    body.style.gridTemplateColumns = "18rem auto";
     bloqueGrande = true;
     menu.innerHTML += `
     <div id="menu__Parte Uno">
