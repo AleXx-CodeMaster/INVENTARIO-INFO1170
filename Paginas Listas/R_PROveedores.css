@@ -3,7 +3,10 @@
     margin: 0;
     font-family: monospace;
 }
+
 h1{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 .tr-shadow img{
@@ -15,6 +18,43 @@ h1{
     margin-right: 1rem;
     border-radius: 0.2rem;
 }
+
 .table{
     width: 100%;
+}
+.Busqueda__Seleccion{
+    display: flex;
+}
+#Buscador,#Seleccion{
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    width: 16rem;
+
+    margin: 0.7rem -0rem 0rem 10rem;
+    background-color: #EFF3F6;
+    padding: 0.3rem;
+}
+#icon{
+    background-image: url(busqueda.png);
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    margin-left: -0.19999rem;
+    border: none;
+    width: 2rem;
+    padding: 0.3rem;
+    background-color: #EFF3F6;
+    border-radius: 0px 10px 10px 0px;
+    text-indent: -9999px;
+
+}
+#ADD a{
+    color:white;
+    text-decoration: none;
+}
+#ADD{
+    background-color: #00B5E9;
+    border: none;
+    width: 6rem;
+    margin-left: 22%;
 }
