@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+}
+#imgAutores{
+    width: 15%;
+    border-radius: 2%;
+}
+#Nombre,#infor,#puesto{
+    padding: 0% 0% 0% 3% ;
+    font-size: larger
+}
+#infor{
+    font-size: small;
+}
+#puesto{
+    margin-top: 1%;
+    font-size: medium;
+}
+.Cuerpo__Pagina{
+    font-family: 'Poppins', sans-serif;
+}
+.Contendor{
+    display: flex;
+    margin: 2rem;
+    width: 90%;
+
+
+
+}
+.INFORMACION{
+    display: block;
+}
+#Title{
+    font-size: 1.5rem;
+    padding: 2% 0% 2% 0%;
+}
