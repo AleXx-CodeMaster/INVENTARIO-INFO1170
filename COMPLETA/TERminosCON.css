@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#HEAD_TERN{
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: monospace;
+    /* font-family: 'Poppins', sans-serif; */
+}
+.TERMINOS_C{
+    font-family: monospace;
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    margin: 0% 0% 0% 9%;
+}
+#li{
+    list-style-type: none;
+    /* padding: 0.2rem 2rem 0rem 2rem; */
+}
+#p{
+ padding:1rem 0rem 1rem 2rem;
+}
+#Item {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
