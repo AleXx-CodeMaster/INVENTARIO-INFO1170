@@ -95,11 +95,11 @@ body{
     background-image: url(https://cdn.icon-icons.com/icons2/1509/PNG/96/mailsend_104372.png);
     background-size: 80% 56%; 
 }
-#Editar{
+#Editar,#EditarDato{
     background-image: url(https://cdn.icon-icons.com/icons2/1509/PNG/96/edit_104206.png);
     background-size: 56%; 
 }
-#Delete{
+#Delete,#EliminarDato{
     background-image: url(https://cdn.icon-icons.com/icons2/1509/PNG/96/editdelete_104494.png);
     background-size: 56%; 
 }
