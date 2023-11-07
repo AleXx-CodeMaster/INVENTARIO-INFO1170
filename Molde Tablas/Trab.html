@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Provedores</title>
+    <title>Trabajadores</title>
     <link rel="stylesheet" href="Registro Tablas ADD,Modific,delete,post/Pagina.css">
     <link rel="stylesheet" href="Registro Tablas ADD,Modific,delete,post/TABLA.css">
     <link rel="stylesheet" href="Formularios.CSS">
@@ -11,15 +11,15 @@
 <body id="body">
     <nav class="Menu"></nav>
     <div class="Cuerpo__Pagina">
-        <header id="Encabezado"><h1>Proveedores</h1></header>
+        <header id="Encabezado"><h1>Registros de empleados</h1></header>
         <div class="PANEL__BUTTON">
             <div class="BUtton">
-                <button id="BotonExistencia">Nueva Existencia</button> 
-                <button id="BotonAntiguo">Proveedores Antiguos</button>
+                <button id="BotonExistencia">Añadir Trabjador</button> 
+                <button id="BotonAntiguo">Trabajadores Posteriores</button>
              </div>
             <div class="Search">
                 <form action="Buscar">
-                    <input id="Buscador" type="text" class="Selector" placeholder="Buscar por Nombre">
+                    <input id="Buscador" type="text" class="Selector" placeholder="Buscar Trabajador">
                     <input id="icon"type="submit" >
                 </form>
             </div>
@@ -29,23 +29,26 @@
                 <table class="table table-data2">
                     <thead>
                         <tr>
-                            <th>Proveedor</th>
-                            
-                            <th>email</th>
+                            <th>Trabajador</th>
+                            <th>Rut</th>
+                            <th>Email</th>
                             <th>Telefono</th>
-                            <th>Direccion</th>
+                            <th>Fecha de Ingreso</th>
+                            <th>Estado</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="tr-shadow">
                             <td>1.|IMG|Nombre provedor </td>
-
-                            <td><span>Proveedor@gmail.com</span></td>
-                            <td><span>+56 9401 9001</span> </td>
-                            <td><span>Balmaceda 194</span> </td>
+                            <td><span>21.607.907-8</span></td>
+                            <td><span>Trbajador@gmail.com</span> </td>
+                            <td><span>+56 9000 8097</span> </td>
+                            <td><span>31 de Julio 2023</span> </td>
+                            <td><span>En línea</span> </td>
                             <td><!--ITEM-compartir-modificar-eliminar-másInformación--->
                                 <div class="BOTONES_SELECCION">
+                                    <button id="Compartir"   title="Compartir"> </button>
                                     <button id="EditarDato" title="Edit">      </button>
                                     <button id="EliminarDato" title="Delete">    </button>
                                 </div>
@@ -54,12 +57,14 @@
                         <tr class="spacer"></tr>
                         <tr class="tr-shadow">
                             <td>1.|IMG|Nombre provedor </td>
-                            
-                            <td><span>Proveedor@gmail.com</span></td>
-                            <td><span>+56 9401 9001</span> </td>
-                            <td><span>Balmaceda 194</span> </td>
+                            <td><span>21.607.907-8</span></td>
+                            <td><span>Trbajador@gmail.com</span> </td>
+                            <td><span>+56 9000 8097</span> </td>
+                            <td><span>31 de Julio 2023</span> </td>
+                            <td><span>En línea</span> </td>
                             <td><!--ITEM-compartir-modificar-eliminar-másInformación--->
                                 <div class="BOTONES_SELECCION">
+                                    <button id="Compartir"   title="Compartir"> </button>
                                     <button id="EditarDato" title="Edit">      </button>
                                     <button id="EliminarDato" title="Delete">    </button>
                                 </div>
@@ -72,11 +77,13 @@
         <div id="add" class="modal">
             <div class="modal-content">
                 <div id="Form">
-                    <h2>Agregar Proveedor</h2>
+                    <h2>Agregar Trabajador</h2>
                     <input type="text" class="Selector" placeholder="Nombre"> <br>
+                    <input type="text" class="Selector" placeholder="Rut"> <br>
                     <input type="text" class="Selector" placeholder="Correo"> <br>
-                    <input type="text" class="Selector" placeholder="Telefono"> <br>
-                    <input type="text" class="Selector" placeholder="Direccion"> <br>
+                    <input type="text" class="Selector" placeholder="Telefono"><br>
+                    <input type="password" class="Selector" placeholder="Contraseña"><br>
+                    <input type="password" class="Selector" placeholder="Repita Contraseña"><br>
                     <div id="Bu">
                         <button id="CerrarModal" class="Selector" title="Cancelar Acción">Cancelar</button>
                         <button id="Agregar_BD" class="Selector" title="Agregar al sistema">Añadir</button>
@@ -103,40 +110,48 @@
         <div id="antiguo" class="modal">
             <div class="modal-content">
                 <div id="Form">
-                <h1>Proveedores Antiguos</h1>
+                <h1>Trabajadores Posteriores</h1>
 
                 <table class="table table-data2">
                     <thead>
                         <tr>
-                            <th>Proveedor</th>
-                            
-                            <th>email</th>
+                            <th>Trabajador</th>
+                            <th>Rut</th>
+                            <th>Email</th>
                             <th>Telefono</th>
-                            <th>Direccion</th>
+                            <th>Fecha de Ingreso</th>
+                            <th>Estado</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="tr-shadow">
                             <td>1.|IMG|Nombre provedor </td>
-
-                            <td><span>Proveedor@gmail.com</span></td>
-                            <td><span>+56 9401 9001</span> </td>
-                            <td><span>Balmaceda 194</span> </td>
+                            <td><span>21.607.907-8</span></td>
+                            <td><span>Trbajador@gmail.com</span> </td>
+                            <td><span>+56 9000 8097</span> </td>
+                            <td><span>31 de Julio 2023</span> </td>
+                            <td><span>En línea</span> </td>
+                            <td><!--ITEM-compartir-modificar-eliminar-másInformación--->
+                                <div class="BOTONES_SELECCION">
+                                    <button id="EliminarDato" title="Delete">    </button>
+                                </div>
+                            </td>
                         </tr>
                         <tr class="spacer"></tr>
                         <tr class="tr-shadow">
                             <td>1.|IMG|Nombre provedor </td>
-                            
-                            <td><span>Proveedor@gmail.com</span></td>
-                            <td><span>+56 9401 9001</span> </td>
-                            <td><span>Balmaceda 194</span> </td>
+                            <td><span>21.607.907-8</span></td>
+                            <td><span>Trbajador@gmail.com</span> </td>
+                            <td><span>+56 9000 8097</span> </td>
+                            <td><span>31 de Julio 2023</span> </td>
+                            <td><span>En línea</span> </td>
+                            <td><!--ITEM-compartir-modificar-eliminar-másInformación--->
+                                <div class="BOTONES_SELECCION">
+                                    <button id="EliminarDato" title="Delete">    </button>
+                                </div>
+                            </td>
                         </tr>
-                        <td><!--ITEM-compartir-modificar-eliminar-másInformación--->
-                            <div class="BOTONES_SELECCION">
-                                <button id="EliminarDato" title="Delete">    </button>
-                            </div>
-                        </td>
                     </tbody>
                 </table>
                 </div>
@@ -152,6 +167,5 @@
     <script src="antiguos.js"></script>
     <script src="agregar.js"></script>
     <script src="editar.js"></script>
-
 </body>
 </html>
