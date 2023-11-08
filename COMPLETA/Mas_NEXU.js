@@ -1,5 +1,5 @@
 var contenidoNQ = document.querySelector('.Que_es')
-fetch('../JSON/Nexuinventory.json')
+fetch('Nexuinventory.json')
     .then(res=> res.json())
     .then(datos => {
         datos.forEach(dato =>{
@@ -9,7 +9,7 @@ fetch('../JSON/Nexuinventory.json')
         })
     })
 var contenidoNH = document.querySelector('.historia')
-fetch('../JSON/Historia.json')
+fetch('Historia.json')
     .then(res=> res.json())
     .then(datos => {
         datos.forEach(dato =>{
@@ -21,7 +21,7 @@ fetch('../JSON/Historia.json')
 
 var contenidoNC = document.querySelector('#encargados')
 
-fetch('../JSON/Equipo.json')
+fetch('Equipo.json')
     .then( res => res.json())
     .then( datos => {
         datos.forEach(dato => { 
