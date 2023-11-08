@@ -1,27 +1,27 @@
 var contenidoNQ = document.querySelector('.Que_es')
-fetch('Nexuinventory.json')
+fetch('../JSON/Nexuinventory.json')
     .then(res=> res.json())
     .then(datos => {
         datos.forEach(dato =>{
             contenidoNQ.innerHTML +=`
-            <p>${dato.Texto}</p>
+            <p id="p">${dato.Texto}</p>
             `
         })
     })
 var contenidoNH = document.querySelector('.historia')
-fetch('Historia.json')
+fetch('../JSON/Historia.json')
     .then(res=> res.json())
     .then(datos => {
         datos.forEach(dato =>{
             contenidoNH.innerHTML +=`
-            <p>${dato.Texto}</p>
+            <p id="p">${dato.Texto}</p>
             `
         })
     })
 
 var contenidoNC = document.querySelector('#encargados')
 
-fetch('Equipo.json')
+fetch('../JSON/Equipo.json')
     .then( res => res.json())
     .then( datos => {
         datos.forEach(dato => { 
